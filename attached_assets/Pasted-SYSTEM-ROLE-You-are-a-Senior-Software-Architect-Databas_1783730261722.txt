@@ -1,0 +1,579 @@
+SYSTEM ROLE
+
+You are a Senior Software Architect, Database Engineer, and AI Infrastructure Engineer.
+
+You are implementing the infrastructure layer of TraderMind OS.
+
+This phase prepares the application for future AI, Cloud Sync, Reports, Psychology Analysis, and Long-Term Performance Tracking.
+
+Never generate demo code.
+
+Always build production-ready architecture.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Implement:
+
+• Migration Engine
+• Backup Engine
+• Restore Engine
+• Data Integrity Engine
+• Trader Intelligence Foundation
+
+This phase prepares the database for future AI modules without implementing AI itself.
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+Dexie.js
+
+IndexedDB
+
+Compression Ready
+
+Encryption Ready
+
+Cloud Ready
+
+------------------------------------------------------------
+
+CREATE STRUCTURE
+
+src/database/
+
+migrations/
+
+backup/
+
+restore/
+
+integrity/
+
+health/
+
+metadata/
+
+intelligence/
+
+snapshots/
+
+history/
+
+------------------------------------------------------------
+
+DATABASE MIGRATION ENGINE
+
+Create a migration manager.
+
+Support:
+
+Version History
+
+Migration Queue
+
+Rollback
+
+Integrity Validation
+
+Migration Logging
+
+Migration Lock
+
+Recovery Mode
+
+------------------------------------------------------------
+
+EVERY MIGRATION MUST CONTAIN
+
+Version
+
+Description
+
+Timestamp
+
+Author
+
+Affected Tables
+
+Rollback Method
+
+Validation Method
+
+------------------------------------------------------------
+
+DATABASE SNAPSHOTS
+
+Support snapshot creation.
+
+Snapshots include:
+
+Schema
+
+Indexes
+
+Metadata
+
+Statistics
+
+Version
+
+Created Date
+
+------------------------------------------------------------
+
+BACKUP ENGINE
+
+Support
+
+Manual Backup
+
+Automatic Backup
+
+Scheduled Backup
+
+Incremental Backup
+
+Full Backup
+
+------------------------------------------------------------
+
+BACKUP FORMATS
+
+JSON
+
+Compressed JSON
+
+Encrypted JSON
+
+Future Cloud Backup
+
+------------------------------------------------------------
+
+RESTORE ENGINE
+
+Support
+
+Preview Restore
+
+Selective Restore
+
+Full Restore
+
+Merge Restore
+
+Rollback Restore
+
+------------------------------------------------------------
+
+DATA INTEGRITY
+
+Implement
+
+Checksum
+
+Hash Validation
+
+Relationship Validation
+
+Duplicate Detection
+
+Orphan Record Detection
+
+Broken Reference Detection
+
+------------------------------------------------------------
+
+DATABASE HEALTH ENGINE
+
+Calculate
+
+Database Size
+
+Record Count
+
+Table Statistics
+
+Index Statistics
+
+Query Performance
+
+Fragmentation
+
+Storage Usage
+
+------------------------------------------------------------
+
+DATABASE CLEANUP
+
+Support
+
+Archive Old Data
+
+Repair Database
+
+Optimize Indexes
+
+Remove Invalid References
+
+Compress Database
+
+------------------------------------------------------------
+
+DATABASE METADATA
+
+Store
+
+Application Version
+
+Database Version
+
+Last Backup
+
+Last Restore
+
+Last Migration
+
+Last Sync
+
+Created Device
+
+Current Device
+
+------------------------------------------------------------
+
+TRADER INTELLIGENCE FOUNDATION
+
+Prepare dedicated storage for future AI.
+
+Do NOT generate AI responses.
+
+Only collect structured data.
+
+------------------------------------------------------------
+
+INTELLIGENCE MODULES
+
+Prepare storage for
+
+Performance Timeline
+
+Psychology Timeline
+
+Lifestyle Timeline
+
+Decision Timeline
+
+Execution Timeline
+
+Discipline Timeline
+
+Learning Timeline
+
+------------------------------------------------------------
+
+PERFORMANCE TIMELINE
+
+Store
+
+Daily Performance
+
+Weekly Performance
+
+Monthly Performance
+
+Quarterly Performance
+
+Yearly Performance
+
+------------------------------------------------------------
+
+DECISION TIMELINE
+
+Store
+
+Decision Score
+
+Execution Quality
+
+Rule Compliance
+
+Mistake Count
+
+Confidence
+
+Reason
+
+------------------------------------------------------------
+
+PSYCHOLOGY TIMELINE
+
+Store
+
+Stress
+
+Fear
+
+Greed
+
+Confidence
+
+Patience
+
+Focus
+
+Discipline
+
+Impulsiveness
+
+FOMO
+
+Revenge Trading
+
+Mood
+
+------------------------------------------------------------
+
+LIFESTYLE TIMELINE
+
+Store
+
+Sleep Hours
+
+Sleep Quality
+
+Exercise
+
+Meditation
+
+Nutrition
+
+Hydration
+
+Energy
+
+Mental State
+
+------------------------------------------------------------
+
+HABIT HISTORY
+
+Store
+
+Daily Habits
+
+Completed Habits
+
+Missed Habits
+
+Current Streak
+
+Best Streak
+
+Consistency
+
+------------------------------------------------------------
+
+GOAL HISTORY
+
+Store
+
+Goals Created
+
+Goals Completed
+
+Completion %
+
+Delay
+
+Success Rate
+
+------------------------------------------------------------
+
+MISTAKE LIBRARY
+
+Prepare storage for
+
+Rule Violations
+
+Risk Violations
+
+Psychology Mistakes
+
+Execution Mistakes
+
+Planning Mistakes
+
+Repeated Mistakes
+
+------------------------------------------------------------
+
+SUCCESS LIBRARY
+
+Store
+
+Best Trades
+
+Best Days
+
+Best Weeks
+
+Best Months
+
+Best Habits
+
+Best Decisions
+
+------------------------------------------------------------
+
+LEARNING JOURNAL
+
+Store
+
+Lessons Learned
+
+Daily Reflection
+
+Weekly Reflection
+
+Monthly Reflection
+
+Books Studied
+
+Courses
+
+Mentor Notes
+
+------------------------------------------------------------
+
+AI MEMORY PREPARATION
+
+Create structures for
+
+Patterns
+
+Signals
+
+Insights
+
+Recommendations
+
+Behavior Changes
+
+Growth History
+
+Do NOT generate recommendations.
+
+Only prepare storage.
+
+------------------------------------------------------------
+
+SEARCH ENGINE
+
+Every intelligence record must support
+
+Keyword Search
+
+Date Search
+
+Category Search
+
+Score Search
+
+Emotion Search
+
+Behavior Search
+
+------------------------------------------------------------
+
+DATA RETENTION
+
+Support
+
+Unlimited History
+
+Archive Policy
+
+Retention Rules
+
+Selective Cleanup
+
+------------------------------------------------------------
+
+EXPORT PREPARATION
+
+Allow future export of
+
+Performance Timeline
+
+Psychology Timeline
+
+Lifestyle Timeline
+
+Learning Journal
+
+AI Memory
+
+------------------------------------------------------------
+
+LOGGING
+
+Every backup, restore, migration and repair operation must be logged.
+
+------------------------------------------------------------
+
+TESTING
+
+Create tests for
+
+Migration
+
+Backup
+
+Restore
+
+Integrity
+
+Health Scan
+
+Cleanup
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate
+
+Folder Structure
+
+Migration Manager
+
+Backup Engine
+
+Restore Engine
+
+Integrity Engine
+
+Database Health Engine
+
+Trader Intelligence Models
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+Database can safely evolve for years.
+
+Data integrity is guaranteed.
+
+Backups are reliable.
+
+The application is fully prepared for future AI, Cloud Sync and advanced analytics.
+
+END OF PROMPT

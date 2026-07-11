@@ -1,0 +1,349 @@
+SYSTEM ROLE
+
+You are a Senior Product Architect, Senior UX Designer, and Senior React Engineer.
+
+You are implementing the Trading Journal module of TraderMind OS.
+
+This is NOT a CRUD form.
+
+This is a professional Trading Decision Capture System.
+
+Every trade must become a complete decision record.
+
+The user journey must be fast, intuitive, and psychologically optimized.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Design and implement the complete Trading Journal workflow.
+
+The journal must capture not only trade data, but also:
+
+Decision quality
+
+Psychological state
+
+Behavior
+
+Lifestyle impact
+
+Execution quality
+
+Learning outcomes
+
+The system must prepare structured data for future AI analysis.
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+React Hook Form
+
+Zod
+
+TailwindCSS
+
+Zustand
+
+Dexie.js
+
+Framer Motion
+
+------------------------------------------------------------
+
+CREATE MODULE STRUCTURE
+
+src/modules/journal/
+
+components/
+
+pages/
+
+hooks/
+
+services/
+
+forms/
+
+validators/
+
+calculators/
+
+workflow/
+
+review/
+
+attachments/
+
+timeline/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+DESIGN PRINCIPLES
+
+The trade creation process must feel like completing a mission, not filling a spreadsheet.
+
+Support:
+
+Desktop
+
+Tablet
+
+Mobile
+
+Autosave
+
+Offline mode
+
+Step navigation
+
+Draft saving
+
+------------------------------------------------------------
+
+TRADE WORKFLOW
+
+Implement a multi-step workflow.
+
+Step 1
+
+Pre-Trade
+
+↓
+
+Step 2
+
+Trade Information
+
+↓
+
+Step 3
+
+Execution
+
+↓
+
+Step 4
+
+Psychology
+
+↓
+
+Step 5
+
+Lifestyle
+
+↓
+
+Step 6
+
+Attachments
+
+↓
+
+Step 7
+
+Review & Submit
+
+------------------------------------------------------------
+
+WORKFLOW REQUIREMENTS
+
+Each step must:
+
+Validate independently
+
+Autosave progress
+
+Allow previous/next navigation
+
+Display completion progress
+
+Prevent data loss
+
+------------------------------------------------------------
+
+DRAFT SYSTEM
+
+Support:
+
+Create Draft
+
+Resume Draft
+
+Delete Draft
+
+Autosave every few seconds
+
+Recover after browser crash
+
+------------------------------------------------------------
+
+NAVIGATION
+
+Display:
+
+Progress Bar
+
+Completed Steps
+
+Current Step
+
+Estimated Time
+
+Validation Status
+
+------------------------------------------------------------
+
+HEADER
+
+Display:
+
+Trade Status
+
+Draft Status
+
+Sync Status
+
+Current Account
+
+Current Box
+
+------------------------------------------------------------
+
+STATE MANAGEMENT
+
+Store workflow state using Zustand.
+
+Persist unfinished trades locally.
+
+------------------------------------------------------------
+
+VALIDATION
+
+Every step must have:
+
+Zod Schema
+
+Business Validation
+
+Relationship Validation
+
+Error Summary
+
+------------------------------------------------------------
+
+CALCULATIONS
+
+Prepare calculation services.
+
+Do not implement formulas yet.
+
+Reserve services for:
+
+Risk
+
+Profit
+
+R Multiple
+
+Duration
+
+Execution Score
+
+Psychology Score
+
+Lifestyle Score
+
+Overall Trade Score
+
+------------------------------------------------------------
+
+MEDIA SUPPORT
+
+Allow future support for:
+
+Images
+
+Charts
+
+Videos
+
+Voice Notes
+
+PDF Attachments
+
+------------------------------------------------------------
+
+TIMELINE
+
+Create internal timeline.
+
+Every important action should generate timeline events.
+
+Examples:
+
+Trade Created
+
+Entry Edited
+
+Screenshot Added
+
+Review Completed
+
+Trade Closed
+
+------------------------------------------------------------
+
+ACCESSIBILITY
+
+Support:
+
+Keyboard Navigation
+
+Screen Readers
+
+High Contrast
+
+Responsive Layout
+
+------------------------------------------------------------
+
+OUTPUT
+
+Generate:
+
+Folder structure
+
+Workflow components
+
+Navigation
+
+Progress system
+
+Draft system
+
+State management
+
+Validation skeleton
+
+Production-ready code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The journal module must behave like a guided workflow instead of a traditional data entry form.
+
+It must support offline usage, draft recovery, autosave, and future AI integration.
+
+END OF PROMPT

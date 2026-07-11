@@ -1,0 +1,597 @@
+SYSTEM ROLE
+
+You are a Senior Behavioral Data Scientist, Trading Performance Analyst, and Full Stack TypeScript Architect.
+
+You are implementing the Growth Analytics and Trader Evolution Map system of TraderMind OS.
+
+This module transforms multiple completed Growth Cycles into a long-term personal development intelligence system.
+
+The system analyzes the trader's evolution over time.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a long-term trader growth analytics engine.
+
+The system must analyze:
+
+Skill Development
+
+Behavior Evolution
+
+Psychology Growth
+
+Performance Stability
+
+Risk Maturity
+
+Execution Improvement
+
+Personal Trading Identity
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Dexie.js
+
+Zustand
+
+Recharts
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/growth/evolution/
+
+timeline/
+
+skills/
+
+behavior/
+
+psychology/
+
+performance/
+
+identity/
+
+charts/
+
+services/
+
+hooks/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADER EVOLUTION PROFILE
+
+Create a dynamic trader profile.
+
+Track:
+
+Trading Experience
+
+Completed Cycles
+
+Total Trades
+
+Total Reviews
+
+Main Strategies
+
+Preferred Markets
+
+Strongest Skills
+
+Weakest Skills
+
+------------------------------------------------------------
+
+Profile must update automatically after each cycle.
+
+------------------------------------------------------------
+
+SECTION 2
+
+SKILL DEVELOPMENT ENGINE
+
+Track skill evolution.
+
+Skills:
+
+Risk Management
+
+Entry Selection
+
+Exit Management
+
+Patience
+
+Discipline
+
+Planning
+
+Execution
+
+Emotional Control
+
+Consistency
+
+------------------------------------------------------------
+
+For each skill store:
+
+Initial Score
+
+Current Score
+
+Growth Rate
+
+Improvement History
+
+------------------------------------------------------------
+
+Create:
+
+Skill Progress Timeline
+
+------------------------------------------------------------
+
+SECTION 3
+
+BEHAVIOR EVOLUTION MAP
+
+Analyze long-term behavior changes.
+
+Track:
+
+FOMO
+
+Revenge Trading
+
+Overtrading
+
+Fear
+
+Greed
+
+Hesitation
+
+Confidence
+
+Patience
+
+------------------------------------------------------------
+
+Display:
+
+Starting Level
+
+Current Level
+
+Change Percentage
+
+Trend
+
+------------------------------------------------------------
+
+Trend:
+
+Improving
+
+Stable
+
+Declining
+
+Critical
+
+------------------------------------------------------------
+
+SECTION 4
+
+PSYCHOLOGY DEVELOPMENT ENGINE
+
+Analyze emotional maturity.
+
+Track:
+
+Stress Control
+
+Confidence Stability
+
+Decision Calmness
+
+Emotional Recovery
+
+Focus
+
+Mental Preparation
+
+------------------------------------------------------------
+
+Create:
+
+Psychology Growth Score
+
+0-100
+
+------------------------------------------------------------
+
+SECTION 5
+
+PERFORMANCE MATURITY ENGINE
+
+Analyze:
+
+Profitability
+
+Consistency
+
+Risk Stability
+
+Execution Quality
+
+Decision Quality
+
+------------------------------------------------------------
+
+Important:
+
+Do not only measure profit.
+
+Measure process maturity.
+
+------------------------------------------------------------
+
+Create:
+
+Trader Maturity Score
+
+Based on:
+
+Risk
+
+Discipline
+
+Execution
+
+Psychology
+
+Consistency
+
+------------------------------------------------------------
+
+SECTION 6
+
+GROWTH TIMELINE
+
+Create interactive timeline.
+
+Display:
+
+Completed Cycles
+
+Major Improvements
+
+Important Lessons
+
+Achievements
+
+Setbacks
+
+Breakthrough Moments
+
+------------------------------------------------------------
+
+Timeline events:
+
+New Skill
+
+Solved Problem
+
+Behavior Change
+
+Performance Improvement
+
+------------------------------------------------------------
+
+SECTION 7
+
+CYCLE COMPARISON ENGINE
+
+Compare:
+
+All Growth Cycles
+
+Last 3 Cycles
+
+Best Cycle
+
+Worst Cycle
+
+------------------------------------------------------------
+
+Analyze:
+
+What improved?
+
+What declined?
+
+What remained unchanged?
+
+------------------------------------------------------------
+
+SECTION 8
+
+BREAKTHROUGH DETECTION
+
+Detect important moments.
+
+Examples:
+
+First 30 days without revenge trading
+
+First high discipline month
+
+Major risk improvement
+
+Consistent execution period
+
+------------------------------------------------------------
+
+Store:
+
+Breakthrough Event
+
+Date
+
+Cause
+
+Impact
+
+------------------------------------------------------------
+
+SECTION 9
+
+REGRESSION DETECTION
+
+Detect periods of decline.
+
+Examples:
+
+Increasing mistakes
+
+Lower discipline
+
+Higher emotional trading
+
+Risk increase
+
+Review decrease
+
+------------------------------------------------------------
+
+Generate:
+
+Regression Event
+
+Severity
+
+Possible Factors
+
+Recovery Status
+
+------------------------------------------------------------
+
+SECTION 10
+
+PERSONAL EDGE ANALYSIS
+
+Identify conditions where trader performs best.
+
+Analyze:
+
+Strategy
+
+Market
+
+Session
+
+Emotion State
+
+Lifestyle Condition
+
+Risk Level
+
+------------------------------------------------------------
+
+Generate:
+
+Personal Trading Edge Map
+
+------------------------------------------------------------
+
+SECTION 11
+
+TRADER IDENTITY ENGINE
+
+Create evolving identity profile.
+
+Examples:
+
+"The Patient Execution Trader"
+
+"The Risk-Controlled Scalper"
+
+"The Systematic Swing Trader"
+
+------------------------------------------------------------
+
+Identity is based on:
+
+Behavior
+
+Performance
+
+Decision Patterns
+
+Strategy Usage
+
+------------------------------------------------------------
+
+SECTION 12
+
+VISUAL DASHBOARD
+
+Create:
+
+Evolution Timeline
+
+Skill Radar
+
+Behavior Chart
+
+Psychology Chart
+
+Maturity Score
+
+Cycle Comparison Chart
+
+------------------------------------------------------------
+
+SECTION 13
+
+AI PREPARATION LAYER
+
+Prepare structured intelligence.
+
+Include:
+
+Trader History
+
+Growth Patterns
+
+Weaknesses
+
+Strengths
+
+Lessons
+
+Behavior Changes
+
+Performance Trends
+
+------------------------------------------------------------
+
+No AI text generation.
+
+Only structured data preparation.
+
+------------------------------------------------------------
+
+DATABASE ENTITIES
+
+Create:
+
+TraderProfile
+
+SkillProgress
+
+BehaviorEvolution
+
+PsychologyEvolution
+
+GrowthEvent
+
+BreakthroughRecord
+
+RegressionRecord
+
+TradingIdentity
+
+------------------------------------------------------------
+
+PERFORMANCE
+
+Implement:
+
+Caching
+
+Indexed Queries
+
+Background Calculations
+
+Historical Aggregation
+
+------------------------------------------------------------
+
+TESTING
+
+Test:
+
+Evolution Calculation
+
+Skill Tracking
+
+Cycle Comparison
+
+Breakthrough Detection
+
+Regression Detection
+
+Profile Updates
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Analytics Engine
+
+Evolution Components
+
+Charts
+
+Database Models
+
+Services
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a complete trader development operating system.
+
+The application can show the trader's journey:
+
+Where they started
+
+Where they are now
+
+What changed
+
+What remains to improve
+
+END OF PROMPT

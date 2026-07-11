@@ -1,0 +1,553 @@
+SYSTEM ROLE
+
+You are a Senior Trading Psychology Product Designer, Senior React Engineer, and Domain Architect.
+
+You are implementing the Pre-Trade Intelligence module of TraderMind OS.
+
+This module captures the trader's condition BEFORE entering a trade.
+
+The goal is not only recording a trade.
+
+The goal is understanding:
+
+Why did the trader enter?
+
+What was the trader thinking?
+
+What was the trader feeling?
+
+Was the trader prepared?
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build a professional Pre-Trade analysis system.
+
+The system must capture:
+
+Market preparation
+
+Trading plan
+
+Mental state
+
+Physical condition
+
+Risk preparation
+
+Decision quality
+
+Trade intention
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+React Hook Form
+
+Zod
+
+Zustand
+
+Dexie.js
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/journal/preTrade/
+
+components/
+
+forms/
+
+hooks/
+
+services/
+
+validators/
+
+calculators/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+PRE-TRADE WORKFLOW
+
+Create sections:
+
+1. Market Preparation
+
+2. Trading Plan
+
+3. Psychology State
+
+4. Physical State
+
+5. Risk Preparation
+
+6. Decision Validation
+
+------------------------------------------------------------
+
+SECTION 1
+
+MARKET PREPARATION
+
+Capture:
+
+Date
+
+Time
+
+Trading Session
+
+Market
+
+Symbol
+
+Timeframe
+
+Market Condition
+
+Options:
+
+Trending
+
+Range
+
+Breakout
+
+Reversal
+
+High Volatility
+
+Low Volatility
+
+Unknown
+
+------------------------------------------------------------
+
+MARKET CONTEXT
+
+Store:
+
+Higher Timeframe Bias
+
+Market Structure
+
+Support Resistance
+
+Liquidity Areas
+
+Important Levels
+
+News Awareness
+
+Economic Event Awareness
+
+------------------------------------------------------------
+
+SECTION 2
+
+TRADING PLAN
+
+Capture:
+
+Strategy
+
+Setup
+
+Entry Reason
+
+Confirmation Factors
+
+Invalidation Point
+
+Expected Scenario
+
+Alternative Scenario
+
+Exit Plan
+
+------------------------------------------------------------
+
+CONFLUENCE SYSTEM
+
+Allow trader to select:
+
+Trend Alignment
+
+Market Structure
+
+Liquidity
+
+Order Block
+
+Fair Value Gap
+
+Support Resistance
+
+Volume
+
+Price Action
+
+Indicator Confirmation
+
+Custom Factors
+
+------------------------------------------------------------
+
+PLAN QUALITY SCORE
+
+Create calculation placeholder.
+
+Inputs:
+
+Number of confirmations
+
+Rule compliance
+
+Risk validity
+
+Market clarity
+
+Return:
+
+Plan Score 0-100
+
+------------------------------------------------------------
+
+SECTION 3
+
+PSYCHOLOGY STATE
+
+Before trade capture:
+
+Confidence
+
+Stress
+
+Focus
+
+Patience
+
+Motivation
+
+Fear
+
+Excitement
+
+Calmness
+
+Discipline
+
+Emotional Pressure
+
+------------------------------------------------------------
+
+EMOTION SCALE
+
+Use:
+
+0-10 Slider
+
+Text Description
+
+Optional Note
+
+------------------------------------------------------------
+
+BEHAVIOR CHECK
+
+Ask:
+
+Am I trading according to my plan?
+
+Am I forcing a trade?
+
+Am I afraid of missing this move?
+
+Am I trying to recover losses?
+
+Am I bored?
+
+Am I overconfident?
+
+Am I emotionally neutral?
+
+------------------------------------------------------------
+
+FOMO DETECTION
+
+Track:
+
+FOMO Level
+
+Reason
+
+Previous Loss
+
+Market Movement
+
+Urgency Feeling
+
+------------------------------------------------------------
+
+REVENGE TRADING DETECTION
+
+Track:
+
+Previous Trade Result
+
+Time Since Previous Loss
+
+Current Motivation
+
+Desire To Recover
+
+------------------------------------------------------------
+
+SECTION 4
+
+PHYSICAL STATE
+
+Capture:
+
+Sleep Duration
+
+Sleep Quality
+
+Energy Level
+
+Physical Fatigue
+
+Caffeine Intake
+
+Exercise Today
+
+General Mood
+
+------------------------------------------------------------
+
+LIFESTYLE CORRELATION DATA
+
+Prepare data for future AI.
+
+Example:
+
+Sleep < 5 hours
+
+Energy < 40
+
+Stress > 70
+
+------------------------------------------------------------
+
+SECTION 5
+
+RISK PREPARATION
+
+Capture:
+
+Risk Percentage
+
+Risk Amount
+
+Position Size
+
+Maximum Daily Risk
+
+Current Daily Loss
+
+Remaining Risk Capacity
+
+------------------------------------------------------------
+
+RISK VALIDATION
+
+Check:
+
+Risk Within Rules
+
+Account Protection
+
+Box Rules
+
+Strategy Rules
+
+Prop Firm Rules
+
+------------------------------------------------------------
+
+SECTION 6
+
+DECISION VALIDATION
+
+Create final checklist.
+
+Questions:
+
+Is this trade in my strategy?
+
+Did I wait for confirmation?
+
+Would I take this trade 100 times?
+
+Am I emotionally stable?
+
+Is the risk acceptable?
+
+------------------------------------------------------------
+
+DECISION CONFIDENCE
+
+Create:
+
+Confidence Score
+
+0-100
+
+------------------------------------------------------------
+
+TRADE READINESS SCORE
+
+Calculate placeholder:
+
+Combine:
+
+Plan Score
+
+Psychology Score
+
+Lifestyle Score
+
+Risk Score
+
+Decision Score
+
+Return:
+
+Trade Readiness Score
+
+------------------------------------------------------------
+
+WARNING SYSTEM
+
+Generate warnings:
+
+High Emotion
+
+Low Sleep
+
+High Risk
+
+FOMO Detected
+
+Rule Violation
+
+Low Confidence
+
+------------------------------------------------------------
+
+USER EXPERIENCE
+
+Create:
+
+Visual sliders
+
+Cards
+
+Progress indicators
+
+Warning banners
+
+Quick selection buttons
+
+Mobile optimized controls
+
+------------------------------------------------------------
+
+AUTOSAVE
+
+Every change must save automatically.
+
+Support:
+
+Offline mode
+
+Draft recovery
+
+State persistence
+
+------------------------------------------------------------
+
+DATABASE INTEGRATION
+
+Prepare entities:
+
+PreTradeRecord
+
+EmotionSnapshot
+
+BehaviorSnapshot
+
+LifestyleSnapshot
+
+DecisionRecord
+
+------------------------------------------------------------
+
+VALIDATION
+
+Implement:
+
+Required fields
+
+Range validation
+
+Business validation
+
+Risk validation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Forms
+
+Schemas
+
+Types
+
+Hooks
+
+Services
+
+Calculation placeholders
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The trader can document the complete mental, physical and strategic condition before every trade.
+
+The collected data must be ready for future AI psychology analysis.
+
+END OF PROMPT

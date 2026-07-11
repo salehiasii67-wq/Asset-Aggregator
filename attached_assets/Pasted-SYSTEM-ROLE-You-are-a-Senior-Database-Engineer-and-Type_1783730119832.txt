@@ -1,0 +1,401 @@
+SYSTEM ROLE
+
+You are a Senior Database Engineer and TypeScript Architect.
+
+Your responsibility is to implement the complete local database engine for TraderMind OS.
+
+The database schema already exists.
+
+Now build the production-ready IndexedDB engine using Dexie.js.
+
+Never generate demo code.
+
+Never generate fake data.
+
+Use production architecture only.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Implement the complete local database engine.
+
+The implementation must be:
+
+Offline First
+
+Scalable
+
+Cloud Ready
+
+Migration Ready
+
+High Performance
+
+AI Ready
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+Dexie.js
+
+IndexedDB
+
+UUID
+
+------------------------------------------------------------
+
+CREATE FILES
+
+src/database/
+
+db.ts
+
+schema.ts
+
+database.ts
+
+database.types.ts
+
+database.constants.ts
+
+database.errors.ts
+
+database.events.ts
+
+database.hooks.ts
+
+database.middleware.ts
+
+database.indexes.ts
+
+------------------------------------------------------------
+
+DATABASE CLASS
+
+Create a singleton class.
+
+Name:
+
+TraderMindDatabase
+
+Responsibilities:
+
+Open database
+
+Version management
+
+Migration
+
+Connection handling
+
+Transaction handling
+
+Table registration
+
+Database events
+
+------------------------------------------------------------
+
+DATABASE VERSIONING
+
+Use semantic versions.
+
+Example:
+
+Version 1
+
+Initial Database
+
+Version 2
+
+Goals Module
+
+Version 3
+
+AI Memory
+
+Never break existing data.
+
+------------------------------------------------------------
+
+TRANSACTIONS
+
+Support
+
+Read Transaction
+
+Write Transaction
+
+Bulk Transaction
+
+Rollback
+
+Nested Transactions
+
+------------------------------------------------------------
+
+DATABASE EVENTS
+
+Implement
+
+Database Ready
+
+Database Opened
+
+Migration Started
+
+Migration Finished
+
+Database Error
+
+Database Closed
+
+------------------------------------------------------------
+
+DATABASE HOOKS
+
+Create hooks
+
+Before Create
+
+Before Update
+
+Before Delete
+
+After Create
+
+After Update
+
+After Delete
+
+------------------------------------------------------------
+
+AUTO FIELDS
+
+Automatically generate
+
+UUID
+
+createdAt
+
+updatedAt
+
+version
+
+lastModified
+
+------------------------------------------------------------
+
+SOFT DELETE
+
+Delete operations must:
+
+Set deletedAt
+
+Set isArchived
+
+Never remove physical record.
+
+------------------------------------------------------------
+
+INDEX OPTIMIZATION
+
+Create indexes
+
+Compound indexes
+
+Unique indexes
+
+Search indexes
+
+Date indexes
+
+------------------------------------------------------------
+
+FULL TEXT SEARCH PREPARATION
+
+Prepare searchable fields
+
+Trade Notes
+
+Review Notes
+
+AI Memory
+
+Journal
+
+Goals
+
+------------------------------------------------------------
+
+QUERY HELPERS
+
+Prepare reusable queries
+
+Find By ID
+
+Find By Date
+
+Find By Symbol
+
+Find By Strategy
+
+Find By Box
+
+Find By Tag
+
+Find By Emotion
+
+Find By Session
+
+Find By Result
+
+------------------------------------------------------------
+
+PERFORMANCE
+
+Use
+
+Bulk Insert
+
+Bulk Update
+
+Bulk Delete
+
+Pagination
+
+Cursor Queries
+
+Lazy Loading
+
+Memoized Queries
+
+------------------------------------------------------------
+
+DATABASE SECURITY
+
+Prepare
+
+Encrypted fields
+
+Sensitive field handling
+
+Future password protection
+
+Future cloud encryption
+
+------------------------------------------------------------
+
+BACKUP PREPARATION
+
+Prepare methods
+
+Export JSON
+
+Import JSON
+
+Compress
+
+Restore
+
+Integrity Check
+
+------------------------------------------------------------
+
+DATABASE HEALTH
+
+Create utilities
+
+Database Size
+
+Table Count
+
+Index Validation
+
+Repair Database
+
+Integrity Scan
+
+------------------------------------------------------------
+
+ERROR TYPES
+
+Create
+
+DatabaseConnectionError
+
+TransactionError
+
+MigrationError
+
+ValidationError
+
+SyncError
+
+BackupError
+
+------------------------------------------------------------
+
+LOGGING
+
+Create
+
+Database Logger
+
+Migration Logger
+
+Performance Logger
+
+Error Logger
+
+------------------------------------------------------------
+
+TESTING
+
+Generate test structure
+
+Database Tests
+
+Migration Tests
+
+Performance Tests
+
+Stress Tests
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+For every file
+
+File Path
+
+Purpose
+
+Complete production-ready code
+
+Dependencies
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The database engine must:
+
+Compile successfully
+
+Handle 100,000+ trades
+
+Support cloud synchronization
+
+Support future AI modules
+
+Support automatic migrations
+
+Be production ready
+
+END OF PROMPT

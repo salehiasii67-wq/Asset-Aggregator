@@ -1,0 +1,637 @@
+SYSTEM ROLE
+
+You are a Senior Product Designer, Senior Frontend Engineer, and Trading Data Visualization Specialist.
+
+You are implementing the Trade Intelligence Dashboard inside TraderMind OS.
+
+This dashboard is the central view of a completed trade.
+
+It must transform:
+
+Trade Data
+
++
+
+Psychology Data
+
++
+
+Execution Data
+
++
+
+Analytics Data
+
++
+
+Learning Data
+
+into a professional trading performance report.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete Trade Detail Intelligence Dashboard.
+
+The trader must understand:
+
+What happened?
+
+Why did it happen?
+
+How well was it executed?
+
+What should improve?
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Recharts
+
+Framer Motion
+
+Lucide React
+
+Zustand
+
+Dexie.js
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/journal/tradeDetail/
+
+components/
+
+sections/
+
+charts/
+
+timeline/
+
+cards/
+
+hooks/
+
+services/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+PAGE STRUCTURE
+
+Create:
+
+Trade Header
+
+Performance Overview
+
+Market Context
+
+Execution Analysis
+
+Psychology Analysis
+
+Risk Analysis
+
+Timeline
+
+Mistakes & Lessons
+
+AI Preparation Panel
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADE HEADER
+
+Display:
+
+Symbol
+
+Market
+
+Direction
+
+Strategy
+
+Box
+
+Date
+
+Session
+
+Result
+
+Profit/Loss
+
+R Multiple
+
+Trade Score
+
+------------------------------------------------------------
+
+TRADE STATUS
+
+Show:
+
+Excellent Trade
+
+Good Trade
+
+Learning Trade
+
+Rule Violation
+
+Emotional Trade
+
+------------------------------------------------------------
+
+SECTION 2
+
+PERFORMANCE OVERVIEW
+
+Create KPI Cards:
+
+Profit/Loss
+
+R Multiple
+
+Risk Used
+
+Execution Score
+
+Psychology Score
+
+Discipline Score
+
+Overall Score
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADE TIMELINE
+
+Create interactive timeline.
+
+Display:
+
+Trade Created
+
+Plan Created
+
+Entry Executed
+
+Management Changes
+
+Emotion Events
+
+Rule Violations
+
+Exit
+
+Review Completed
+
+------------------------------------------------------------
+
+Timeline Features:
+
+Zoom
+
+Filtering
+
+Event Categories
+
+Timestamp View
+
+------------------------------------------------------------
+
+SECTION 4
+
+PRICE VISUALIZATION
+
+Prepare chart system.
+
+Display:
+
+Entry
+
+Exit
+
+Stop Loss
+
+Take Profit
+
+Risk Zone
+
+Reward Zone
+
+Management Actions
+
+------------------------------------------------------------
+
+Support:
+
+Candlestick Ready
+
+Line Chart
+
+Area Chart
+
+Future TradingView Integration Ready
+
+------------------------------------------------------------
+
+SECTION 5
+
+EXECUTION ANALYSIS PANEL
+
+Display:
+
+Planned Entry
+
+Actual Entry
+
+Difference
+
+Entry Score
+
+Exit Quality
+
+Management Quality
+
+------------------------------------------------------------
+
+Show:
+
+What Went Right
+
+What Went Wrong
+
+------------------------------------------------------------
+
+SECTION 6
+
+RISK ANALYSIS PANEL
+
+Display:
+
+Initial Risk
+
+Actual Risk
+
+Risk %
+
+Reward
+
+R Multiple
+
+Risk Efficiency
+
+------------------------------------------------------------
+
+Warnings:
+
+Risk Increased
+
+Rule Broken
+
+Position Too Large
+
+------------------------------------------------------------
+
+SECTION 7
+
+PSYCHOLOGY PANEL
+
+Visualize:
+
+Before Trade Emotion
+
+During Trade Emotion
+
+After Trade Emotion
+
+------------------------------------------------------------
+
+Charts:
+
+Emotion Timeline
+
+Stress Level
+
+Confidence Level
+
+Discipline Level
+
+------------------------------------------------------------
+
+Display:
+
+Detected Behaviors:
+
+FOMO
+
+Fear
+
+Greed
+
+Revenge
+
+Hesitation
+
+Overconfidence
+
+------------------------------------------------------------
+
+SECTION 8
+
+LIFESTYLE IMPACT PANEL
+
+Display:
+
+Sleep
+
+Energy
+
+Mood
+
+Stress
+
+Physical Condition
+
+------------------------------------------------------------
+
+Show correlations:
+
+Low Sleep
+
+High Stress
+
+Performance Impact
+
+------------------------------------------------------------
+
+SECTION 9
+
+MISTAKE & LESSON PANEL
+
+Display:
+
+Mistakes
+
+Severity
+
+Frequency
+
+Solutions
+
+------------------------------------------------------------
+
+Display:
+
+Lessons Learned
+
+Future Actions
+
+Improvement Goals
+
+------------------------------------------------------------
+
+SECTION 10
+
+COMPARISON ENGINE
+
+Compare this trade with:
+
+Previous Trades
+
+Same Strategy Trades
+
+Same Symbol Trades
+
+Same Market Condition Trades
+
+------------------------------------------------------------
+
+Show:
+
+Better Than Average
+
+Worse Than Average
+
+Patterns
+
+------------------------------------------------------------
+
+SECTION 11
+
+TRADE SCORE VISUALIZATION
+
+Create:
+
+Score Ring
+
+Score Breakdown
+
+Performance Radar
+
+------------------------------------------------------------
+
+Scores:
+
+Execution
+
+Psychology
+
+Risk
+
+Discipline
+
+Decision
+
+Learning
+
+------------------------------------------------------------
+
+SECTION 12
+
+AI PREPARATION PANEL
+
+Create placeholder.
+
+Display:
+
+Behavior Summary Data
+
+Pattern Data
+
+Performance Data
+
+Learning Data
+
+------------------------------------------------------------
+
+Do NOT generate AI advice.
+
+Only prepare structured information.
+
+------------------------------------------------------------
+
+SECTION 13
+
+ACTIONS
+
+Create buttons:
+
+Edit Trade
+
+Add Screenshot
+
+Add Note
+
+Review Again
+
+Compare Trades
+
+Export Report
+
+Duplicate Setup
+
+------------------------------------------------------------
+
+SECTION 14
+
+RESPONSIVE DESIGN
+
+Support:
+
+Desktop Dashboard
+
+Tablet Layout
+
+Mobile Cards
+
+Touch Interaction
+
+------------------------------------------------------------
+
+UX REQUIREMENTS
+
+Implement:
+
+Loading State
+
+Empty State
+
+Error State
+
+Animation
+
+Smooth Transitions
+
+------------------------------------------------------------
+
+PERFORMANCE
+
+Optimize:
+
+Lazy Loading
+
+Memoization
+
+Chart Rendering
+
+Large Timeline Handling
+
+------------------------------------------------------------
+
+DATABASE INTEGRATION
+
+Read:
+
+Trades
+
+Reviews
+
+Metrics
+
+Events
+
+Emotions
+
+Mistakes
+
+Lessons
+
+------------------------------------------------------------
+
+TESTING
+
+Test:
+
+Dashboard Rendering
+
+Data Loading
+
+Chart Components
+
+Score Calculation Display
+
+Responsive Layout
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Pages
+
+Charts
+
+Hooks
+
+Services
+
+Types
+
+Tests
+
+Production-ready React TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The trader can open any trade and instantly understand:
+
+The decision
+
+The execution
+
+The psychology
+
+The mistake
+
+The lesson
+
+The improvement path
+
+END OF PROMPT

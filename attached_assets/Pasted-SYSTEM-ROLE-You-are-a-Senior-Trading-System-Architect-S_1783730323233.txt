@@ -1,0 +1,623 @@
+SYSTEM ROLE
+
+You are a Senior Trading System Architect, Senior React Engineer, and Behavioral Data Engineer.
+
+You are implementing the Trade Execution Intelligence module of TraderMind OS.
+
+This module captures everything that happens DURING trade execution.
+
+The purpose is to understand the difference between:
+
+Trading Plan
+
+vs
+
+Actual Trading Behavior
+
+The system must identify execution quality, discipline, emotional interference and decision changes.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build a professional execution tracking system.
+
+Capture:
+
+Order execution
+
+Trade management
+
+Behavior changes
+
+Rule compliance
+
+Emotional reactions
+
+Decision changes
+
+Risk management behavior
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Zustand
+
+Dexie.js
+
+React Hook Form
+
+Zod
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/journal/execution/
+
+components/
+
+forms/
+
+hooks/
+
+services/
+
+validators/
+
+calculators/
+
+timeline/
+
+events/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+EXECUTION WORKFLOW
+
+Create sections:
+
+1. Order Execution
+
+2. Trade Management
+
+3. Behavior Monitoring
+
+4. Rule Compliance
+
+5. Emotional Events
+
+6. Execution Review
+
+------------------------------------------------------------
+
+SECTION 1
+
+ORDER EXECUTION
+
+Capture:
+
+Order Type
+
+Options:
+
+Market Order
+
+Limit Order
+
+Stop Order
+
+Pending Order
+
+------------------------------------------------------------
+
+ENTRY EXECUTION
+
+Store:
+
+Planned Entry
+
+Actual Entry
+
+Entry Difference
+
+Entry Delay
+
+Slippage
+
+Execution Quality
+
+------------------------------------------------------------
+
+ENTRY ANALYSIS
+
+Calculate:
+
+Entry Accuracy Score
+
+Inputs:
+
+Planned Entry
+
+Actual Entry
+
+Market Movement
+
+Slippage
+
+Return:
+
+0-100 Score
+
+------------------------------------------------------------
+
+SECTION 2
+
+TRADE MANAGEMENT
+
+Track:
+
+Stop Loss Changes
+
+Take Profit Changes
+
+Partial Close
+
+Position Increase
+
+Position Reduction
+
+Trade Extension
+
+Early Exit
+
+Late Exit
+
+------------------------------------------------------------
+
+STOP LOSS BEHAVIOR
+
+Capture:
+
+Moved Stop Loss?
+
+Yes / No
+
+Reason:
+
+Fear
+
+Market Noise
+
+Strategy Change
+
+Manual Decision
+
+Emotional Reaction
+
+------------------------------------------------------------
+
+TAKE PROFIT BEHAVIOR
+
+Capture:
+
+Closed Early?
+
+Yes / No
+
+Reason:
+
+Fear
+
+Doubt
+
+Profit Protection
+
+Market Change
+
+Rule Based
+
+------------------------------------------------------------
+
+POSITION MANAGEMENT
+
+Track:
+
+Added Position
+
+Reduced Position
+
+Averaging
+
+Scaling
+
+Pyramiding
+
+------------------------------------------------------------
+
+RISK CHANGES
+
+Detect:
+
+Risk Increased
+
+Risk Decreased
+
+Risk Violated
+
+------------------------------------------------------------
+
+SECTION 3
+
+BEHAVIOR MONITORING
+
+Track real-time behavior.
+
+Events:
+
+FOMO
+
+Hesitation
+
+Fear
+
+Greed
+
+Overconfidence
+
+Boredom
+
+Impatience
+
+Frustration
+
+Revenge
+
+Panic
+
+------------------------------------------------------------
+
+BEHAVIOR EVENT MODEL
+
+Each event contains:
+
+Type
+
+Timestamp
+
+Intensity
+
+Trigger
+
+Description
+
+Action Taken
+
+Result
+
+------------------------------------------------------------
+
+EXAMPLE
+
+Event:
+
+FOMO
+
+Intensity:
+
+80
+
+Trigger:
+
+Price moved without entry
+
+Action:
+
+Entered late
+
+Result:
+
+Loss
+
+------------------------------------------------------------
+
+SECTION 4
+
+RULE COMPLIANCE
+
+Create Rule Tracker.
+
+For every strategy rule:
+
+Passed
+
+Failed
+
+Ignored
+
+Unknown
+
+------------------------------------------------------------
+
+RULE VIOLATION TYPES
+
+Entry Violation
+
+Risk Violation
+
+Exit Violation
+
+Time Violation
+
+Strategy Violation
+
+Psychology Violation
+
+------------------------------------------------------------
+
+DISCIPLINE SCORE
+
+Create calculation placeholder.
+
+Inputs:
+
+Rule Compliance
+
+Risk Management
+
+Emotional Control
+
+Execution Consistency
+
+Return:
+
+Discipline Score 0-100
+
+------------------------------------------------------------
+
+SECTION 5
+
+EMOTIONAL EVENTS
+
+Track emotions during trade.
+
+Before Entry
+
+During Trade
+
+After Exit
+
+------------------------------------------------------------
+
+EMOTION TIMELINE
+
+Store:
+
+Timestamp
+
+Emotion
+
+Intensity
+
+Context
+
+Decision Impact
+
+------------------------------------------------------------
+
+SECTION 6
+
+EXECUTION TIMELINE
+
+Create chronological event history.
+
+Events:
+
+Order Created
+
+Order Filled
+
+Stop Modified
+
+Target Modified
+
+Partial Closed
+
+Emotion Recorded
+
+Rule Broken
+
+Trade Closed
+
+Review Started
+
+------------------------------------------------------------
+
+TRADE STATE MANAGEMENT
+
+Track states:
+
+Planned
+
+Waiting
+
+Entered
+
+Managing
+
+Partially Closed
+
+Closed
+
+Reviewed
+
+------------------------------------------------------------
+
+REAL-TIME NOTES
+
+Support:
+
+Quick Notes
+
+Voice Notes Ready
+
+Screenshots
+
+Annotations
+
+------------------------------------------------------------
+
+EXECUTION QUALITY SCORE
+
+Prepare calculation.
+
+Inputs:
+
+Entry Quality
+
+Management Quality
+
+Rule Compliance
+
+Risk Control
+
+Emotional Control
+
+Return:
+
+Execution Score 0-100
+
+------------------------------------------------------------
+
+WARNING SYSTEM
+
+Generate alerts:
+
+Risk Increased
+
+Rule Broken
+
+Emotional Trading
+
+Late Entry
+
+Early Exit
+
+Stop Loss Manipulation
+
+------------------------------------------------------------
+
+DATABASE ENTITIES
+
+Prepare:
+
+ExecutionRecord
+
+TradeEvent
+
+BehaviorEvent
+
+EmotionEvent
+
+RuleCheck
+
+ManagementAction
+
+------------------------------------------------------------
+
+USER EXPERIENCE
+
+Create:
+
+Timeline UI
+
+Event Cards
+
+Quick Actions
+
+Emotion Buttons
+
+Behavior Tags
+
+Score Indicators
+
+Mobile Friendly Interface
+
+------------------------------------------------------------
+
+AUTOSAVE
+
+All execution events must save instantly.
+
+Support:
+
+Offline
+
+Recovery
+
+Sync Queue
+
+------------------------------------------------------------
+
+VALIDATION
+
+Validate:
+
+Event Timestamp
+
+Trade Relationship
+
+Score Range
+
+Rule Relationship
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Types
+
+Schemas
+
+Hooks
+
+Services
+
+Timeline Engine
+
+Event System
+
+Calculation Services
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The system must clearly show:
+
+What the trader planned
+
+What the trader actually did
+
+Where execution quality improved or failed
+
+All data must be prepared for future AI behavioral analysis.
+
+END OF PROMPT

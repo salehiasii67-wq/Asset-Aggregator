@@ -1,0 +1,609 @@
+SYSTEM ROLE
+
+You are a Senior Trading Psychology Architect, Senior Learning System Designer, and Senior TypeScript Engineer.
+
+You are implementing the Post-Trade Review and Learning System of TraderMind OS.
+
+This module transforms completed trades into:
+
+Knowledge
+
+Lessons
+
+Behavior Improvements
+
+Performance Insights
+
+Personal Trading Intelligence
+
+This is NOT a simple review form.
+
+It is a structured learning engine.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build a professional post-trade analysis system.
+
+After every completed trade, the trader must be able to analyze:
+
+Trade Result
+
+Execution Quality
+
+Psychology
+
+Mistakes
+
+Strengths
+
+Lessons
+
+Future Improvements
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Zustand
+
+Dexie.js
+
+React Hook Form
+
+Zod
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/journal/review/
+
+components/
+
+forms/
+
+hooks/
+
+services/
+
+calculators/
+
+mistakes/
+
+lessons/
+
+templates/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+REVIEW WORKFLOW
+
+Create sections:
+
+1. Trade Summary
+
+2. Performance Analysis
+
+3. Execution Review
+
+4. Psychology Review
+
+5. Mistake Analysis
+
+6. Lesson Extraction
+
+7. Future Improvement
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADE SUMMARY
+
+Display:
+
+Symbol
+
+Direction
+
+Entry
+
+Exit
+
+Risk
+
+Reward
+
+Result
+
+Profit/Loss
+
+R Multiple
+
+Duration
+
+Strategy
+
+Setup
+
+Box
+
+------------------------------------------------------------
+
+SECTION 2
+
+PERFORMANCE ANALYSIS
+
+Evaluate:
+
+Was the trade profitable?
+
+Was the process correct?
+
+Was the decision logical?
+
+Was the execution according to plan?
+
+------------------------------------------------------------
+
+PROCESS VS RESULT
+
+Important rule:
+
+Separate:
+
+Good Trade + Loss
+
+Bad Trade + Win
+
+Good Trade + Win
+
+Bad Trade + Loss
+
+------------------------------------------------------------
+
+TRADE QUALITY CLASSIFICATION
+
+Create categories:
+
+A+
+
+Perfect Execution
+
+A
+
+Good Execution
+
+B
+
+Acceptable
+
+C
+
+Poor Execution
+
+D
+
+Rule Breaking
+
+------------------------------------------------------------
+
+SECTION 3
+
+EXECUTION REVIEW
+
+Questions:
+
+Did I follow my entry rules?
+
+Did I respect risk?
+
+Did I manage correctly?
+
+Did I exit according to plan?
+
+Did I react emotionally?
+
+------------------------------------------------------------
+
+EXECUTION SCORE
+
+Calculate placeholder.
+
+Inputs:
+
+Entry Quality
+
+Management Quality
+
+Rule Compliance
+
+Risk Management
+
+Timing
+
+Return:
+
+Execution Score 0-100
+
+------------------------------------------------------------
+
+SECTION 4
+
+PSYCHOLOGY REVIEW
+
+Analyze:
+
+Before Trade Emotion
+
+During Trade Emotion
+
+After Trade Emotion
+
+------------------------------------------------------------
+
+QUESTIONS
+
+Ask:
+
+What emotion affected my decision?
+
+Did I feel pressure?
+
+Did I hesitate?
+
+Did I force the trade?
+
+Did I trust my plan?
+
+------------------------------------------------------------
+
+PSYCHOLOGY SCORE
+
+Calculate:
+
+Confidence
+
+Discipline
+
+Patience
+
+Emotional Control
+
+Focus
+
+Return:
+
+Psychology Score 0-100
+
+------------------------------------------------------------
+
+SECTION 5
+
+MISTAKE ANALYSIS ENGINE
+
+Create personal mistake library.
+
+------------------------------------------------------------
+
+MISTAKE CATEGORIES
+
+Risk Mistake
+
+Entry Mistake
+
+Exit Mistake
+
+Strategy Mistake
+
+Psychology Mistake
+
+Execution Mistake
+
+Planning Mistake
+
+Lifestyle Mistake
+
+------------------------------------------------------------
+
+MISTAKE RECORD
+
+Store:
+
+Type
+
+Description
+
+Severity
+
+Frequency
+
+Trigger
+
+Solution
+
+Related Trades
+
+------------------------------------------------------------
+
+REPEATED MISTAKE DETECTION
+
+Prepare system to detect:
+
+Same mistake repeated
+
+Increasing frequency
+
+High impact mistakes
+
+Unresolved mistakes
+
+------------------------------------------------------------
+
+SECTION 6
+
+STRENGTH ANALYSIS
+
+Capture:
+
+What was done correctly?
+
+Examples:
+
+Perfect Risk
+
+Patient Entry
+
+Good Analysis
+
+Strong Discipline
+
+Correct Execution
+
+------------------------------------------------------------
+
+STRENGTH LIBRARY
+
+Store:
+
+Strength Type
+
+Description
+
+Frequency
+
+Related Trades
+
+Performance Impact
+
+------------------------------------------------------------
+
+SECTION 7
+
+LESSON EXTRACTION
+
+Create Learning Journal.
+
+Store:
+
+Lesson
+
+Category
+
+Importance
+
+Related Trade
+
+Action Required
+
+------------------------------------------------------------
+
+LESSON TYPES
+
+Technical
+
+Psychology
+
+Risk Management
+
+Execution
+
+Lifestyle
+
+Strategy
+
+------------------------------------------------------------
+
+IMPROVEMENT PLAN
+
+After review create:
+
+What to continue
+
+What to stop
+
+What to improve
+
+What to test
+
+------------------------------------------------------------
+
+NEXT TRADE PREPARATION
+
+Generate:
+
+Reminder
+
+Rule Adjustment
+
+Behavior Goal
+
+Focus Area
+
+------------------------------------------------------------
+
+TRADE FINAL SCORE
+
+Create final scoring system.
+
+Combine:
+
+Execution Score
+
+Psychology Score
+
+Discipline Score
+
+Risk Score
+
+Decision Score
+
+Return:
+
+Trade Performance Score
+
+0-100
+
+------------------------------------------------------------
+
+LEARNING TIMELINE
+
+Create events:
+
+Trade Reviewed
+
+Mistake Added
+
+Lesson Created
+
+Improvement Added
+
+Pattern Detected
+
+------------------------------------------------------------
+
+AI PREPARATION
+
+Prepare structured data:
+
+Trade Context
+
+Decision
+
+Emotion
+
+Behavior
+
+Mistake
+
+Lesson
+
+Improvement
+
+Outcome
+
+------------------------------------------------------------
+
+DATABASE ENTITIES
+
+Prepare:
+
+TradeReview
+
+MistakeRecord
+
+StrengthRecord
+
+LessonRecord
+
+ImprovementAction
+
+TradeScore
+
+------------------------------------------------------------
+
+USER EXPERIENCE
+
+Create:
+
+Review Wizard
+
+Score Cards
+
+Mistake Selector
+
+Lesson Editor
+
+Before/After Comparison
+
+------------------------------------------------------------
+
+AUTOSAVE
+
+Support:
+
+Draft Review
+
+Offline Save
+
+Recovery
+
+------------------------------------------------------------
+
+VALIDATION
+
+Validate:
+
+Review Completion
+
+Score Range
+
+Trade Relationship
+
+Required Lessons
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Forms
+
+Schemas
+
+Services
+
+Mistake Engine
+
+Learning Engine
+
+Scoring Engine
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+Every completed trade must become a learning asset.
+
+The system must help the trader improve from historical behavior.
+
+All data must be structured for future AI Coaching.
+
+END OF PROMPT

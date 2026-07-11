@@ -1,0 +1,641 @@
+SYSTEM ROLE
+
+You are a Senior Behavioral System Engineer, Habit Tracking Architect, and Full Stack TypeScript Developer.
+
+You are implementing the Growth Cycle Automation Engine of TraderMind OS.
+
+This module creates automated systems that help traders maintain consistency, discipline, and commitment during improvement cycles.
+
+The system does NOT trade.
+
+The system does NOT predict markets.
+
+The system manages personal improvement behavior.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build an automation engine for Growth Cycles.
+
+The system must automatically manage:
+
+Daily Missions
+
+Progress Tracking
+
+Habit Consistency
+
+Rule Monitoring
+
+Commitment Tracking
+
+Improvement Reminders
+
+Behavior Alerts
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Zustand
+
+Dexie.js
+
+IndexedDB
+
+Notification API
+
+Service Worker
+
+PWA Background Support
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/growth/automation/
+
+missions/
+
+habits/
+
+reminders/
+
+alerts/
+
+streaks/
+
+scheduler/
+
+services/
+
+hooks/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+SECTION 1
+
+AUTOMATIC CYCLE ACTIVATION
+
+Implement:
+
+Start Cycle
+
+Pause Cycle
+
+Resume Cycle
+
+Complete Cycle
+
+Archive Cycle
+
+------------------------------------------------------------
+
+When cycle starts:
+
+Initialize goals
+
+Activate rules
+
+Generate missions
+
+Create tracking schedule
+
+------------------------------------------------------------
+
+SECTION 2
+
+DAILY MISSION GENERATOR
+
+Create automatic daily tasks.
+
+Mission examples:
+
+Review Yesterday Trades
+
+Complete Pre-Trade Checklist
+
+Analyze One Mistake
+
+Practice Patience
+
+Review Strategy Rules
+
+Update Psychology Journal
+
+------------------------------------------------------------
+
+MISSION TYPES
+
+Create:
+
+Trading Mission
+
+Psychology Mission
+
+Learning Mission
+
+Lifestyle Mission
+
+Discipline Mission
+
+------------------------------------------------------------
+
+MISSION PRIORITY
+
+Support:
+
+Critical
+
+Important
+
+Normal
+
+Optional
+
+------------------------------------------------------------
+
+SECTION 3
+
+HABIT TRACKING ENGINE
+
+Create habit system.
+
+Track:
+
+Daily Completion
+
+Weekly Consistency
+
+Monthly Progress
+
+------------------------------------------------------------
+
+Habit Examples:
+
+Trade Review
+
+Morning Planning
+
+Risk Check
+
+Emotion Check
+
+Market Preparation
+
+End-of-Day Review
+
+------------------------------------------------------------
+
+HABIT ENTITY
+
+Create:
+
+id
+
+cycleId
+
+name
+
+category
+
+frequency
+
+target
+
+currentStreak
+
+completionRate
+
+status
+
+------------------------------------------------------------
+
+SECTION 4
+
+STREAK SYSTEM
+
+Create:
+
+Daily Streak
+
+Weekly Streak
+
+Discipline Streak
+
+No Violation Streak
+
+------------------------------------------------------------
+
+Track:
+
+Current Streak
+
+Best Streak
+
+Broken Streak
+
+Recovery Time
+
+------------------------------------------------------------
+
+Achievements:
+
+7 Days Consistent
+
+30 Days Disciplined
+
+50 Reviews Completed
+
+Zero Risk Violations
+
+------------------------------------------------------------
+
+SECTION 5
+
+RULE COMPLIANCE MONITOR
+
+Monitor:
+
+Cycle Rules
+
+Trade Behavior
+
+Risk Behavior
+
+Review Behavior
+
+------------------------------------------------------------
+
+Detect:
+
+Rule Followed
+
+Rule Warning
+
+Rule Violation
+
+Repeated Violation
+
+------------------------------------------------------------
+
+RULE ALERT LEVELS
+
+Create:
+
+Information
+
+Warning
+
+Critical
+
+------------------------------------------------------------
+
+SECTION 6
+
+BEHAVIOR ALERT ENGINE
+
+Create automatic alerts.
+
+Detect patterns:
+
+Missing Reviews
+
+Increasing Risk
+
+Skipping Missions
+
+Repeated Mistakes
+
+Emotional Trading
+
+Breaking Rules
+
+------------------------------------------------------------
+
+Example:
+
+"Your last 3 trades ignored your checklist."
+
+"Risk increased compared to your cycle goal."
+
+------------------------------------------------------------
+
+SECTION 7
+
+COMMITMENT SCORE
+
+Create:
+
+Commitment Score
+
+0-100
+
+Based on:
+
+Mission Completion
+
+Habit Consistency
+
+Rule Compliance
+
+Review Frequency
+
+Daily Engagement
+
+------------------------------------------------------------
+
+Display:
+
+Current Score
+
+Trend
+
+Improvement
+
+Decline
+
+------------------------------------------------------------
+
+SECTION 8
+
+DAILY CHECK-IN SYSTEM
+
+Create quick daily form.
+
+Questions:
+
+How do I feel today?
+
+Energy Level
+
+Stress Level
+
+Focus Level
+
+Trading Readiness
+
+Main Goal Today
+
+------------------------------------------------------------
+
+Store:
+
+Daily State
+
+Date
+
+Mood
+
+Energy
+
+Stress
+
+Focus
+
+Notes
+
+------------------------------------------------------------
+
+SECTION 9
+
+PRE-TRADE COMMITMENT CHECK
+
+Before creating a trade:
+
+Show optional checklist:
+
+Am I following my plan?
+
+Is risk acceptable?
+
+Is this inside my strategy?
+
+Is emotion influencing me?
+
+------------------------------------------------------------
+
+Store:
+
+Preparation Score
+
+Readiness Status
+
+------------------------------------------------------------
+
+SECTION 10
+
+POST-TRADE AUTOMATION
+
+After closing trade:
+
+Automatically trigger:
+
+Review Reminder
+
+Emotion Update
+
+Lesson Reminder
+
+Rule Check
+
+------------------------------------------------------------
+
+SECTION 11
+
+NOTIFICATION SYSTEM
+
+Support:
+
+Browser Notifications
+
+PWA Notifications
+
+In-App Notifications
+
+------------------------------------------------------------
+
+Notification Types:
+
+Daily Mission
+
+Review Reminder
+
+Rule Warning
+
+Goal Progress
+
+Cycle Milestone
+
+------------------------------------------------------------
+
+SECTION 12
+
+PROGRESS AUTOMATION
+
+Automatically calculate:
+
+Goal Progress
+
+Habit Progress
+
+Commitment Score
+
+Growth Score
+
+------------------------------------------------------------
+
+Update:
+
+Dashboard
+
+Charts
+
+Statistics
+
+------------------------------------------------------------
+
+SECTION 13
+
+FAILURE RECOVERY SYSTEM
+
+When user falls behind:
+
+Detect:
+
+Missed Days
+
+Incomplete Goals
+
+Low Commitment
+
+Repeated Violations
+
+------------------------------------------------------------
+
+Generate recovery actions:
+
+Restart Routine
+
+Reduce Complexity
+
+Review Goal
+
+Adjust Mission
+
+------------------------------------------------------------
+
+SECTION 14
+
+PERSONALIZATION
+
+Allow customization:
+
+Mission Frequency
+
+Notification Time
+
+Goal Difficulty
+
+Reminder Style
+
+Cycle Intensity
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+DailyMission
+
+Habit
+
+HabitRecord
+
+CommitmentScore
+
+Alert
+
+Notification
+
+DailyCheckIn
+
+Achievement
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE
+
+Implement:
+
+Background Scheduling
+
+Efficient Queries
+
+Offline Support
+
+Sync Preparation
+
+------------------------------------------------------------
+
+TESTING
+
+Test:
+
+Mission Generation
+
+Habit Tracking
+
+Streak Calculation
+
+Alert Detection
+
+Notification System
+
+Commitment Score
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Automation Services
+
+Schedulers
+
+Database Models
+
+Components
+
+Hooks
+
+Notification System
+
+Testing Suite
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS actively helps the trader maintain discipline throughout the Growth Cycle.
+
+The system becomes a daily improvement companion, not only a trading journal.
+
+END OF PROMPT

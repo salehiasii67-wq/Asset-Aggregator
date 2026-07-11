@@ -1,0 +1,671 @@
+SYSTEM ROLE
+
+You are a Senior Product Architect, Behavioral Performance Engineer, and Full Stack TypeScript Developer.
+
+You are implementing the Growth Cycle System of TraderMind OS.
+
+The Growth Cycle replaces the traditional Trade Box concept.
+
+This is not a trade counter.
+
+This is a structured improvement cycle designed to develop the trader's:
+
+Skill
+
+Discipline
+
+Psychology
+
+Execution
+
+Risk Management
+
+Decision Making
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete Growth Cycle architecture.
+
+The system must allow traders to:
+
+Create improvement cycles
+
+Define objectives
+
+Track progress
+
+Measure behavior change
+
+Analyze performance
+
+Generate improvement insights
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Zustand
+
+Dexie.js
+
+IndexedDB
+
+TailwindCSS
+
+Recharts
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/growth/
+
+cycles/
+
+goals/
+
+missions/
+
+rules/
+
+progress/
+
+reviews/
+
+analytics/
+
+components/
+
+services/
+
+hooks/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+CORE CONCEPT
+
+A Growth Cycle contains:
+
+Purpose
+
+Duration
+
+Focus Area
+
+Rules
+
+Goals
+
+Measurements
+
+Trades
+
+Reviews
+
+Final Evaluation
+
+------------------------------------------------------------
+
+GROWTH CYCLE ENTITY
+
+Create:
+
+GrowthCycle
+
+Fields:
+
+id
+
+name
+
+description
+
+status
+
+startDate
+
+endDate
+
+duration
+
+targetTrades
+
+completedTrades
+
+focusAreas
+
+createdAt
+
+updatedAt
+
+------------------------------------------------------------
+
+CYCLE STATUS
+
+Support:
+
+Draft
+
+Active
+
+Paused
+
+Completed
+
+Archived
+
+------------------------------------------------------------
+
+CYCLE CREATION WORKFLOW
+
+Create wizard:
+
+Step 1
+
+Cycle Identity
+
+Step 2
+
+Goals
+
+Step 3
+
+Focus Areas
+
+Step 4
+
+Rules
+
+Step 5
+
+Measurement System
+
+Step 6
+
+Confirmation
+
+------------------------------------------------------------
+
+STEP 1
+
+CYCLE IDENTITY
+
+Capture:
+
+Cycle Name
+
+Example:
+
+"Improve Discipline"
+
+"Master London Session"
+
+"Reduce Emotional Trading"
+
+------------------------------------------------------------
+
+Description:
+
+Why this cycle exists.
+
+Expected Outcome.
+
+------------------------------------------------------------
+
+STEP 2
+
+FOCUS AREAS
+
+Allow selection:
+
+Risk Management
+
+Execution
+
+Psychology
+
+Strategy
+
+Consistency
+
+Patience
+
+Entry Quality
+
+Exit Quality
+
+Lifestyle
+
+Planning
+
+------------------------------------------------------------
+
+FOCUS SCORE
+
+Track improvement target:
+
+Current Level
+
+Target Level
+
+Progress %
+
+------------------------------------------------------------
+
+STEP 3
+
+GOAL ENGINE
+
+Create goals.
+
+Types:
+
+Performance Goal
+
+Behavior Goal
+
+Learning Goal
+
+Habit Goal
+
+Risk Goal
+
+------------------------------------------------------------
+
+Examples:
+
+Reduce FOMO Trades
+
+Follow Checklist 90%
+
+Maximum Risk 1%
+
+Complete 50 Reviews
+
+Improve Sleep Routine
+
+------------------------------------------------------------
+
+GOAL ENTITY
+
+Fields:
+
+id
+
+cycleId
+
+title
+
+type
+
+target
+
+currentValue
+
+progress
+
+status
+
+deadline
+
+------------------------------------------------------------
+
+STEP 4
+
+RULE SYSTEM
+
+Each cycle can have custom rules.
+
+Examples:
+
+Maximum 2 Trades Per Day
+
+No Revenge Trading
+
+Risk Maximum 1%
+
+Review Every Trade
+
+Stop After Daily Loss Limit
+
+------------------------------------------------------------
+
+RULE ENTITY
+
+Fields:
+
+id
+
+cycleId
+
+name
+
+description
+
+severity
+
+active
+
+violations
+
+------------------------------------------------------------
+
+RULE VIOLATION TRACKING
+
+Track:
+
+Violation Count
+
+Date
+
+Trade
+
+Impact
+
+Resolution
+
+------------------------------------------------------------
+
+STEP 5
+
+MEASUREMENT SYSTEM
+
+Define success metrics.
+
+Metrics:
+
+Profit
+
+Average R
+
+Win Rate
+
+Execution Score
+
+Psychology Score
+
+Discipline Score
+
+Risk Score
+
+Consistency Score
+
+------------------------------------------------------------
+
+WEIGHT SYSTEM
+
+Allow custom weights.
+
+Example:
+
+Discipline 40%
+
+Risk 30%
+
+Execution 20%
+
+Profit 10%
+
+------------------------------------------------------------
+
+CYCLE MISSION SYSTEM
+
+Create daily missions.
+
+Examples:
+
+Complete Pre-Trade Checklist
+
+No Rule Violations
+
+Review Previous Mistake
+
+Practice Patience
+
+------------------------------------------------------------
+
+MISSION ENTITY
+
+Fields:
+
+id
+
+cycleId
+
+date
+
+title
+
+category
+
+completed
+
+score
+
+------------------------------------------------------------
+
+PROGRESS ENGINE
+
+Calculate:
+
+Goal Progress
+
+Rule Compliance
+
+Mission Completion
+
+Behavior Improvement
+
+Performance Growth
+
+------------------------------------------------------------
+
+PROGRESS VISUALIZATION
+
+Create:
+
+Progress Ring
+
+Timeline
+
+Growth Chart
+
+Completion Percentage
+
+------------------------------------------------------------
+
+TRADE CONNECTION
+
+Every trade can belong to:
+
+One Growth Cycle
+
+One Strategy
+
+One Mission
+
+------------------------------------------------------------
+
+CYCLE ANALYTICS
+
+Calculate:
+
+Total Trades
+
+Win Rate
+
+Average R
+
+Profit
+
+Risk Quality
+
+Execution Quality
+
+Psychology Improvement
+
+------------------------------------------------------------
+
+BEHAVIOR CHANGE TRACKING
+
+Compare:
+
+Before Cycle
+
+During Cycle
+
+After Cycle
+
+------------------------------------------------------------
+
+Track:
+
+FOMO Reduction
+
+Discipline Increase
+
+Risk Improvement
+
+Patience Improvement
+
+------------------------------------------------------------
+
+CYCLE NOTES
+
+Support:
+
+Daily Notes
+
+Weekly Reflection
+
+Important Events
+
+Breakthrough Moments
+
+------------------------------------------------------------
+
+CYCLE REVIEW PREPARATION
+
+Prepare:
+
+Final Review
+
+Achievements
+
+Failures
+
+Lessons
+
+Next Cycle Recommendations
+
+------------------------------------------------------------
+
+DATABASE ENTITIES
+
+Create:
+
+GrowthCycle
+
+CycleGoal
+
+CycleRule
+
+CycleMission
+
+CycleMetric
+
+CycleReview
+
+BehaviorProgress
+
+------------------------------------------------------------
+
+USER INTERFACE
+
+Create:
+
+Cycle Dashboard
+
+Creation Wizard
+
+Goal Cards
+
+Mission Cards
+
+Progress Widgets
+
+Rule Monitor
+
+------------------------------------------------------------
+
+PERFORMANCE
+
+Implement:
+
+Lazy Loading
+
+Memoization
+
+Optimized Queries
+
+Background Calculations
+
+------------------------------------------------------------
+
+TESTING
+
+Test:
+
+Cycle Creation
+
+Goal Tracking
+
+Rule Tracking
+
+Progress Calculation
+
+Trade Connection
+
+Review Generation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Architecture
+
+Database Models
+
+Components
+
+Services
+
+Hooks
+
+Calculation Engines
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+Growth Cycle becomes the main system for trader improvement.
+
+The trader does not only measure money.
+
+The trader measures personal growth.
+
+END OF PROMPT

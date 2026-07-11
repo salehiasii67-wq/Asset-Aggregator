@@ -1,0 +1,653 @@
+SYSTEM ROLE
+
+You are a Senior Product Designer, Senior Frontend Engineer, and Behavioral Analytics Engineer.
+
+You are implementing the Growth Cycle Dashboard of TraderMind OS.
+
+This dashboard is the command center of a trader's current improvement cycle.
+
+It must show:
+
+Current mission
+
+Progress
+
+Behavior change
+
+Performance evolution
+
+Rule compliance
+
+Personal growth
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional Growth Cycle Dashboard.
+
+The trader must instantly understand:
+
+Where am I?
+
+What am I improving?
+
+Am I following my rules?
+
+What changed?
+
+What should I focus on next?
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Recharts
+
+Framer Motion
+
+Zustand
+
+Dexie.js
+
+Lucide React
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/growth/dashboard/
+
+components/
+
+widgets/
+
+charts/
+
+cards/
+
+hooks/
+
+services/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+MAIN DASHBOARD LAYOUT
+
+Create:
+
+Header Section
+
+Progress Overview
+
+Current Mission
+
+Goal Tracking
+
+Rule Monitor
+
+Performance Evolution
+
+Behavior Evolution
+
+Reflection Area
+
+------------------------------------------------------------
+
+SECTION 1
+
+CYCLE HEADER
+
+Display:
+
+Cycle Name
+
+Status
+
+Duration
+
+Start Date
+
+End Date
+
+Remaining Days
+
+Target Trades
+
+------------------------------------------------------------
+
+Display:
+
+Current Focus Areas
+
+Example:
+
+Risk Discipline
+
+Emotional Control
+
+Execution Quality
+
+------------------------------------------------------------
+
+SECTION 2
+
+GROWTH SCORE
+
+Create main score.
+
+Display:
+
+Growth Score
+
+0-100
+
+Based on:
+
+Goal Completion
+
+Rule Compliance
+
+Behavior Improvement
+
+Performance Quality
+
+Consistency
+
+------------------------------------------------------------
+
+Create:
+
+Score Ring
+
+Score Breakdown
+
+Historical Comparison
+
+------------------------------------------------------------
+
+SECTION 3
+
+PROGRESS OVERVIEW
+
+Display:
+
+Overall Progress
+
+Goal Progress
+
+Mission Completion
+
+Trade Completion
+
+Review Completion
+
+------------------------------------------------------------
+
+Create:
+
+Progress Bars
+
+Progress Rings
+
+Timeline View
+
+------------------------------------------------------------
+
+SECTION 4
+
+CURRENT MISSION WIDGET
+
+Display:
+
+Today's Mission
+
+Description
+
+Priority
+
+Completion Status
+
+------------------------------------------------------------
+
+Mission Actions:
+
+Complete
+
+Skip
+
+Add Note
+
+Review
+
+------------------------------------------------------------
+
+SECTION 5
+
+GOAL TRACKING SYSTEM
+
+Display all cycle goals.
+
+Each goal card contains:
+
+Goal Name
+
+Category
+
+Current Value
+
+Target Value
+
+Progress %
+
+Status
+
+------------------------------------------------------------
+
+Goal Status:
+
+Not Started
+
+In Progress
+
+Almost Complete
+
+Completed
+
+Failed
+
+------------------------------------------------------------
+
+SECTION 6
+
+RULE MONITOR
+
+Display cycle rules.
+
+For every rule:
+
+Rule Name
+
+Current Status
+
+Violation Count
+
+Last Violation
+
+Impact
+
+------------------------------------------------------------
+
+Visual states:
+
+Passed
+
+Warning
+
+Critical
+
+------------------------------------------------------------
+
+RULE COMPLIANCE SCORE
+
+Calculate:
+
+Passed Rules
+
+Failed Rules
+
+Severity
+
+Frequency
+
+Return:
+
+Compliance Score 0-100
+
+------------------------------------------------------------
+
+SECTION 7
+
+PERFORMANCE EVOLUTION
+
+Create charts.
+
+Display:
+
+Profit Progress
+
+Average R Progress
+
+Execution Score Progress
+
+Psychology Score Progress
+
+Discipline Score Progress
+
+------------------------------------------------------------
+
+Charts:
+
+Line Chart
+
+Area Chart
+
+Comparison Chart
+
+------------------------------------------------------------
+
+SECTION 8
+
+BEHAVIOR EVOLUTION
+
+Track change over time.
+
+Display:
+
+Before Cycle
+
+Current
+
+Target
+
+------------------------------------------------------------
+
+Behaviors:
+
+FOMO
+
+Revenge Trading
+
+Overtrading
+
+Risk Increase
+
+Patience
+
+Discipline
+
+Confidence
+
+------------------------------------------------------------
+
+Create:
+
+Behavior Radar
+
+Improvement Timeline
+
+------------------------------------------------------------
+
+SECTION 9
+
+TRADE QUALITY ANALYSIS
+
+Analyze trades inside cycle.
+
+Display:
+
+A+ Trades
+
+Good Trades
+
+Learning Trades
+
+Mistake Trades
+
+------------------------------------------------------------
+
+Calculate:
+
+Average Trade Score
+
+Best Trade
+
+Worst Trade
+
+Most Common Mistake
+
+Most Improved Skill
+
+------------------------------------------------------------
+
+SECTION 10
+
+DAILY REFLECTION SYSTEM
+
+Create quick reflection.
+
+Questions:
+
+What did I learn today?
+
+What mistake did I notice?
+
+What did I improve?
+
+What will I focus on tomorrow?
+
+------------------------------------------------------------
+
+Store:
+
+Daily Reflection
+
+Date
+
+Mood
+
+Lesson
+
+Action
+
+------------------------------------------------------------
+
+SECTION 11
+
+BREAKTHROUGH MOMENTS
+
+Create achievement system.
+
+Track:
+
+First Rule Streak
+
+Best Discipline Week
+
+No FOMO Period
+
+Best Execution
+
+Risk Improvement
+
+------------------------------------------------------------
+
+Achievement Entity:
+
+id
+
+cycleId
+
+title
+
+description
+
+date
+
+impact
+
+------------------------------------------------------------
+
+SECTION 12
+
+COMPARISON ENGINE
+
+Compare:
+
+Current Cycle
+
+Previous Cycle
+
+------------------------------------------------------------
+
+Compare:
+
+Risk
+
+Psychology
+
+Execution
+
+Consistency
+
+Profitability
+
+------------------------------------------------------------
+
+Generate:
+
+Improved Areas
+
+Declined Areas
+
+Unchanged Areas
+
+------------------------------------------------------------
+
+SECTION 13
+
+NEXT ACTION ENGINE
+
+Prepare structured recommendations.
+
+Examples:
+
+Review Exit Rules
+
+Reduce Risk
+
+Practice Patience
+
+Improve Preparation
+
+------------------------------------------------------------
+
+Do NOT generate AI advice.
+
+Only create data structure.
+
+------------------------------------------------------------
+
+SECTION 14
+
+MOBILE EXPERIENCE
+
+Create mobile-first design.
+
+Support:
+
+Cards
+
+Swipe Navigation
+
+Bottom Actions
+
+Quick Update
+
+One-Hand Usage
+
+------------------------------------------------------------
+
+SECTION 15
+
+PERFORMANCE
+
+Optimize:
+
+Chart Rendering
+
+Large Cycle Data
+
+Historical Queries
+
+Animations
+
+------------------------------------------------------------
+
+DATABASE ACCESS
+
+Read:
+
+GrowthCycle
+
+Goals
+
+Rules
+
+Missions
+
+Trades
+
+Reviews
+
+Scores
+
+Behavior Records
+
+------------------------------------------------------------
+
+TESTING
+
+Test:
+
+Dashboard Rendering
+
+Progress Calculation
+
+Goal Updates
+
+Rule Status
+
+Behavior Charts
+
+Comparison
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Charts
+
+Hooks
+
+Services
+
+Calculation Logic
+
+Tests
+
+Production-ready React TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The Growth Cycle Dashboard becomes the trader's daily improvement command center.
+
+The trader can measure growth, not just profit.
+
+END OF PROMPT

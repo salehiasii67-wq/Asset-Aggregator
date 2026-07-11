@@ -1,0 +1,676 @@
+SYSTEM ROLE
+
+You are a Senior Quantitative Analyst, Trading Performance Engineer, and Senior Frontend Architect.
+
+You are implementing the Professional Statistical Dashboard of TraderMind OS.
+
+This dashboard is the main analytical command center of the trader.
+
+It converts all trading data into professional performance intelligence.
+
+The system must answer:
+
+How profitable am I?
+
+How consistent am I?
+
+Where am I losing?
+
+What is my edge?
+
+What should I improve?
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional institutional-style trading analytics dashboard.
+
+The dashboard must analyze:
+
+Profitability
+
+Risk
+
+Execution
+
+Psychology
+
+Strategy Performance
+
+Behavior
+
+Consistency
+
+Growth
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Zustand
+
+Dexie.js
+
+Recharts
+
+TailwindCSS
+
+Lucide React
+
+Framer Motion
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/analytics/dashboard/
+
+components/
+
+widgets/
+
+charts/
+
+metrics/
+
+filters/
+
+services/
+
+calculators/
+
+hooks/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+MAIN DASHBOARD STRUCTURE
+
+Create:
+
+1. Performance Overview
+
+2. Equity Analysis
+
+3. Risk Analysis
+
+4. Trade Statistics
+
+5. Strategy Intelligence
+
+6. Psychology Analytics
+
+7. Execution Analytics
+
+8. Time Analysis
+
+9. Growth Comparison
+
+------------------------------------------------------------
+
+SECTION 1
+
+PERFORMANCE OVERVIEW
+
+Create professional KPI cards.
+
+Display:
+
+Total Trades
+
+Winning Trades
+
+Losing Trades
+
+Win Rate
+
+Net Profit
+
+Average R
+
+Profit Factor
+
+Expectancy
+
+Maximum Drawdown
+
+Recovery Factor
+
+------------------------------------------------------------
+
+KPI REQUIREMENTS
+
+Each metric must show:
+
+Current Value
+
+Previous Period Comparison
+
+Trend
+
+Percentage Change
+
+------------------------------------------------------------
+
+SECTION 2
+
+EQUITY CURVE ENGINE
+
+Create interactive equity chart.
+
+Display:
+
+Balance Growth
+
+Profit/Loss Changes
+
+Drawdown Periods
+
+Recovery Periods
+
+------------------------------------------------------------
+
+Features:
+
+Zoom
+
+Date Range
+
+Compare Periods
+
+Highlight Events
+
+------------------------------------------------------------
+
+SECTION 3
+
+DRAWDOWN ANALYSIS
+
+Implement:
+
+Maximum Drawdown
+
+Current Drawdown
+
+Average Drawdown
+
+Drawdown Duration
+
+Recovery Time
+
+------------------------------------------------------------
+
+Create visualization:
+
+Drawdown Chart
+
+Recovery Timeline
+
+Risk Stress Periods
+
+------------------------------------------------------------
+
+SECTION 4
+
+TRADE DISTRIBUTION ANALYSIS
+
+Analyze:
+
+Winning Trades
+
+Losing Trades
+
+Break Even Trades
+
+------------------------------------------------------------
+
+Display:
+
+Profit Distribution
+
+Loss Distribution
+
+R Distribution
+
+------------------------------------------------------------
+
+Charts:
+
+Histogram
+
+Scatter Plot
+
+Distribution Chart
+
+------------------------------------------------------------
+
+SECTION 5
+
+EXPECTANCY ENGINE
+
+Calculate:
+
+Average Win
+
+Average Loss
+
+Win Rate
+
+Loss Rate
+
+Average R
+
+Expectancy
+
+------------------------------------------------------------
+
+Formula:
+
+Expectancy =
+(Win Rate × Average Win)
+-
+(Loss Rate × Average Loss)
+
+------------------------------------------------------------
+
+Display:
+
+Positive Expectancy
+
+Negative Expectancy
+
+Expectancy Trend
+
+------------------------------------------------------------
+
+SECTION 6
+
+RISK PERFORMANCE DASHBOARD
+
+Analyze:
+
+Risk Per Trade
+
+Risk Consistency
+
+Risk Violations
+
+Position Sizing
+
+Exposure
+
+------------------------------------------------------------
+
+Display:
+
+Risk Score
+
+0-100
+
+Based on:
+
+Consistency
+
+Discipline
+
+Rule Compliance
+
+------------------------------------------------------------
+
+SECTION 7
+
+STRATEGY PERFORMANCE ANALYSIS
+
+For each strategy:
+
+Calculate:
+
+Number of Trades
+
+Win Rate
+
+Profit
+
+Average R
+
+Expectancy
+
+Drawdown
+
+Best Conditions
+
+Worst Conditions
+
+------------------------------------------------------------
+
+Create:
+
+Strategy Ranking
+
+Best Strategy
+
+Weakest Strategy
+
+------------------------------------------------------------
+
+SECTION 8
+
+SYMBOL PERFORMANCE ANALYSIS
+
+Analyze:
+
+Markets
+
+Symbols
+
+Assets
+
+------------------------------------------------------------
+
+Display:
+
+Most Profitable Symbol
+
+Most Consistent Symbol
+
+Worst Performing Symbol
+
+------------------------------------------------------------
+
+SECTION 9
+
+SESSION ANALYSIS
+
+Analyze:
+
+Tokyo
+
+London
+
+New York
+
+Overlap Sessions
+
+------------------------------------------------------------
+
+Calculate:
+
+Performance
+
+Win Rate
+
+Average R
+
+Mistakes
+
+Psychology Score
+
+------------------------------------------------------------
+
+SECTION 10
+
+TIME PERFORMANCE ANALYSIS
+
+Analyze:
+
+Hour
+
+Day
+
+Week
+
+Month
+
+Quarter
+
+Year
+
+------------------------------------------------------------
+
+Find:
+
+Best Trading Time
+
+Worst Trading Time
+
+High Performance Windows
+
+------------------------------------------------------------
+
+SECTION 11
+
+PSYCHOLOGY DASHBOARD
+
+Analyze:
+
+Emotion Impact
+
+Confidence
+
+Stress
+
+Discipline
+
+Patience
+
+------------------------------------------------------------
+
+Display:
+
+Emotion Performance Correlation
+
+------------------------------------------------------------
+
+Examples:
+
+High Stress:
+Average R -0.8
+
+Calm State:
+Average R +1.5
+
+------------------------------------------------------------
+
+SECTION 12
+
+EXECUTION DASHBOARD
+
+Analyze:
+
+Entry Quality
+
+Exit Quality
+
+Rule Compliance
+
+Checklist Completion
+
+------------------------------------------------------------
+
+Display:
+
+Execution Score Trend
+
+------------------------------------------------------------
+
+SECTION 13
+
+PERFORMANCE HEATMAP
+
+Create calendar heatmap.
+
+Display:
+
+Daily Performance
+
+Profit/Loss
+
+Trade Quality
+
+Psychology State
+
+------------------------------------------------------------
+
+SECTION 14
+
+FILTER SYSTEM
+
+All dashboard data must support:
+
+Date Range
+
+Growth Cycle
+
+Strategy
+
+Symbol
+
+Session
+
+Emotion
+
+Market
+
+Tag
+
+Trade Score
+
+------------------------------------------------------------
+
+SECTION 15
+
+COMPARISON SYSTEM
+
+Allow:
+
+This Month vs Last Month
+
+Cycle vs Cycle
+
+Strategy vs Strategy
+
+Current Year vs Previous Year
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERSONAL EDGE DISCOVERY
+
+Prepare engine to detect:
+
+Best Strategy
+
+Best Market
+
+Best Session
+
+Best Psychology State
+
+Best Risk Level
+
+------------------------------------------------------------
+
+SECTION 17
+
+DATABASE SERVICES
+
+Create:
+
+Analytics Query Service
+
+Calculation Service
+
+Aggregation Service
+
+Cache Service
+
+------------------------------------------------------------
+
+SECTION 18
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Memoization
+
+Indexed Database Queries
+
+Lazy Loading
+
+Background Calculations
+
+Data Caching
+
+------------------------------------------------------------
+
+SECTION 19
+
+RESPONSIVE DESIGN
+
+Support:
+
+Desktop Trading Terminal Layout
+
+Tablet Dashboard
+
+Mobile Cards
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Metric Calculations
+
+Chart Data
+
+Filters
+
+Comparisons
+
+Performance
+
+Database Queries
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Dashboard Components
+
+Calculation Services
+
+Chart Components
+
+Hooks
+
+Database Queries
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The trader has a professional statistical command center.
+
+The dashboard must provide institutional-level understanding of personal trading performance.
+
+END OF PROMPT

@@ -1,0 +1,593 @@
+SYSTEM ROLE
+
+You are a Senior Data Architect, Trading Analytics Engineer, and TypeScript System Designer.
+
+You are implementing the Journal Intelligence Engine of TraderMind OS.
+
+This module transforms historical trades into a structured personal trading knowledge base.
+
+The system must help the trader answer:
+
+What works for me?
+
+What does not work for me?
+
+When do I perform best?
+
+What mistakes repeat?
+
+What patterns define my trading behavior?
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build a professional Trade Intelligence System.
+
+Implement:
+
+Advanced Search
+
+Advanced Filtering
+
+Trade Library
+
+Pattern Preparation
+
+Performance Grouping
+
+Behavior Analysis Foundation
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+Dexie.js
+
+React
+
+Zustand
+
+IndexedDB
+
+Recharts
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/journal/intelligence/
+
+search/
+
+filters/
+
+library/
+
+patterns/
+
+grouping/
+
+services/
+
+calculators/
+
+hooks/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+SECTION 1
+
+ADVANCED TRADE SEARCH ENGINE
+
+Create powerful search.
+
+Support:
+
+Keyword Search
+
+Symbol Search
+
+Strategy Search
+
+Setup Search
+
+Emotion Search
+
+Mistake Search
+
+Lesson Search
+
+------------------------------------------------------------
+
+SEARCH FIELDS
+
+Search:
+
+Notes
+
+Reasons
+
+Lessons
+
+Mistakes
+
+Tags
+
+Market Conditions
+
+Behavior Events
+
+------------------------------------------------------------
+
+SECTION 2
+
+ADVANCED FILTER SYSTEM
+
+Create multi-condition filters.
+
+Support:
+
+Date Range
+
+Symbol
+
+Market
+
+Direction
+
+Strategy
+
+Box
+
+Session
+
+Timeframe
+
+Result
+
+R Multiple
+
+Trade Score
+
+Emotion
+
+Psychology Score
+
+Execution Score
+
+------------------------------------------------------------
+
+COMBINED FILTERS
+
+Support:
+
+AND Logic
+
+OR Logic
+
+Saved Filters
+
+Recent Filters
+
+Favorite Filters
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADE LIBRARY
+
+Create categorized trade collections.
+
+------------------------------------------------------------
+
+BEST TRADES LIBRARY
+
+Automatically collect:
+
+Highest R Trades
+
+Highest Score Trades
+
+Best Executions
+
+Most Disciplined Trades
+
+Best Psychology Trades
+
+------------------------------------------------------------
+
+WORST TRADES LIBRARY
+
+Collect:
+
+Largest Losses
+
+Lowest Scores
+
+Risk Violations
+
+Emotional Trades
+
+Rule Breaking Trades
+
+------------------------------------------------------------
+
+LEARNING LIBRARY
+
+Collect:
+
+Important Lessons
+
+Repeated Mistakes
+
+Successful Adjustments
+
+------------------------------------------------------------
+
+SECTION 4
+
+TRADE PATTERN ENGINE
+
+Create pattern detection foundation.
+
+Do NOT use AI.
+
+Use structured rules.
+
+------------------------------------------------------------
+
+DETECT PATTERNS:
+
+Performance Patterns
+
+Behavior Patterns
+
+Psychology Patterns
+
+Risk Patterns
+
+Strategy Patterns
+
+------------------------------------------------------------
+
+EXAMPLES
+
+Detect:
+
+After 3 Wins → Overconfidence Increase
+
+After Loss → Risk Increase
+
+Low Sleep → Lower Execution Score
+
+Certain Session → Better Performance
+
+Certain Strategy → Higher Expectancy
+
+------------------------------------------------------------
+
+SECTION 5
+
+TRADE GROUPING ENGINE
+
+Group trades by:
+
+Strategy
+
+Symbol
+
+Session
+
+Market Condition
+
+Emotion
+
+Behavior
+
+Lifestyle Condition
+
+------------------------------------------------------------
+
+FOR EACH GROUP CALCULATE:
+
+Number of Trades
+
+Win Rate
+
+Average R
+
+Profit
+
+Average Score
+
+Mistakes
+
+Strengths
+
+------------------------------------------------------------
+
+SECTION 6
+
+PERSONAL EDGE FINDER FOUNDATION
+
+Prepare system to discover:
+
+Trading Edge
+
+Psychological Edge
+
+Execution Edge
+
+Lifestyle Edge
+
+------------------------------------------------------------
+
+TRACK:
+
+Conditions where trader performs best.
+
+Conditions where trader performs worst.
+
+------------------------------------------------------------
+
+SECTION 7
+
+MISTAKE REPETITION ENGINE
+
+Analyze:
+
+Repeated Errors
+
+Frequency
+
+Severity
+
+Financial Impact
+
+Time Between Occurrences
+
+------------------------------------------------------------
+
+CREATE:
+
+Mistake Score
+
+Priority Level
+
+Improvement Status
+
+------------------------------------------------------------
+
+SECTION 8
+
+SUCCESS BEHAVIOR ENGINE
+
+Track successful behaviors.
+
+Examples:
+
+Waiting for Confirmation
+
+Respecting Risk
+
+Following Checklist
+
+Patience
+
+Proper Exit
+
+------------------------------------------------------------
+
+CREATE:
+
+Behavior Frequency
+
+Behavior Impact
+
+Success Correlation
+
+------------------------------------------------------------
+
+SECTION 9
+
+PERSONAL TRADING PROFILE
+
+Create dynamic profile.
+
+Store:
+
+Preferred Strategies
+
+Best Markets
+
+Best Sessions
+
+Common Mistakes
+
+Strongest Skills
+
+Weakest Skills
+
+------------------------------------------------------------
+
+SECTION 10
+
+SAVED VIEWS
+
+Allow user to create dashboards.
+
+Examples:
+
+"My Best EURUSD Trades"
+
+"My FOMO Trades"
+
+"My London Session"
+
+"My Worst Mistakes"
+
+"My A+ Setups"
+
+------------------------------------------------------------
+
+SECTION 11
+
+TRADE COMPARISON TOOL
+
+Compare:
+
+Two Trades
+
+Multiple Trades
+
+Winning vs Losing Trades
+
+Strategy A vs Strategy B
+
+------------------------------------------------------------
+
+COMPARE:
+
+Risk
+
+Execution
+
+Psychology
+
+Timing
+
+Behavior
+
+Outcome
+
+------------------------------------------------------------
+
+SECTION 12
+
+EXPORT PREPARATION
+
+Prepare export data:
+
+Trade History
+
+Performance Data
+
+Mistake Library
+
+Lesson Library
+
+Pattern Data
+
+------------------------------------------------------------
+
+SECTION 13
+
+DATABASE ENTITIES
+
+Create:
+
+TradeCollection
+
+SavedFilter
+
+PatternRecord
+
+BehaviorPattern
+
+MistakePattern
+
+SuccessPattern
+
+TraderProfile
+
+------------------------------------------------------------
+
+SECTION 14
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Indexed Queries
+
+Caching
+
+Pagination
+
+Lazy Loading
+
+Background Calculations
+
+------------------------------------------------------------
+
+SECTION 15
+
+TESTING
+
+Test:
+
+Search Engine
+
+Filters
+
+Grouping
+
+Pattern Detection
+
+Comparison
+
+Library Generation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Services
+
+Database Models
+
+Search Engine
+
+Filter Engine
+
+Pattern Engine
+
+Library System
+
+Testing Suite
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+The journal becomes a personal trading intelligence database.
+
+The trader can discover:
+
+Personal strengths
+
+Personal weaknesses
+
+Winning conditions
+
+Losing conditions
+
+Repeated behavioral patterns
+
+The foundation is ready for future AI Coach integration.
+
+END OF PROMPT

@@ -1,0 +1,573 @@
+SYSTEM ROLE
+
+You are a Senior Software Architect and Senior TypeScript Engineer.
+
+You are implementing the Repository Layer of TraderMind OS.
+
+The database engine already exists.
+
+No UI should communicate with Dexie directly.
+
+Every database operation MUST go through repositories.
+
+Follow Clean Architecture.
+
+Follow SOLID principles.
+
+Write production-quality code only.
+
+Never create demo code.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete Repository Layer that abstracts all database access.
+
+Repositories must be reusable, testable, scalable and cloud-ready.
+
+Every module must communicate with repositories instead of the database.
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+Dexie.js
+
+Repository Pattern
+
+Service Layer
+
+Dependency Injection Ready
+
+------------------------------------------------------------
+
+CREATE STRUCTURE
+
+src/database/
+
+repositories/
+
+base/
+
+interfaces/
+
+implementations/
+
+factories/
+
+filters/
+
+queries/
+
+dto/
+
+mappers/
+
+validators/
+
+------------------------------------------------------------
+
+BASE REPOSITORY
+
+Create a generic BaseRepository<T>.
+
+Responsibilities:
+
+Create
+
+CreateMany
+
+FindById
+
+FindAll
+
+Update
+
+UpdateMany
+
+Archive
+
+Restore
+
+Delete (Soft Delete)
+
+Exists
+
+Count
+
+Paginate
+
+Search
+
+Filter
+
+Sort
+
+BulkInsert
+
+BulkUpdate
+
+BulkArchive
+
+BulkRestore
+
+Transaction Support
+
+------------------------------------------------------------
+
+REPOSITORY INTERFACES
+
+Create interfaces for:
+
+TradeRepository
+
+TradeBoxRepository
+
+StrategyRepository
+
+AccountRepository
+
+BrokerRepository
+
+PropFirmRepository
+
+ReviewRepository
+
+ChecklistRepository
+
+TagRepository
+
+GoalRepository
+
+HabitRepository
+
+LifestyleRepository
+
+PsychologyRepository
+
+SettingsRepository
+
+NotificationRepository
+
+ReportRepository
+
+AIMemoryRepository
+
+------------------------------------------------------------
+
+TRADE REPOSITORY
+
+Implement specialized methods:
+
+FindBySymbol()
+
+FindByAccount()
+
+FindByStrategy()
+
+FindByBox()
+
+FindBySession()
+
+FindByResult()
+
+FindByDateRange()
+
+FindByRisk()
+
+FindByExecutionScore()
+
+FindByPsychologyScore()
+
+FindOpenTrades()
+
+FindClosedTrades()
+
+GetLastTrade()
+
+GetTradeHistory()
+
+GetTradeStatistics()
+
+------------------------------------------------------------
+
+BOX REPOSITORY
+
+Methods
+
+GetActiveBox()
+
+CompleteBox()
+
+ArchiveBox()
+
+CalculateProgress()
+
+GetRemainingTrades()
+
+GetAverageExecution()
+
+GetAveragePsychology()
+
+------------------------------------------------------------
+
+ACCOUNT REPOSITORY
+
+Methods
+
+GetBalance()
+
+GetOpenRisk()
+
+GetDrawdown()
+
+GetProfit()
+
+GetStatistics()
+
+------------------------------------------------------------
+
+STRATEGY REPOSITORY
+
+Methods
+
+GetPerformance()
+
+GetWinRate()
+
+GetAverageR()
+
+GetTrades()
+
+------------------------------------------------------------
+
+PSYCHOLOGY REPOSITORY
+
+Methods
+
+SaveEmotion()
+
+SaveBehavior()
+
+GetEmotionHistory()
+
+GetStressHistory()
+
+GetFearTrend()
+
+GetConfidenceTrend()
+
+GetPsychologyScore()
+
+------------------------------------------------------------
+
+LIFESTYLE REPOSITORY
+
+Methods
+
+SaveSleep()
+
+SaveWorkout()
+
+SaveMeditation()
+
+SaveEnergy()
+
+SaveNutrition()
+
+GetLifestyleHistory()
+
+CalculateLifestyleScore()
+
+------------------------------------------------------------
+
+GOALS REPOSITORY
+
+Methods
+
+CreateGoal()
+
+UpdateProgress()
+
+CompleteGoal()
+
+ArchiveGoal()
+
+GetDailyGoals()
+
+GetWeeklyGoals()
+
+GetMonthlyGoals()
+
+------------------------------------------------------------
+
+HABITS REPOSITORY
+
+Methods
+
+CompleteHabit()
+
+GetCurrentStreak()
+
+GetBestStreak()
+
+CalculateCompletionRate()
+
+------------------------------------------------------------
+
+SEARCH ENGINE
+
+Every repository must support:
+
+Search by keyword
+
+Search by date
+
+Search by tag
+
+Search by note
+
+Search by AI label
+
+Search by strategy
+
+------------------------------------------------------------
+
+FILTER SYSTEM
+
+Support filters:
+
+Date
+
+Date Range
+
+Account
+
+Broker
+
+Prop Firm
+
+Strategy
+
+Setup
+
+Trade Box
+
+Tag
+
+Emotion
+
+Behavior
+
+Risk
+
+Result
+
+Session
+
+Execution Score
+
+Psychology Score
+
+Lifestyle Score
+
+------------------------------------------------------------
+
+SORTING
+
+Support
+
+Newest
+
+Oldest
+
+Highest Profit
+
+Lowest Profit
+
+Highest R
+
+Lowest R
+
+Highest Score
+
+Lowest Score
+
+Alphabetical
+
+Custom
+
+------------------------------------------------------------
+
+PAGINATION
+
+Support
+
+Offset Pagination
+
+Cursor Pagination
+
+Infinite Scroll Ready
+
+------------------------------------------------------------
+
+QUERY OBJECTS
+
+Never pass raw parameters.
+
+Create reusable query DTOs.
+
+Example:
+
+TradeFilterDTO
+
+TradeSearchDTO
+
+TradeSortDTO
+
+TradeStatisticsDTO
+
+------------------------------------------------------------
+
+MAPPERS
+
+Create mapper layer.
+
+Database Entity
+
+↓
+
+Domain Model
+
+↓
+
+DTO
+
+↓
+
+View Model
+
+Never expose raw database entities to UI.
+
+------------------------------------------------------------
+
+VALIDATION
+
+Repositories must validate:
+
+Relationships
+
+Foreign Keys
+
+Required Fields
+
+Business Rules
+
+Duplicate Records
+
+Invalid Values
+
+------------------------------------------------------------
+
+TRANSACTIONS
+
+Support:
+
+Single Transaction
+
+Batch Transaction
+
+Nested Transaction
+
+Rollback
+
+------------------------------------------------------------
+
+ERROR HANDLING
+
+Create repository errors:
+
+RepositoryError
+
+NotFoundError
+
+DuplicateError
+
+RelationshipError
+
+ValidationError
+
+ConflictError
+
+------------------------------------------------------------
+
+LOGGING
+
+Every repository operation must log:
+
+Timestamp
+
+Repository
+
+Operation
+
+Execution Time
+
+Result
+
+Error
+
+------------------------------------------------------------
+
+TESTABILITY
+
+Repositories must be fully unit-testable.
+
+Use interfaces.
+
+No hard dependency on Dexie.
+
+Support dependency injection.
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Folder structure
+
+Interfaces
+
+Base Repository
+
+Concrete Repositories
+
+DTOs
+
+Query Objects
+
+Mapper Layer
+
+Validation Layer
+
+Complete production-ready TypeScript code.
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+All database access is abstracted.
+
+No UI component accesses IndexedDB directly.
+
+Repositories are reusable.
+
+Repositories are cloud-ready.
+
+Repositories support future synchronization without architectural changes.
+
+END OF PROMPT

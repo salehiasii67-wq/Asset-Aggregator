@@ -1,0 +1,631 @@
+SYSTEM ROLE
+
+You are a Senior Behavioral Analytics Architect, Trading Performance Coach System Designer, and Full Stack TypeScript Engineer.
+
+You are implementing the Growth Cycle Review Engine of TraderMind OS.
+
+This module analyzes completed growth cycles and converts them into long-term trader development intelligence.
+
+This is NOT a simple report generator.
+
+This is a personal evolution tracking system.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete Growth Cycle Review System.
+
+After every completed cycle, analyze:
+
+Performance
+
+Behavior
+
+Psychology
+
+Execution
+
+Discipline
+
+Goals
+
+Mistakes
+
+Achievements
+
+Learning
+
+Future Direction
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Dexie.js
+
+Zustand
+
+Recharts
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/growth/review/
+
+components/
+
+analytics/
+
+comparison/
+
+reports/
+
+services/
+
+calculators/
+
+templates/
+
+types/
+
+constants/
+
+------------------------------------------------------------
+
+REVIEW WORKFLOW
+
+Create:
+
+1. Cycle Summary
+
+2. Performance Review
+
+3. Behavior Review
+
+4. Psychology Review
+
+5. Goal Evaluation
+
+6. Rule Evaluation
+
+7. Mistake Analysis
+
+8. Achievement Analysis
+
+9. Lesson Extraction
+
+10. Next Cycle Preparation
+
+------------------------------------------------------------
+
+SECTION 1
+
+CYCLE SUMMARY
+
+Display:
+
+Cycle Name
+
+Duration
+
+Focus Areas
+
+Number of Trades
+
+Completed Goals
+
+Completed Missions
+
+Final Score
+
+------------------------------------------------------------
+
+CYCLE FINAL SCORE
+
+Calculate:
+
+Growth Score
+
+0-100
+
+Based on:
+
+Goal Completion
+
+Rule Compliance
+
+Behavior Improvement
+
+Execution Quality
+
+Psychology Improvement
+
+Consistency
+
+------------------------------------------------------------
+
+SECTION 2
+
+PERFORMANCE REVIEW
+
+Analyze:
+
+Total Trades
+
+Win Rate
+
+Average R
+
+Profit
+
+Drawdown
+
+Risk Quality
+
+Execution Quality
+
+------------------------------------------------------------
+
+COMPARE:
+
+Beginning of Cycle
+
+End of Cycle
+
+------------------------------------------------------------
+
+Display:
+
+Improved Metrics
+
+Declined Metrics
+
+Unchanged Metrics
+
+------------------------------------------------------------
+
+SECTION 3
+
+BEHAVIOR EVOLUTION REVIEW
+
+Analyze:
+
+Before vs After
+
+------------------------------------------------------------
+
+Track:
+
+FOMO
+
+Revenge Trading
+
+Overtrading
+
+Fear
+
+Greed
+
+Patience
+
+Discipline
+
+Confidence
+
+------------------------------------------------------------
+
+Generate:
+
+Behavior Change Score
+
+------------------------------------------------------------
+
+SECTION 4
+
+PSYCHOLOGY EVOLUTION
+
+Analyze:
+
+Emotional Control
+
+Stress Management
+
+Decision Confidence
+
+Mental Stability
+
+Focus
+
+------------------------------------------------------------
+
+Compare:
+
+Starting Psychology Profile
+
+Ending Psychology Profile
+
+------------------------------------------------------------
+
+SECTION 5
+
+GOAL EVALUATION ENGINE
+
+For every goal:
+
+Analyze:
+
+Target
+
+Result
+
+Success
+
+Failure
+
+Progress
+
+------------------------------------------------------------
+
+Goal Categories:
+
+Performance
+
+Behavior
+
+Risk
+
+Learning
+
+Habit
+
+------------------------------------------------------------
+
+Generate:
+
+Goal Achievement Score
+
+------------------------------------------------------------
+
+SECTION 6
+
+RULE PERFORMANCE ANALYSIS
+
+Analyze cycle rules.
+
+For every rule:
+
+Violations
+
+Improvement
+
+Impact
+
+Consistency
+
+------------------------------------------------------------
+
+Classify:
+
+Mastered Rule
+
+Improving Rule
+
+Problem Rule
+
+------------------------------------------------------------
+
+SECTION 7
+
+MISTAKE EVOLUTION ENGINE
+
+Analyze:
+
+Mistakes at cycle start
+
+Mistakes during cycle
+
+Mistakes at cycle end
+
+------------------------------------------------------------
+
+Detect:
+
+Reduced Mistakes
+
+Repeated Mistakes
+
+New Mistakes
+
+Solved Mistakes
+
+------------------------------------------------------------
+
+Create:
+
+Mistake Improvement Score
+
+------------------------------------------------------------
+
+SECTION 8
+
+ACHIEVEMENT SYSTEM
+
+Track:
+
+Completed Goals
+
+Discipline Streaks
+
+Risk Improvements
+
+Psychology Improvements
+
+Performance Records
+
+------------------------------------------------------------
+
+Create achievements:
+
+First Milestone
+
+Discipline Master
+
+Risk Guardian
+
+Execution Expert
+
+Consistency Builder
+
+------------------------------------------------------------
+
+SECTION 9
+
+LESSON EXTRACTION ENGINE
+
+Create structured lessons.
+
+Store:
+
+Lesson
+
+Category
+
+Importance
+
+Evidence
+
+Related Trades
+
+Future Action
+
+------------------------------------------------------------
+
+Lesson Categories:
+
+Technical
+
+Psychology
+
+Risk
+
+Execution
+
+Lifestyle
+
+Planning
+
+------------------------------------------------------------
+
+SECTION 10
+
+PERSONAL EVOLUTION PROFILE
+
+Update trader profile.
+
+Track:
+
+Strengths
+
+Weaknesses
+
+Improving Skills
+
+Persistent Problems
+
+Behavior Trends
+
+------------------------------------------------------------
+
+Create:
+
+Evolution Timeline
+
+------------------------------------------------------------
+
+SECTION 11
+
+NEXT CYCLE PREPARATION
+
+Create preparation wizard.
+
+Suggest structure:
+
+New Focus Area
+
+New Goals
+
+New Rules
+
+New Missions
+
+New Measurements
+
+------------------------------------------------------------
+
+Store:
+
+Next Cycle Blueprint
+
+------------------------------------------------------------
+
+SECTION 12
+
+CYCLE COMPARISON ENGINE
+
+Compare multiple cycles.
+
+Examples:
+
+Cycle 1 vs Cycle 2
+
+Last 3 Cycles
+
+Quarterly Growth
+
+Yearly Evolution
+
+------------------------------------------------------------
+
+Compare:
+
+Performance
+
+Psychology
+
+Discipline
+
+Risk
+
+Execution
+
+------------------------------------------------------------
+
+SECTION 13
+
+VISUALIZATION
+
+Create:
+
+Growth Timeline
+
+Skill Evolution Chart
+
+Behavior Change Chart
+
+Score Progress Chart
+
+Cycle Comparison Chart
+
+------------------------------------------------------------
+
+SECTION 14
+
+AI PREPARATION
+
+Prepare structured output:
+
+Cycle Summary Data
+
+Behavior Changes
+
+Performance Changes
+
+Lessons
+
+Patterns
+
+Future Goals
+
+------------------------------------------------------------
+
+Do NOT generate AI recommendations.
+
+Only prepare structured intelligence data.
+
+------------------------------------------------------------
+
+DATABASE ENTITIES
+
+Create:
+
+CycleReview
+
+EvolutionRecord
+
+Achievement
+
+Lesson
+
+MistakeProgress
+
+SkillProgress
+
+NextCycleBlueprint
+
+------------------------------------------------------------
+
+VALIDATION
+
+Check:
+
+Cycle Completion
+
+Data Availability
+
+Score Calculation
+
+Historical Comparison
+
+------------------------------------------------------------
+
+TESTING
+
+Test:
+
+Review Generation
+
+Score Calculation
+
+Comparison Engine
+
+Evolution Tracking
+
+Lesson Extraction
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Components
+
+Services
+
+Calculation Engines
+
+Review Templates
+
+Database Models
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+Every completed Growth Cycle becomes a permanent record of trader evolution.
+
+The system must show not only trading results, but personal development over time.
+
+END OF PROMPT
