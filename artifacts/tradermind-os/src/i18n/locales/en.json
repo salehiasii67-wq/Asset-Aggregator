@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "journal": "Journal",
+    "analytics": "Analytics",
+    "psychology": "Psychology",
+    "growth": "Growth",
+    "evolution": "Evolution",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "maturityLevel": "Maturity Level",
+    "netProfit": "Net P&L",
+    "winRate": "Win Rate",
+    "avgR": "Avg R",
+    "totalTrades": "Total Trades",
+    "activeCycle": "Active Growth Cycle",
+    "recentTrades": "Recent Trades",
+    "psychology": "Psychology",
+    "quickActions": "Quick Actions",
+    "newTrade": "New Trade",
+    "startReview": "Start Review",
+    "logPsychology": "Log Psych"
+  },
+  "trade": {
+    "symbol": "Symbol",
+    "direction": "Direction",
+    "strategy": "Strategy",
+    "outcome": "Outcome",
+    "date": "Date",
+    "pnl": "P&L",
+    "r": "R",
+    "long": "Long",
+    "short": "Short",
+    "win": "Win",
+    "loss": "Loss",
+    "breakeven": "Breakeven"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "noData": "No data available",
+    "loading": "Loading..."
+  }
+}

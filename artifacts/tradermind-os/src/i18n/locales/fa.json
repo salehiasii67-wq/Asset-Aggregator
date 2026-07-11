@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "dashboard": "داشبورد",
+    "journal": "ژورنال",
+    "analytics": "تحلیل",
+    "psychology": "روانشناسی",
+    "growth": "رشد",
+    "evolution": "تحول",
+    "settings": "تنظیمات"
+  },
+  "dashboard": {
+    "welcome": "خوش آمدید",
+    "maturityLevel": "سطح بلوغ",
+    "netProfit": "سود خالص",
+    "winRate": "نرخ برد",
+    "avgR": "میانگین R",
+    "totalTrades": "کل معاملات",
+    "activeCycle": "چرخه رشد فعال",
+    "recentTrades": "معاملات اخیر",
+    "psychology": "روانشناسی",
+    "quickActions": "اقدامات سریع",
+    "newTrade": "معامله جدید",
+    "startReview": "شروع بررسی",
+    "logPsychology": "ثبت روانشناسی"
+  },
+  "trade": {
+    "symbol": "نماد",
+    "direction": "جهت",
+    "strategy": "استراتژی",
+    "outcome": "نتیجه",
+    "date": "تاریخ",
+    "pnl": "سود/زیان",
+    "r": "نسبت R",
+    "long": "خرید (Long)",
+    "short": "فروش (Short)",
+    "win": "برد",
+    "loss": "باخت",
+    "breakeven": "سر به سر"
+  },
+  "common": {
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "noData": "داده‌ای موجود نیست",
+    "loading": "در حال بارگذاری..."
+  }
+}
