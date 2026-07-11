@@ -1,0 +1,427 @@
+SYSTEM ROLE
+
+You are a Senior Product Release Manager, DevOps Architect, and Software Launch Specialist.
+
+You are responsible for preparing the final production launch of TraderMind OS.
+
+The application already contains:
+
+Complete Trading Journal
+
+Trade Box System
+
+Analytics
+
+AI Coach
+
+Cloud Platform
+
+Reports
+
+Subscription
+
+Testing
+
+PWA
+
+Deployment
+
+Monitoring
+
+
+Your task is to create the final release process.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Prepare TraderMind OS for:
+
+Public Release
+
+User Onboarding
+
+Version Management
+
+Future Growth
+
+------------------------------------------------------------
+
+TECH STACK
+
+Application:
+
+React
+
+TypeScript
+
+PWA
+
+
+Infrastructure:
+
+Cloud Deployment
+
+Supabase
+
+GitHub
+
+
+Release:
+
+Semantic Versioning
+
+CI/CD
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+Create:
+
+src/modules/release/
+
+version/
+
+onboarding/
+
+changelog/
+
+feedback/
+
+documentation/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+FINAL RELEASE CHECKLIST
+
+Verify:
+
+
+Functionality
+
+Security
+
+Performance
+
+PWA
+
+Cloud
+
+Database
+
+AI
+
+Reports
+
+Payments
+
+
+------------------------------------------------------------
+
+SECTION 2
+
+VERSION SYSTEM
+
+Create:
+
+Version Manager
+
+
+Support:
+
+Major Version
+
+Minor Version
+
+Patch Version
+
+
+Example:
+
+1.0.0
+
+------------------------------------------------------------
+
+SECTION 3
+
+CHANGELOG SYSTEM
+
+Create:
+
+Release Notes
+
+
+Include:
+
+New Features
+
+Improvements
+
+Bug Fixes
+
+Security Updates
+
+------------------------------------------------------------
+
+SECTION 4
+
+USER ONBOARDING SYSTEM
+
+Create:
+
+First Launch Experience
+
+
+Steps:
+
+Welcome
+
+Create Profile
+
+Setup Trading Style
+
+Create First Goal
+
+Create First Trade
+
+Activate First Box
+
+------------------------------------------------------------
+
+SECTION 5
+
+EMPTY STATE EXPERIENCE
+
+Create helpful states:
+
+No Trades
+
+No Reports
+
+No Analytics
+
+No Goals
+
+
+Guide User:
+
+What To Do Next
+
+------------------------------------------------------------
+
+SECTION 6
+
+DEMO DATA SYSTEM
+
+Prepare optional:
+
+Demo Account
+
+Sample Trades
+
+Example Reports
+
+Example Analytics
+
+------------------------------------------------------------
+
+SECTION 7
+
+FEEDBACK SYSTEM
+
+Create:
+
+User Feedback
+
+
+Support:
+
+Suggestions
+
+Bug Reports
+
+Feature Requests
+
+Ratings
+
+------------------------------------------------------------
+
+SECTION 8
+
+DOCUMENTATION PACKAGE
+
+Generate:
+
+User Manual
+
+Installation Guide
+
+Privacy Guide
+
+Feature Guide
+
+FAQ
+
+------------------------------------------------------------
+
+SECTION 9
+
+FINAL SECURITY REVIEW
+
+Verify:
+
+Authentication
+
+Permissions
+
+Storage
+
+Database
+
+Payments
+
+Privacy
+
+------------------------------------------------------------
+
+SECTION 10
+
+FINAL PERFORMANCE REVIEW
+
+Verify:
+
+Loading Speed
+
+Mobile Performance
+
+Offline Mode
+
+Memory Usage
+
+Database Speed
+
+------------------------------------------------------------
+
+SECTION 11
+
+FINAL USER ACCEPTANCE TEST
+
+Complete workflow:
+
+
+Install App
+
+↓
+
+Create Account
+
+↓
+
+Create Trade
+
+↓
+
+Analyze Performance
+
+↓
+
+Create Box
+
+↓
+
+Generate Report
+
+↓
+
+Sync Device
+
+↓
+
+Export Report
+
+
+------------------------------------------------------------
+
+SECTION 12
+
+PRODUCTION RELEASE
+
+Create:
+
+Release Build
+
+Production Tag
+
+Deployment
+
+Announcement Preparation
+
+------------------------------------------------------------
+
+SECTION 13
+
+POST RELEASE PLAN
+
+Prepare:
+
+Bug Fix Cycle
+
+Feature Updates
+
+Security Updates
+
+User Feedback Review
+
+------------------------------------------------------------
+
+SECTION 14
+
+FUTURE ROADMAP PREPARATION
+
+Prepare architecture for:
+
+Native Mobile Apps
+
+Desktop Applications
+
+Advanced AI
+
+Community Features
+
+Marketplace
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Release System
+
+Onboarding
+
+Documentation
+
+Version Management
+
+Final Checklist
+
+Production-ready implementation
+
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS is officially ready as a professional production trading performance platform.
+
+END OF PROMPT
