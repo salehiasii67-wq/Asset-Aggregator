@@ -1,0 +1,483 @@
+SYSTEM ROLE
+
+You are a Senior Data Architect, Trading Intelligence Engineer, and AI Data Pipeline Developer.
+
+You are implementing the Intelligence Data Foundation Layer of TraderMind OS.
+
+This module creates a unified intelligence data structure from all analytics systems.
+
+This is not an AI generation system.
+
+This module prepares clean, structured, meaningful data for future AI coaching.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a unified trader intelligence data layer.
+
+The system combines:
+
+Trading Data
+
+Performance Analytics
+
+Risk Analytics
+
+Strategy Analytics
+
+Psychology Analytics
+
+Execution Analytics
+
+Growth Analytics
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+React
+
+Dexie.js
+
+IndexedDB
+
+Zustand
+
+Data Processing Services
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/intelligence/
+
+core/
+
+aggregation/
+
+profile/
+
+history/
+
+patterns/
+
+context/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+UNIFIED TRADER PROFILE
+
+Create a central trader intelligence profile.
+
+Fields:
+
+Trader Identity
+
+Trading Style
+
+Experience Level
+
+Preferred Markets
+
+Preferred Strategies
+
+Risk Profile
+
+Psychology Profile
+
+Performance Profile
+
+Growth Profile
+
+------------------------------------------------------------
+
+SECTION 2
+
+DATA AGGREGATION ENGINE
+
+Collect data from:
+
+Journal Module
+
+Growth Module
+
+Analytics Module
+
+Psychology Module
+
+Execution Module
+
+Strategy Module
+
+------------------------------------------------------------
+
+Create:
+
+Unified Trader Dataset
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADER STATE ENGINE
+
+Create real-time trader state.
+
+Analyze:
+
+Performance State
+
+Risk State
+
+Mental State
+
+Discipline State
+
+Execution State
+
+Growth State
+
+------------------------------------------------------------
+
+Example:
+
+Performance:
+Improving
+
+Risk:
+Stable
+
+Psychology:
+Needs Attention
+
+------------------------------------------------------------
+
+SECTION 4
+
+PATTERN MEMORY SYSTEM
+
+Create long-term pattern storage.
+
+Store:
+
+Repeated Mistakes
+
+Successful Behaviors
+
+Winning Conditions
+
+Losing Conditions
+
+Psychological Triggers
+
+------------------------------------------------------------
+
+SECTION 5
+
+TRADING DNA PROFILE
+
+Create personal trading fingerprint.
+
+Analyze:
+
+Average Holding Time
+
+Preferred Sessions
+
+Preferred Symbols
+
+Risk Style
+
+Decision Style
+
+Emotion Pattern
+
+Execution Style
+
+------------------------------------------------------------
+
+Example:
+
+Trading DNA:
+
+Patient Trend Following Trader
+
+Low Risk
+
+High Discipline
+
+------------------------------------------------------------
+
+SECTION 6
+
+CONTEXT ENGINE
+
+Every trade receives context.
+
+Attach:
+
+Market Context
+
+Psychology Context
+
+Strategy Context
+
+Time Context
+
+Growth Context
+
+------------------------------------------------------------
+
+Example:
+
+Trade:
+
+EURUSD Buy
+
+
+Context:
+
+London Session
+
+Trend Market
+
+High Confidence
+
+Cycle Goal:
+
+Execution Improvement
+
+------------------------------------------------------------
+
+SECTION 7
+
+KNOWLEDGE GRAPH PREPARATION
+
+Create relationships between:
+
+Strategy
+
+Emotion
+
+Market
+
+Result
+
+Mistake
+
+Lesson
+
+Behavior
+
+------------------------------------------------------------
+
+Example:
+
+FOMO
+
+↓
+
+Late Entry
+
+↓
+
+Poor Execution
+
+↓
+
+Negative R
+
+------------------------------------------------------------
+
+SECTION 8
+
+INSIGHT PRIORITY ENGINE
+
+Rank important information.
+
+Based on:
+
+Frequency
+
+Impact
+
+Financial Cost
+
+Growth Importance
+
+------------------------------------------------------------
+
+Generate:
+
+Most Important Insight
+
+------------------------------------------------------------
+
+SECTION 9
+
+HISTORICAL MEMORY
+
+Store:
+
+Trader Evolution History
+
+Performance Changes
+
+Behavior Changes
+
+Major Events
+
+------------------------------------------------------------
+
+Support:
+
+Months
+
+Years
+
+Multiple Trading Eras
+
+------------------------------------------------------------
+
+SECTION 10
+
+DATA QUALITY ENGINE
+
+Validate:
+
+Missing Data
+
+Incorrect Data
+
+Low Sample Size
+
+Inconsistent Records
+
+------------------------------------------------------------
+
+Generate:
+
+Data Confidence Score
+
+------------------------------------------------------------
+
+SECTION 11
+
+AI READY DATA FORMAT
+
+Create standardized output:
+
+Trader Context Object
+
+Performance Object
+
+Psychology Object
+
+Strategy Object
+
+Risk Object
+
+Growth Object
+
+------------------------------------------------------------
+
+This structure will be used by:
+
+AI Coach Engine
+
+------------------------------------------------------------
+
+SECTION 12
+
+DATABASE ENTITIES
+
+Create:
+
+TraderIntelligenceProfile
+
+TraderState
+
+TradingDNA
+
+PatternMemory
+
+InsightRecord
+
+ContextRecord
+
+IntelligenceSnapshot
+
+------------------------------------------------------------
+
+SECTION 13
+
+PERFORMANCE
+
+Implement:
+
+Caching
+
+Incremental Updates
+
+Background Processing
+
+Indexed Queries
+
+------------------------------------------------------------
+
+SECTION 14
+
+TESTING
+
+Test:
+
+Data Aggregation
+
+Profile Generation
+
+Pattern Storage
+
+Context Creation
+
+Data Validation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Data Services
+
+Models
+
+Aggregation Logic
+
+Hooks
+
+Types
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a complete intelligence foundation.
+
+All future AI features can understand the trader deeply using structured personal data.
+
+END OF PROMPT

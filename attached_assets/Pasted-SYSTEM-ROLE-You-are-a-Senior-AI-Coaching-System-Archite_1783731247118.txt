@@ -1,0 +1,583 @@
+SYSTEM ROLE
+
+You are a Senior AI Coaching System Architect, Behavioral Change Engineer, and Trading Performance Specialist.
+
+You are implementing the AI Recommendation and Action Planning Engine of TraderMind OS.
+
+This system converts analysis into personalized improvement actions.
+
+The AI creates development plans.
+
+It does not provide trading signals.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create an intelligent coaching system that generates:
+
+Improvement Plans
+
+Daily Actions
+
+Training Exercises
+
+Behavior Corrections
+
+Performance Goals
+
+Reflection Tasks
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+AI Service Layer
+
+Dexie.js
+
+IndexedDB
+
+Zustand
+
+Growth Module Integration
+
+Psychology Engine Integration
+
+Analytics Integration
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/coaching/
+
+recommendations/
+
+actions/
+
+plans/
+
+exercises/
+
+goals/
+
+tracking/
+
+priority/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+COACHING CONTEXT ENGINE
+
+Collect:
+
+Trader Profile
+
+Trading DNA
+
+Current Weaknesses
+
+Recent Mistakes
+
+Performance Trends
+
+Psychology Patterns
+
+Growth Goals
+
+------------------------------------------------------------
+
+Create:
+
+Coaching Context Object
+
+------------------------------------------------------------
+
+SECTION 2
+
+PROBLEM IDENTIFICATION ENGINE
+
+Identify:
+
+Main Limiting Factors
+
+Behavior Problems
+
+Skill Gaps
+
+Consistency Issues
+
+Psychology Challenges
+
+------------------------------------------------------------
+
+Rank problems by:
+
+Frequency
+
+Impact
+
+Cost
+
+Growth Importance
+
+------------------------------------------------------------
+
+SECTION 3
+
+PRIORITY SYSTEM
+
+Create recommendation priority.
+
+Levels:
+
+Critical
+
+High
+
+Medium
+
+Low
+
+------------------------------------------------------------
+
+Example:
+
+Critical:
+
+Risk rule violations
+
+
+High:
+
+Early exits
+
+
+Medium:
+
+Improve journaling quality
+
+------------------------------------------------------------
+
+SECTION 4
+
+ACTION PLAN GENERATOR
+
+Generate practical actions.
+
+Each action contains:
+
+Title
+
+Reason
+
+Expected Benefit
+
+Difficulty
+
+Duration
+
+Measurement Method
+
+------------------------------------------------------------
+
+Example:
+
+Action:
+
+Complete pre-trade checklist for next 20 trades.
+
+
+Reason:
+
+Reduce impulsive entries.
+
+
+Measurement:
+
+Rule compliance score.
+
+------------------------------------------------------------
+
+SECTION 5
+
+DAILY COACHING TASKS
+
+Create daily tasks.
+
+Categories:
+
+Preparation
+
+Execution
+
+Psychology
+
+Review
+
+Learning
+
+------------------------------------------------------------
+
+Examples:
+
+Review yesterday's mistake
+
+Write today's trading intention
+
+Complete emotional check
+
+------------------------------------------------------------
+
+SECTION 6
+
+TRADING PRACTICE ENGINE
+
+Generate exercises.
+
+Examples:
+
+Exit Discipline Exercise
+
+Risk Consistency Exercise
+
+Patience Exercise
+
+FOMO Control Exercise
+
+------------------------------------------------------------
+
+Each exercise:
+
+Goal
+
+Steps
+
+Duration
+
+Success Criteria
+
+Progress
+
+------------------------------------------------------------
+
+SECTION 7
+
+BEHAVIOR CHANGE PROGRAM
+
+Create behavior correction plans.
+
+Structure:
+
+Current Behavior
+
+Negative Impact
+
+Replacement Behavior
+
+Practice Method
+
+Tracking
+
+------------------------------------------------------------
+
+Example:
+
+Current:
+
+Entering after missing move.
+
+
+Replacement:
+
+Wait for next valid setup.
+
+------------------------------------------------------------
+
+SECTION 8
+
+PERSONAL DEVELOPMENT GOALS
+
+Create AI-generated goals.
+
+Types:
+
+Short Term
+
+Medium Term
+
+Long Term
+
+------------------------------------------------------------
+
+Examples:
+
+7 Days:
+
+Complete all reviews.
+
+
+30 Days:
+
+Reduce impulsive trades.
+
+
+90 Days:
+
+Improve consistency.
+
+------------------------------------------------------------
+
+SECTION 9
+
+COACHING FEEDBACK SYSTEM
+
+Generate feedback.
+
+Structure:
+
+Observation
+
+Evidence
+
+Why It Matters
+
+Recommended Action
+
+------------------------------------------------------------
+
+Example:
+
+Observation:
+
+Risk increased after losses.
+
+
+Action:
+
+Use fixed risk for next cycle.
+
+------------------------------------------------------------
+
+SECTION 10
+
+ACCOUNTABILITY TRACKING
+
+Track:
+
+Assigned Actions
+
+Completed Actions
+
+Missed Actions
+
+Progress
+
+Consistency
+
+------------------------------------------------------------
+
+SECTION 11
+
+ADAPTIVE COACHING
+
+The AI adjusts recommendations based on:
+
+Progress
+
+Failure
+
+Improvement
+
+New Patterns
+
+------------------------------------------------------------
+
+Example:
+
+If FOMO decreases:
+
+Move focus to exit discipline.
+
+------------------------------------------------------------
+
+SECTION 12
+
+COACHING SCORE
+
+Create:
+
+Self Improvement Score
+
+Based on:
+
+Action Completion
+
+Habit Consistency
+
+Behavior Change
+
+Review Quality
+
+------------------------------------------------------------
+
+SECTION 13
+
+REFLECTION SYSTEM
+
+Generate reflection questions.
+
+Examples:
+
+"What did you improve this week?"
+
+"Which behavior changed?"
+
+"What remains difficult?"
+
+------------------------------------------------------------
+
+SECTION 14
+
+WEEKLY COACHING REPORT
+
+Generate:
+
+Progress Summary
+
+Completed Actions
+
+Remaining Problems
+
+New Focus
+
+Next Week Plan
+
+------------------------------------------------------------
+
+SECTION 15
+
+MONTHLY DEVELOPMENT REPORT
+
+Generate:
+
+Growth Overview
+
+Skill Improvements
+
+Behavior Changes
+
+Remaining Challenges
+
+Future Roadmap
+
+------------------------------------------------------------
+
+SECTION 16
+
+DATABASE ENTITIES
+
+Create:
+
+CoachingPlan
+
+ActionItem
+
+Exercise
+
+DevelopmentGoal
+
+CoachingFeedback
+
+ProgressRecord
+
+------------------------------------------------------------
+
+SECTION 17
+
+STATE MANAGEMENT
+
+Create:
+
+Coaching Store
+
+Current Plan
+
+Tasks
+
+Exercises
+
+Progress
+
+------------------------------------------------------------
+
+SECTION 18
+
+PERFORMANCE
+
+Implement:
+
+Cached Recommendations
+
+Incremental Updates
+
+Background Analysis
+
+------------------------------------------------------------
+
+SECTION 19
+
+TESTING
+
+Test:
+
+Problem Detection
+
+Action Generation
+
+Progress Tracking
+
+Adaptive Coaching
+
+Report Generation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Coaching Engine
+
+Recommendation Services
+
+Models
+
+Hooks
+
+Database Schema
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes an active personal trading improvement coach.
+
+The system does not only analyze the past.
+
+It guides future improvement.
+
+END OF PROMPT

@@ -1,0 +1,618 @@
+SYSTEM ROLE
+
+You are a Senior Quantitative Developer, Risk Management Engineer, and Statistical Modeling Architect.
+
+You are implementing the Advanced Risk & Statistical Intelligence Engine of TraderMind OS.
+
+This module transforms historical trading data into professional statistical analysis.
+
+The system does NOT predict future markets.
+
+The system evaluates probability, risk, uncertainty, and performance quality.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create an advanced statistical engine capable of analyzing:
+
+Risk Exposure
+
+Probability
+
+Performance Stability
+
+Statistical Confidence
+
+Capital Protection
+
+Trading Edge Reliability
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+React
+
+Dexie.js
+
+Math.js
+
+Recharts
+
+Web Workers
+
+Zustand
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/analytics/statistics/
+
+risk/
+
+probability/
+
+monteCarlo/
+
+distribution/
+
+confidence/
+
+simulation/
+
+calculators/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+STATISTICAL FOUNDATION ENGINE
+
+Create reusable mathematical services.
+
+Implement:
+
+Mean
+
+Median
+
+Mode
+
+Variance
+
+Standard Deviation
+
+Minimum
+
+Maximum
+
+Percentile
+
+Distribution Analysis
+
+------------------------------------------------------------
+
+All calculations must support:
+
+Filtered Data
+
+Date Range
+
+Strategy
+
+Growth Cycle
+
+Symbol
+
+------------------------------------------------------------
+
+SECTION 2
+
+RETURN DISTRIBUTION ANALYSIS
+
+Analyze:
+
+Trade Returns
+
+R Multiples
+
+Profit/Loss Distribution
+
+------------------------------------------------------------
+
+Calculate:
+
+Average Return
+
+Return Variance
+
+Standard Deviation
+
+Positive Return Frequency
+
+Negative Return Frequency
+
+------------------------------------------------------------
+
+Display:
+
+Return Distribution Chart
+
+R Distribution Histogram
+
+------------------------------------------------------------
+
+SECTION 3
+
+MONTE CARLO SIMULATION ENGINE
+
+Create simulation system.
+
+Purpose:
+
+Understand possible performance ranges based on historical behavior.
+
+------------------------------------------------------------
+
+Input:
+
+Historical Trades
+
+Win Rate
+
+Average Win
+
+Average Loss
+
+Risk Per Trade
+
+R Distribution
+
+------------------------------------------------------------
+
+Generate:
+
+Multiple Simulated Paths
+
+------------------------------------------------------------
+
+Calculate:
+
+Possible Equity Curves
+
+Best Case Scenario
+
+Average Scenario
+
+Worst Case Scenario
+
+------------------------------------------------------------
+
+Visualization:
+
+Simulation Chart
+
+Probability Bands
+
+Outcome Range
+
+------------------------------------------------------------
+
+IMPORTANT:
+
+Simulation is not prediction.
+
+It only demonstrates possible statistical scenarios.
+
+------------------------------------------------------------
+
+SECTION 4
+
+RISK OF RUIN ENGINE
+
+Calculate account survival risk.
+
+Inputs:
+
+Account Size
+
+Risk Per Trade
+
+Win Rate
+
+Average Loss
+
+Average Win
+
+Losing Streak Probability
+
+------------------------------------------------------------
+
+Display:
+
+Risk of Ruin Percentage
+
+Risk Level:
+
+Low
+
+Medium
+
+High
+
+Critical
+
+------------------------------------------------------------
+
+SECTION 5
+
+POSITION SIZING INTELLIGENCE
+
+Create position analysis.
+
+Analyze:
+
+Current Risk
+
+Historical Risk
+
+Recommended Risk Range
+
+Risk Consistency
+
+------------------------------------------------------------
+
+Track:
+
+Risk Increase
+
+Risk Decrease
+
+Risk Violations
+
+------------------------------------------------------------
+
+SECTION 6
+
+VARIANCE ANALYSIS
+
+Analyze performance stability.
+
+Calculate:
+
+Profit Variance
+
+R Variance
+
+Win/Loss Variance
+
+Strategy Variance
+
+------------------------------------------------------------
+
+Detect:
+
+Stable Performance
+
+Unstable Performance
+
+High Volatility
+
+Low Sample Size
+
+------------------------------------------------------------
+
+SECTION 7
+
+CONFIDENCE LEVEL ENGINE
+
+Calculate statistical confidence.
+
+Based on:
+
+Number of Trades
+
+Consistency
+
+Variance
+
+Sample Size
+
+Performance Stability
+
+------------------------------------------------------------
+
+Return:
+
+Confidence Score
+
+0-100
+
+------------------------------------------------------------
+
+Example:
+
+50 Trades
+
+Confidence:
+45%
+
+Need More Data
+
+------------------------------------------------------------
+
+SECTION 8
+
+EDGE VALIDATION ENGINE
+
+Analyze if performance advantage exists.
+
+Evaluate:
+
+Expectancy
+
+Consistency
+
+Repeatability
+
+Risk Control
+
+------------------------------------------------------------
+
+Classify:
+
+Strong Edge
+
+Developing Edge
+
+Unconfirmed Edge
+
+No Evidence
+
+------------------------------------------------------------
+
+SECTION 9
+
+LOSING PERIOD ANALYSIS
+
+Analyze:
+
+Longest Losing Streak
+
+Recovery Time
+
+Drawdown Frequency
+
+Loss Clusters
+
+------------------------------------------------------------
+
+Identify:
+
+Danger Periods
+
+Behavior Changes
+
+Risk Problems
+
+------------------------------------------------------------
+
+SECTION 10
+
+WINNING PERIOD ANALYSIS
+
+Analyze:
+
+Winning Streaks
+
+Growth Periods
+
+High Performance Conditions
+
+------------------------------------------------------------
+
+Identify:
+
+Best Conditions
+
+Strong Behaviors
+
+Optimal Execution
+
+------------------------------------------------------------
+
+SECTION 11
+
+CORRELATION ENGINE
+
+Analyze relationships:
+
+Emotion vs Performance
+
+Sleep vs Performance
+
+Stress vs Performance
+
+Risk vs Result
+
+Strategy vs Result
+
+Session vs Result
+
+------------------------------------------------------------
+
+Calculate:
+
+Correlation Score
+
+Relationship Strength
+
+------------------------------------------------------------
+
+SECTION 12
+
+SAMPLE SIZE ANALYSIS
+
+Evaluate:
+
+Trade Count
+
+Strategy Data
+
+Cycle Data
+
+------------------------------------------------------------
+
+Classify:
+
+Insufficient Data
+
+Early Evidence
+
+Reliable Sample
+
+Strong Dataset
+
+------------------------------------------------------------
+
+SECTION 13
+
+RISK DASHBOARD
+
+Create professional risk widgets:
+
+Risk Score
+
+Risk Consistency
+
+Ruin Probability
+
+Volatility
+
+Confidence Level
+
+------------------------------------------------------------
+
+SECTION 14
+
+STATISTICAL REPORT GENERATOR
+
+Prepare structured reports:
+
+Performance Summary
+
+Risk Summary
+
+Probability Analysis
+
+Simulation Results
+
+Confidence Report
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE MODELS
+
+Create:
+
+StatisticalSnapshot
+
+RiskAnalysis
+
+MonteCarloResult
+
+DistributionRecord
+
+ConfidenceRecord
+
+CorrelationRecord
+
+EdgeValidation
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Web Workers
+
+Caching
+
+Batch Calculations
+
+Background Processing
+
+------------------------------------------------------------
+
+SECTION 17
+
+TESTING
+
+Test:
+
+Statistical Functions
+
+Simulation Accuracy
+
+Risk Calculations
+
+Distribution Analysis
+
+Correlation Engine
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Statistical Services
+
+Risk Engines
+
+Simulation Engine
+
+Charts
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS can statistically evaluate trading performance.
+
+The trader understands:
+
+Risk level
+
+Performance reliability
+
+Statistical confidence
+
+Possible scenarios
+
+Strength of personal trading edge
+
+END OF PROMPT

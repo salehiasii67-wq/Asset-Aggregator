@@ -1,0 +1,528 @@
+SYSTEM ROLE
+
+You are a Senior Product Experience Architect, User Personalization Engineer, and Full Stack Frontend Developer.
+
+You are implementing the User Profile and Personalization Experience System of TraderMind OS.
+
+This module creates a personalized environment for each trader.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete user management and personalization system.
+
+The user must be able to customize:
+
+Identity
+
+Trading Preferences
+
+Risk Preferences
+
+Workspace
+
+Appearance
+
+Notifications
+
+Privacy
+
+Data Management
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Zustand
+
+Dexie.js
+
+Vite PWA
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/settings/
+
+profile/
+
+preferences/
+
+appearance/
+
+trading/
+
+risk/
+
+notifications/
+
+privacy/
+
+backup/
+
+components/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADER PROFILE SYSTEM
+
+Create profile management.
+
+Fields:
+
+Name
+
+Avatar
+
+Trading Experience
+
+Trading Style
+
+Markets
+
+Preferred Session
+
+Timezone
+
+Language
+
+------------------------------------------------------------
+
+Trading Experience Levels:
+
+Beginner
+
+Developing
+
+Intermediate
+
+Advanced
+
+Professional
+
+------------------------------------------------------------
+
+SECTION 2
+
+TRADING IDENTITY PROFILE
+
+Create trader identity settings.
+
+Fields:
+
+Trading Style:
+
+Scalping
+
+Day Trading
+
+Swing Trading
+
+Position Trading
+
+
+Main Markets:
+
+Forex
+
+Crypto
+
+Stocks
+
+Indices
+
+Commodities
+
+------------------------------------------------------------
+
+SECTION 3
+
+RISK PROFILE SETTINGS
+
+Create risk configuration.
+
+Settings:
+
+Default Risk %
+
+Maximum Daily Loss
+
+Maximum Weekly Loss
+
+Maximum Drawdown
+
+Position Size Rules
+
+Risk Warnings
+
+------------------------------------------------------------
+
+Example:
+
+Default Risk:
+
+0.5%
+
+Maximum Daily Loss:
+
+2%
+
+------------------------------------------------------------
+
+SECTION 4
+
+TRADING PLAN SETTINGS
+
+Create personal trading rules.
+
+Fields:
+
+Trading Goals
+
+Preferred Strategies
+
+Allowed Markets
+
+Trading Hours
+
+Avoid Times
+
+Personal Rules
+
+------------------------------------------------------------
+
+SECTION 5
+
+PSYCHOLOGY SETTINGS
+
+Create mental performance preferences.
+
+Track:
+
+Main Challenges
+
+Improvement Goals
+
+Stress Management
+
+Reflection Frequency
+
+Coaching Style Preference
+
+------------------------------------------------------------
+
+SECTION 6
+
+DASHBOARD PERSONALIZATION
+
+Allow:
+
+Widget Selection
+
+Layout Preference
+
+Default Workspace
+
+Visible Metrics
+
+Quick Actions
+
+------------------------------------------------------------
+
+SECTION 7
+
+THEME SYSTEM
+
+Create:
+
+Dark Trading Terminal
+
+Light Professional
+
+Auto Theme
+
+------------------------------------------------------------
+
+Customization:
+
+Density
+
+Font Size
+
+Chart Style
+
+Animation Level
+
+------------------------------------------------------------
+
+SECTION 8
+
+NOTIFICATION SYSTEM
+
+Create notification preferences.
+
+Categories:
+
+Trade Reminder
+
+Review Reminder
+
+Goal Reminder
+
+Habit Reminder
+
+Risk Warning
+
+AI Insight
+
+------------------------------------------------------------
+
+Settings:
+
+Enabled
+
+Disabled
+
+Frequency
+
+Priority
+
+------------------------------------------------------------
+
+SECTION 9
+
+PRIVACY SETTINGS
+
+Create privacy controls.
+
+Options:
+
+Hide Account Information
+
+Hide Balance
+
+Hide Private Notes
+
+Export Control
+
+Data Sharing Control
+
+------------------------------------------------------------
+
+SECTION 10
+
+DATA MANAGEMENT
+
+Create:
+
+Backup Settings
+
+Export Data
+
+Import Data
+
+Clear Local Data
+
+Storage Usage
+
+------------------------------------------------------------
+
+SECTION 11
+
+OFFLINE STATUS CONTROL
+
+Display:
+
+Database Status
+
+Storage Status
+
+Sync Preparation
+
+Last Backup
+
+------------------------------------------------------------
+
+SECTION 12
+
+APP EXPERIENCE SETTINGS
+
+Allow:
+
+Start Page Selection
+
+Default View
+
+Keyboard Shortcuts
+
+Quick Entry Mode
+
+Compact Mode
+
+------------------------------------------------------------
+
+SECTION 13
+
+ACHIEVEMENT PROFILE
+
+Create user achievement display.
+
+Track:
+
+Completed Cycles
+
+Review Streak
+
+Discipline Records
+
+Improvement Milestones
+
+------------------------------------------------------------
+
+SECTION 14
+
+ACCOUNT PREPARATION
+
+Prepare future support:
+
+Cloud Account
+
+Multiple Devices
+
+Subscription
+
+Team Features
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+UserProfile
+
+TradingPreference
+
+RiskProfile
+
+AppearanceSetting
+
+NotificationSetting
+
+PrivacySetting
+
+UserAchievement
+
+------------------------------------------------------------
+
+SECTION 16
+
+STATE MANAGEMENT
+
+Create:
+
+Settings Store
+
+Profile State
+
+Preferences
+
+Theme
+
+Notifications
+
+------------------------------------------------------------
+
+SECTION 17
+
+PERFORMANCE
+
+Implement:
+
+Local Persistence
+
+Fast Loading
+
+Optimized Updates
+
+Offline Support
+
+------------------------------------------------------------
+
+SECTION 18
+
+TESTING
+
+Test:
+
+Profile Update
+
+Settings Persistence
+
+Theme Switching
+
+Notification Settings
+
+Data Management
+
+Mobile Experience
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Settings Pages
+
+Components
+
+Stores
+
+Hooks
+
+Services
+
+Database Models
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a personalized trading operating system.
+
+Every trader has a unique environment based on:
+
+Trading Style
+
+Goals
+
+Psychology
+
+Risk Profile
+
+Personal Preferences
+
+END OF PROMPT

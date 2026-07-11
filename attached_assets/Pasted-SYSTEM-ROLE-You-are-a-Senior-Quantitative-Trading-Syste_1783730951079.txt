@@ -1,0 +1,630 @@
+SYSTEM ROLE
+
+You are a Senior Quantitative Trading Systems Architect, Strategy Analytics Engineer, and Full Stack TypeScript Developer.
+
+You are implementing the Strategy Intelligence Engine of TraderMind OS.
+
+This module transforms trading strategies into measurable, data-driven performance systems.
+
+A strategy is not only a name.
+
+A strategy contains:
+
+Rules
+
+Conditions
+
+Performance History
+
+Execution Behavior
+
+Market Context
+
+Psychological Impact
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional strategy intelligence system.
+
+The system must answer:
+
+Which strategies work best?
+
+Where does each strategy perform best?
+
+What conditions improve results?
+
+What mistakes happen with each strategy?
+
+Which strategy should receive more focus?
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Dexie.js
+
+Zustand
+
+Recharts
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/analytics/strategy/
+
+profiles/
+
+performance/
+
+comparison/
+
+conditions/
+
+playbook/
+
+scoring/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+STRATEGY PROFILE SYSTEM
+
+Create complete strategy profiles.
+
+Each strategy contains:
+
+Name
+
+Description
+
+Category
+
+Market Type
+
+Timeframe
+
+Entry Rules
+
+Exit Rules
+
+Risk Rules
+
+Created Date
+
+------------------------------------------------------------
+
+STRATEGY CATEGORIES
+
+Support:
+
+Scalping
+
+Day Trading
+
+Swing Trading
+
+Breakout
+
+Trend Following
+
+Reversal
+
+Range Trading
+
+News Trading
+
+------------------------------------------------------------
+
+SECTION 2
+
+STRATEGY PERFORMANCE ENGINE
+
+For each strategy calculate:
+
+Total Trades
+
+Winning Trades
+
+Losing Trades
+
+Win Rate
+
+Net Profit
+
+Average R
+
+Profit Factor
+
+Expectancy
+
+Maximum Drawdown
+
+Recovery Time
+
+------------------------------------------------------------
+
+SECTION 3
+
+STRATEGY SCORE SYSTEM
+
+Create:
+
+Strategy Score
+
+0-100
+
+Based on:
+
+Profitability
+
+Consistency
+
+Risk Control
+
+Execution Quality
+
+Psychology Compatibility
+
+Sample Size
+
+------------------------------------------------------------
+
+Classification:
+
+Elite Strategy
+
+Strong Strategy
+
+Developing Strategy
+
+Weak Strategy
+
+Unproven Strategy
+
+------------------------------------------------------------
+
+SECTION 4
+
+STRATEGY COMPARISON ENGINE
+
+Compare:
+
+Strategy A vs Strategy B
+
+Multiple Strategies
+
+Current Strategy vs Previous Version
+
+------------------------------------------------------------
+
+Compare:
+
+Profitability
+
+Risk
+
+Consistency
+
+Psychology
+
+Execution
+
+------------------------------------------------------------
+
+Generate:
+
+Winner Strategy
+
+Strengths
+
+Weaknesses
+
+------------------------------------------------------------
+
+SECTION 5
+
+MARKET CONDITION ANALYSIS
+
+Analyze strategy performance under:
+
+Trending Market
+
+Range Market
+
+High Volatility
+
+Low Volatility
+
+News Environment
+
+Normal Conditions
+
+------------------------------------------------------------
+
+Calculate:
+
+Best Conditions
+
+Worst Conditions
+
+Performance Difference
+
+------------------------------------------------------------
+
+SECTION 6
+
+SESSION COMPATIBILITY ENGINE
+
+Analyze:
+
+Tokyo
+
+London
+
+New York
+
+Overlap
+
+------------------------------------------------------------
+
+For each strategy calculate:
+
+Best Session
+
+Worst Session
+
+Average R
+
+Win Rate
+
+Execution Score
+
+------------------------------------------------------------
+
+SECTION 7
+
+TIMEFRAME ANALYSIS
+
+Analyze strategy performance by:
+
+1 Minute
+
+5 Minute
+
+15 Minute
+
+1 Hour
+
+4 Hour
+
+Daily
+
+------------------------------------------------------------
+
+Find:
+
+Optimal Timeframe
+
+Poor Timeframe
+
+------------------------------------------------------------
+
+SECTION 8
+
+STRATEGY PSYCHOLOGY COMPATIBILITY
+
+Analyze relationship between:
+
+Strategy
+
+Emotion
+
+Stress
+
+Confidence
+
+Discipline
+
+------------------------------------------------------------
+
+Example:
+
+Strategy A:
+
+High profit when:
+
+Confidence >80
+
+Stress <30
+
+------------------------------------------------------------
+
+SECTION 9
+
+STRATEGY MISTAKE ENGINE
+
+Track common errors per strategy.
+
+Examples:
+
+Late Entry
+
+Early Exit
+
+Ignoring Confirmation
+
+Wrong Market Condition
+
+Overtrading
+
+------------------------------------------------------------
+
+Generate:
+
+Most Common Mistake
+
+Financial Impact
+
+Correction Plan
+
+------------------------------------------------------------
+
+SECTION 10
+
+STRATEGY PLAYBOOK
+
+Create professional strategy documentation.
+
+Each strategy contains:
+
+When To Trade
+
+When NOT To Trade
+
+Required Conditions
+
+Checklist
+
+Common Mistakes
+
+Best Examples
+
+Worst Examples
+
+------------------------------------------------------------
+
+SECTION 11
+
+SETUP LIBRARY
+
+Create setup collections.
+
+Examples:
+
+A+ Setup
+
+Average Setup
+
+Avoid Setup
+
+------------------------------------------------------------
+
+Store:
+
+Screenshots
+
+Conditions
+
+Results
+
+Lessons
+
+------------------------------------------------------------
+
+SECTION 12
+
+STRATEGY EVOLUTION
+
+Track strategy changes.
+
+Store:
+
+Version
+
+Changes
+
+Performance Before
+
+Performance After
+
+------------------------------------------------------------
+
+Example:
+
+Strategy v1
+
+Win Rate:
+48%
+
+
+Strategy v2
+
+Win Rate:
+61%
+
+------------------------------------------------------------
+
+SECTION 13
+
+EDGE RANKING SYSTEM
+
+Rank strategies.
+
+Ranking Factors:
+
+Expectancy
+
+Consistency
+
+Risk
+
+Execution
+
+Sample Confidence
+
+------------------------------------------------------------
+
+Create:
+
+Strategy Leaderboard
+
+------------------------------------------------------------
+
+SECTION 14
+
+STRATEGY RECOMMENDATION DATA
+
+Prepare structured data.
+
+Include:
+
+Best Strategy
+
+Best Conditions
+
+Weak Conditions
+
+Required Improvements
+
+------------------------------------------------------------
+
+Do NOT generate AI recommendations.
+
+Only prepare analytical data.
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+StrategyProfile
+
+StrategyMetric
+
+StrategyCondition
+
+StrategyVersion
+
+StrategyMistake
+
+StrategySetup
+
+StrategyRanking
+
+------------------------------------------------------------
+
+SECTION 16
+
+VISUALIZATION
+
+Create:
+
+Strategy Comparison Chart
+
+Performance Ranking Chart
+
+Condition Heatmap
+
+Strategy Timeline
+
+------------------------------------------------------------
+
+SECTION 17
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Cached Calculations
+
+Indexed Queries
+
+Background Processing
+
+------------------------------------------------------------
+
+SECTION 18
+
+TESTING
+
+Test:
+
+Strategy Metrics
+
+Comparison
+
+Ranking
+
+Condition Analysis
+
+Playbook Generation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Strategy Analytics Engine
+
+Components
+
+Charts
+
+Services
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS understands the trader's strategies.
+
+The system knows:
+
+Which strategies create value
+
+Which conditions create success
+
+Which behaviors damage performance
+
+The trader develops a personal strategy playbook.
+
+END OF PROMPT

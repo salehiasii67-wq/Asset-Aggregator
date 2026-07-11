@@ -1,0 +1,616 @@
+SYSTEM ROLE
+
+You are a Senior Trading Intelligence Architect, Quantitative Performance Analyst, and Senior Frontend Engineer.
+
+You are implementing the Advanced Trader Intelligence Dashboard of TraderMind OS.
+
+This is the final aggregation layer of the Analytics System.
+
+It combines all analytical engines into one professional trader command center.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create the ultimate trader performance dashboard.
+
+The dashboard must provide:
+
+Current Trader State
+
+Performance Intelligence
+
+Risk Intelligence
+
+Behavior Intelligence
+
+Execution Intelligence
+
+Growth Intelligence
+
+Personal Edge Discovery
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Zustand
+
+Dexie.js
+
+Recharts
+
+TailwindCSS
+
+Framer Motion
+
+Lucide React
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/analytics/intelligence/
+
+dashboard/
+
+widgets/
+
+scores/
+
+insights/
+
+edge/
+
+recommendations/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADER PERFORMANCE SCORE
+
+Create:
+
+Trader Performance Score
+
+0-100
+
+------------------------------------------------------------
+
+Calculate from:
+
+Profitability
+
+Risk Management
+
+Execution Quality
+
+Psychology
+
+Discipline
+
+Consistency
+
+Growth Progress
+
+------------------------------------------------------------
+
+Display:
+
+Current Score
+
+Previous Score
+
+Trend
+
+Score History
+
+------------------------------------------------------------
+
+SECTION 2
+
+TRADER MATURITY SCORE
+
+Create:
+
+Trader Maturity Index
+
+0-100
+
+Measure:
+
+Professional Behavior
+
+Risk Awareness
+
+Emotional Control
+
+Process Quality
+
+Consistency
+
+------------------------------------------------------------
+
+Levels:
+
+Beginner
+
+Developing
+
+Intermediate
+
+Advanced
+
+Professional
+
+------------------------------------------------------------
+
+SECTION 3
+
+PERSONAL EDGE MAP
+
+Create personal trading edge visualization.
+
+Analyze:
+
+Best Strategy
+
+Best Market
+
+Best Session
+
+Best Time
+
+Best Psychology State
+
+Best Risk Level
+
+------------------------------------------------------------
+
+Display:
+
+"My Trading Edge"
+
+------------------------------------------------------------
+
+Example:
+
+Edge:
+
+London Session
+
+EURUSD
+
+Trend Conditions
+
+0.5% Risk
+
+Calm Mental State
+
+------------------------------------------------------------
+
+SECTION 4
+
+STRENGTH & WEAKNESS ENGINE
+
+Automatically identify:
+
+Top Strengths
+
+Critical Weaknesses
+
+Improving Areas
+
+Declining Areas
+
+------------------------------------------------------------
+
+Examples:
+
+Strength:
+
+Excellent Risk Control
+
+
+Weakness:
+
+Early Exit Behavior
+
+------------------------------------------------------------
+
+SECTION 5
+
+CURRENT TRADER STATE
+
+Create live status panel.
+
+Display:
+
+Performance State
+
+Mental State
+
+Risk State
+
+Execution State
+
+Growth State
+
+------------------------------------------------------------
+
+Example:
+
+Performance:
+Strong
+
+Psychology:
+Stable
+
+Risk:
+Good
+
+Execution:
+Needs Attention
+
+------------------------------------------------------------
+
+SECTION 6
+
+INTELLIGENT ALERT SYSTEM
+
+Create priority alerts.
+
+Categories:
+
+Critical
+
+Warning
+
+Information
+
+Achievement
+
+------------------------------------------------------------
+
+Examples:
+
+Critical:
+
+Risk increased above cycle target.
+
+
+Warning:
+
+FOMO pattern detected.
+
+
+Achievement:
+
+30 days rule compliance reached.
+
+------------------------------------------------------------
+
+SECTION 7
+
+IMPROVEMENT PRIORITY ENGINE
+
+Rank improvement areas.
+
+Based on:
+
+Financial Impact
+
+Frequency
+
+Severity
+
+Growth Potential
+
+------------------------------------------------------------
+
+Output:
+
+Top 3 Improvements
+
+------------------------------------------------------------
+
+Example:
+
+Priority 1:
+
+Improve Exit Management
+
+
+Priority 2:
+
+Reduce Emotional Entries
+
+
+Priority 3:
+
+Increase Review Consistency
+
+------------------------------------------------------------
+
+SECTION 8
+
+TRADER REPORT CARD
+
+Create professional evaluation.
+
+Categories:
+
+Risk Management
+
+Strategy
+
+Execution
+
+Psychology
+
+Discipline
+
+Consistency
+
+------------------------------------------------------------
+
+Each category:
+
+Score
+
+Trend
+
+Explanation
+
+------------------------------------------------------------
+
+SECTION 9
+
+PERFORMANCE TIMELINE
+
+Create complete history.
+
+Display:
+
+Major Improvements
+
+Mistakes Solved
+
+Growth Cycles
+
+Performance Changes
+
+------------------------------------------------------------
+
+SECTION 10
+
+DAILY INTELLIGENCE SNAPSHOT
+
+Create daily overview.
+
+Display:
+
+Today's Focus
+
+Active Goal
+
+Risk Reminder
+
+Psychology Reminder
+
+Current Cycle Mission
+
+------------------------------------------------------------
+
+SECTION 11
+
+COMPARISON ENGINE
+
+Compare:
+
+Current Period
+
+Previous Period
+
+Previous Cycle
+
+Best Period
+
+------------------------------------------------------------
+
+Analyze:
+
+Growth
+
+Decline
+
+Changes
+
+------------------------------------------------------------
+
+SECTION 12
+
+AI COACH DATA PREPARATION
+
+Create final structured intelligence object.
+
+Include:
+
+Trader Profile
+
+Performance Data
+
+Risk Data
+
+Strategy Data
+
+Psychology Data
+
+Execution Data
+
+Growth Data
+
+------------------------------------------------------------
+
+This data will be consumed by:
+
+Phase 6 AI Coach Engine
+
+------------------------------------------------------------
+
+SECTION 13
+
+VISUAL DESIGN
+
+Create professional trading terminal style.
+
+Components:
+
+Main Score Card
+
+Performance Radar
+
+Edge Map
+
+Risk Panel
+
+Psychology Panel
+
+Execution Panel
+
+Growth Timeline
+
+Alert Center
+
+------------------------------------------------------------
+
+SECTION 14
+
+RESPONSIVE DESIGN
+
+Desktop:
+
+Full Trading Command Center
+
+
+Tablet:
+
+Multi Card Layout
+
+
+Mobile:
+
+Priority Cards
+
+Scrollable Intelligence Feed
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+TraderIntelligenceSnapshot
+
+PerformanceScore
+
+MaturityScore
+
+EdgeProfile
+
+ImprovementPriority
+
+AlertRecord
+
+TraderReportCard
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE
+
+Implement:
+
+Aggregation Cache
+
+Background Updates
+
+Memoization
+
+Lazy Loading
+
+Optimized Queries
+
+------------------------------------------------------------
+
+SECTION 17
+
+TESTING
+
+Test:
+
+Score Calculations
+
+Alert Generation
+
+Edge Detection
+
+Dashboard Rendering
+
+Data Aggregation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Dashboard Components
+
+Intelligence Services
+
+Calculation Engines
+
+Charts
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a complete trader intelligence platform.
+
+The trader can instantly understand:
+
+Where they are
+
+What they are doing well
+
+What is hurting performance
+
+What to improve next
+
+How they are evolving
+
+END OF PROMPT

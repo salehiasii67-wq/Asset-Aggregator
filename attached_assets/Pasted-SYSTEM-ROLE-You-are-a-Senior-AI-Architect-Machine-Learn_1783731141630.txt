@@ -1,0 +1,565 @@
+SYSTEM ROLE
+
+You are a Senior AI Architect, Machine Learning Engineer, and Trading Psychology System Designer.
+
+You are implementing the AI Coach Intelligence Foundation of TraderMind OS.
+
+The AI Coach is a personal trading performance coach.
+
+It analyzes trader behavior, psychology, execution, and growth.
+
+It does not provide trading signals.
+
+It does not predict guaranteed profits.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create the foundation architecture for an AI coaching system.
+
+The system must understand:
+
+Trading Behavior
+
+Decision Making
+
+Risk Management
+
+Psychology
+
+Execution Quality
+
+Growth Progress
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Backend Preparation:
+
+AI Service Layer
+
+LLM Integration Ready Architecture
+
+
+Database:
+
+Dexie.js
+
+IndexedDB
+
+
+State:
+
+Zustand
+
+
+Validation:
+
+Zod
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/
+
+core/
+
+engine/
+
+analysis/
+
+context/
+
+memory/
+
+scoring/
+
+recommendations/
+
+prompts/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+AI COACH CORE ENGINE
+
+Create central AI processing architecture.
+
+Responsibilities:
+
+Receive Trader Data
+
+Analyze Context
+
+Generate Insights
+
+Store Learning
+
+Track Progress
+
+------------------------------------------------------------
+
+SECTION 2
+
+AI DATA INPUT PIPELINE
+
+Collect information from:
+
+Journal Module
+
+Analytics Engine
+
+Trader Intelligence
+
+Growth System
+
+Psychology System
+
+Risk System
+
+Review System
+
+------------------------------------------------------------
+
+Create:
+
+AI Context Object
+
+Containing:
+
+Trader Profile
+
+Recent Trades
+
+Performance Metrics
+
+Behavior Patterns
+
+Current Goals
+
+Psychology State
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADER UNDERSTANDING MODEL
+
+Create a structured trader model.
+
+Fields:
+
+Trading Style
+
+Experience Level
+
+Strengths
+
+Weaknesses
+
+Common Mistakes
+
+Preferred Conditions
+
+Risk Behavior
+
+Emotional Profile
+
+Growth Stage
+
+------------------------------------------------------------
+
+SECTION 4
+
+TRADE ANALYSIS ENGINE
+
+Create trade-level analysis framework.
+
+Analyze:
+
+Entry Decision
+
+Exit Decision
+
+Risk Management
+
+Rule Compliance
+
+Emotion Impact
+
+Execution Quality
+
+------------------------------------------------------------
+
+Output:
+
+Trade Score
+
+Strengths
+
+Weaknesses
+
+Lessons
+
+------------------------------------------------------------
+
+SECTION 5
+
+PSYCHOLOGY ANALYSIS ENGINE
+
+Analyze:
+
+Fear
+
+Greed
+
+Stress
+
+Confidence
+
+Patience
+
+Discipline
+
+Impulse Control
+
+------------------------------------------------------------
+
+Detect:
+
+Emotional Trading
+
+FOMO
+
+Revenge Trading
+
+Overconfidence
+
+Hesitation
+
+------------------------------------------------------------
+
+SECTION 6
+
+BEHAVIOR PATTERN ENGINE
+
+Create pattern detection system.
+
+Detect:
+
+Repeated Errors
+
+Winning Behaviors
+
+Losing Behaviors
+
+Performance Changes
+
+Decision Patterns
+
+------------------------------------------------------------
+
+Examples:
+
+After 2 losses:
+
+Risk increases
+
+
+After high confidence:
+
+Rules ignored
+
+
+After good sleep:
+
+Better execution
+
+------------------------------------------------------------
+
+SECTION 7
+
+AI SCORING SYSTEM
+
+Create scoring framework.
+
+Scores:
+
+Trading Performance Score
+
+Execution Score
+
+Discipline Score
+
+Psychology Score
+
+Growth Score
+
+------------------------------------------------------------
+
+Score Range:
+
+0-100
+
+------------------------------------------------------------
+
+SECTION 8
+
+RECOMMENDATION ENGINE
+
+Create improvement recommendation system.
+
+Generate:
+
+Critical Issues
+
+High Priority Actions
+
+Practice Tasks
+
+Long Term Improvements
+
+------------------------------------------------------------
+
+Example:
+
+Issue:
+
+Early Exit
+
+
+Recommendation:
+
+Practice holding planned exits for next 10 trades.
+
+------------------------------------------------------------
+
+SECTION 9
+
+AI MEMORY FOUNDATION
+
+Create memory system.
+
+Store:
+
+Important Patterns
+
+Previous Lessons
+
+Successful Changes
+
+Repeated Mistakes
+
+Trader Evolution
+
+------------------------------------------------------------
+
+Memory Types:
+
+Short Term
+
+Session Memory
+
+Long Term
+
+Trader Profile Memory
+
+------------------------------------------------------------
+
+SECTION 10
+
+PROMPT MANAGEMENT SYSTEM
+
+Create AI prompt architecture.
+
+Support:
+
+System Prompts
+
+Analysis Prompts
+
+Review Prompts
+
+Coaching Prompts
+
+Reflection Prompts
+
+------------------------------------------------------------
+
+SECTION 11
+
+AI RESPONSE STRUCTURE
+
+Standardize AI output.
+
+Format:
+
+Summary
+
+Observation
+
+Evidence
+
+Problem
+
+Recommendation
+
+Action
+
+------------------------------------------------------------
+
+Example:
+
+Observation:
+
+You frequently exit profitable trades early.
+
+Evidence:
+
+Last 15 trades.
+
+
+Recommendation:
+
+Review exit rules.
+
+------------------------------------------------------------
+
+SECTION 12
+
+AI SAFETY LAYER
+
+Implement restrictions.
+
+AI must:
+
+Not predict market direction
+
+Not promise profit
+
+Not encourage higher risk
+
+Not replace trader judgment
+
+------------------------------------------------------------
+
+SECTION 13
+
+DATABASE ENTITIES
+
+Create:
+
+AIProfile
+
+AIInsight
+
+AIAnalysis
+
+AIMemory
+
+AIRecommendation
+
+AIConversationContext
+
+------------------------------------------------------------
+
+SECTION 14
+
+STATE MANAGEMENT
+
+Create:
+
+AI Store
+
+Current Analysis
+
+Insights
+
+Recommendations
+
+Memory State
+
+Loading Status
+
+------------------------------------------------------------
+
+SECTION 15
+
+PERFORMANCE
+
+Implement:
+
+Caching
+
+Incremental Analysis
+
+Background Processing
+
+Data Optimization
+
+------------------------------------------------------------
+
+SECTION 16
+
+TESTING
+
+Test:
+
+Context Building
+
+Trade Analysis
+
+Score Calculation
+
+Memory Storage
+
+Recommendation Generation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+AI Architecture
+
+Services
+
+Models
+
+Types
+
+Hooks
+
+Database Schema
+
+Testing
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a professional AI coaching foundation.
+
+The system can understand the trader before generating advice.
+
+END OF PROMPT

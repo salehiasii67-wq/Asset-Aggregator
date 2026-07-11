@@ -1,0 +1,644 @@
+SYSTEM ROLE
+
+You are a Senior AI Pattern Recognition Engineer, Behavioral Data Scientist, and Trading Evolution Architect.
+
+You are implementing the Long-Term Trader Evolution Intelligence Engine of TraderMind OS.
+
+This system analyzes months and years of trader history to discover hidden patterns, growth, weaknesses, and personal trading evolution.
+
+The AI analyzes development.
+
+It does not predict markets.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a long-term intelligence system that understands:
+
+Trader Evolution
+
+Behavior Changes
+
+Performance Patterns
+
+Skill Development
+
+Recurring Problems
+
+Personal Trading DNA
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+AI Intelligence Layer
+
+Dexie.js
+
+IndexedDB
+
+Zustand
+
+Analytics Engine
+
+Pattern Recognition Services
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/evolution/
+
+patterns/
+
+dna/
+
+timeline/
+
+comparison/
+
+milestones/
+
+forecast/
+
+memory/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+LONG TERM DATA ENGINE
+
+Collect historical data:
+
+Trades
+
+Reviews
+
+Analytics
+
+Psychology Records
+
+Growth Cycles
+
+Goals
+
+Habits
+
+Lessons
+
+AI Insights
+
+------------------------------------------------------------
+
+Create:
+
+Trader Evolution Dataset
+
+------------------------------------------------------------
+
+SECTION 2
+
+TRADER EVOLUTION TIMELINE
+
+Create a timeline of development.
+
+Track:
+
+Performance Changes
+
+Psychology Changes
+
+Skill Improvements
+
+Behavior Changes
+
+Major Lessons
+
+------------------------------------------------------------
+
+Example:
+
+Month 1:
+
+High FOMO
+
+
+Month 3:
+
+Better Risk Control
+
+
+Month 6:
+
+Improved Execution
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADING DNA ENGINE
+
+Create personal trading fingerprint.
+
+Analyze:
+
+Trading Style
+
+Decision Speed
+
+Risk Personality
+
+Preferred Market Conditions
+
+Best Sessions
+
+Best Strategies
+
+Emotion Response
+
+------------------------------------------------------------
+
+Generate:
+
+Trading DNA Profile
+
+------------------------------------------------------------
+
+Example:
+
+Trading DNA:
+
+Patient Trend Trader
+
+Low Risk
+
+Strong Preparation
+
+Weak Exit Management
+
+------------------------------------------------------------
+
+SECTION 4
+
+PATTERN DISCOVERY ENGINE
+
+Find hidden patterns.
+
+Analyze:
+
+When Trader Wins
+
+When Trader Loses
+
+What Conditions Repeat
+
+What Behaviors Cause Problems
+
+------------------------------------------------------------
+
+Patterns:
+
+Positive Patterns
+
+Negative Patterns
+
+Neutral Patterns
+
+------------------------------------------------------------
+
+SECTION 5
+
+SUCCESS PATTERN ANALYSIS
+
+Discover:
+
+Best Performance Conditions
+
+Winning Behaviors
+
+High Quality Decisions
+
+Successful Routines
+
+------------------------------------------------------------
+
+Example:
+
+Best Results:
+
+London Session
+
+Trend Market
+
+Low Stress
+
+Full Checklist
+
+------------------------------------------------------------
+
+SECTION 6
+
+FAILURE PATTERN ANALYSIS
+
+Detect:
+
+Repeated Loss Conditions
+
+Common Mistakes
+
+Behavior Triggers
+
+Risk Problems
+
+------------------------------------------------------------
+
+Example:
+
+Loss Pattern:
+
+After two losses:
+
+Higher risk appears.
+
+------------------------------------------------------------
+
+SECTION 7
+
+VERSION COMPARISON ENGINE
+
+Compare trader versions.
+
+Examples:
+
+Current Month
+
+Previous Month
+
+
+Current Cycle
+
+Previous Cycle
+
+
+Current Year
+
+Previous Year
+
+------------------------------------------------------------
+
+Compare:
+
+Skill
+
+Discipline
+
+Psychology
+
+Risk
+
+Execution
+
+Consistency
+
+------------------------------------------------------------
+
+SECTION 8
+
+SKILL DEVELOPMENT TRACKER
+
+Track improvement of:
+
+Risk Management
+
+Entry Quality
+
+Exit Quality
+
+Strategy Execution
+
+Patience
+
+Emotional Control
+
+Review Quality
+
+------------------------------------------------------------
+
+Create:
+
+Skill Progress Score
+
+------------------------------------------------------------
+
+SECTION 9
+
+MISTAKE REMOVAL TRACKER
+
+Track:
+
+Old Mistakes
+
+Current Frequency
+
+Improvement
+
+Removed Behaviors
+
+------------------------------------------------------------
+
+Example:
+
+FOMO:
+
+Before:
+
+35%
+
+
+Now:
+
+8%
+
+------------------------------------------------------------
+
+SECTION 10
+
+GROWTH MILESTONE ENGINE
+
+Create milestones.
+
+Examples:
+
+First 100 Trades
+
+First Consistent Month
+
+Risk Discipline Achievement
+
+FOMO Reduction
+
+Strategy Mastery
+
+------------------------------------------------------------
+
+Store:
+
+Achievement
+
+Date
+
+Evidence
+
+Impact
+
+------------------------------------------------------------
+
+SECTION 11
+
+BEHAVIOR CHANGE DETECTION
+
+Detect:
+
+New Habits
+
+Improved Decisions
+
+Changed Risk Behavior
+
+Mental Improvements
+
+------------------------------------------------------------
+
+Example:
+
+Old Behavior:
+
+Revenge Trading
+
+
+New Behavior:
+
+Pause After Loss
+
+------------------------------------------------------------
+
+SECTION 12
+
+PERSONAL IMPROVEMENT MAP
+
+Create:
+
+Strength Map
+
+Weakness Map
+
+Opportunity Map
+
+Risk Map
+
+------------------------------------------------------------
+
+SECTION 13
+
+AI GROWTH SUMMARY
+
+Generate long-term summary.
+
+Format:
+
+Where You Started
+
+What Changed
+
+Current Level
+
+Remaining Challenges
+
+Next Development Area
+
+------------------------------------------------------------
+
+SECTION 14
+
+FUTURE DEVELOPMENT GUIDANCE
+
+Create improvement direction.
+
+Based on:
+
+Current Weakness
+
+Historical Pattern
+
+Growth Stage
+
+------------------------------------------------------------
+
+Examples:
+
+Focus:
+
+Exit Management
+
+
+Practice:
+
+Predefined Exit Rules
+
+------------------------------------------------------------
+
+SECTION 15
+
+TRADER MATURITY MODEL
+
+Create levels:
+
+Beginner
+
+Developing
+
+Consistent
+
+Advanced
+
+Professional
+
+Mastery
+
+------------------------------------------------------------
+
+Evaluate:
+
+Knowledge
+
+Execution
+
+Discipline
+
+Psychology
+
+Consistency
+
+------------------------------------------------------------
+
+SECTION 16
+
+AI MEMORY SYSTEM
+
+Store:
+
+Important Life Lessons
+
+Major Breakthroughs
+
+Behavior Changes
+
+Personal Rules
+
+------------------------------------------------------------
+
+SECTION 17
+
+DATABASE ENTITIES
+
+Create:
+
+TraderEvolution
+
+TradingDNA
+
+PatternRecord
+
+SkillProgress
+
+Milestone
+
+GrowthSnapshot
+
+------------------------------------------------------------
+
+SECTION 18
+
+STATE MANAGEMENT
+
+Create:
+
+Evolution Store
+
+Timeline
+
+Patterns
+
+Skills
+
+Milestones
+
+------------------------------------------------------------
+
+SECTION 19
+
+PERFORMANCE
+
+Implement:
+
+Historical Aggregation
+
+Pattern Caching
+
+Efficient Queries
+
+Background Processing
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Pattern Detection
+
+DNA Generation
+
+Comparison Engine
+
+Milestone Tracking
+
+Evolution Reports
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Evolution Engine
+
+Pattern Services
+
+Models
+
+Hooks
+
+Database Schema
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS understands who the trader was, who the trader is, and how the trader is improving.
+
+END OF PROMPT

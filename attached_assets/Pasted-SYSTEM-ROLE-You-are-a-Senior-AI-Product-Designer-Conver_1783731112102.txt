@@ -1,0 +1,519 @@
+SYSTEM ROLE
+
+You are a Senior AI Product Designer, Conversational UX Architect, and Frontend Engineer.
+
+You are implementing the AI Coach User Experience Layer of TraderMind OS.
+
+This module creates the interface for a personal trading performance assistant.
+
+The AI is not a signal provider.
+
+The AI is a performance coach.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional AI coaching experience.
+
+The system interface must allow traders to:
+
+Ask Questions
+
+Review Performance
+
+Understand Mistakes
+
+Create Improvement Plans
+
+Track Growth
+
+Reflect On Behavior
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Zustand
+
+Framer Motion
+
+React Markdown
+
+Dexie.js
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/
+
+interface/
+
+chat/
+
+coach/
+
+insights/
+
+history/
+
+prompts/
+
+components/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+AI COACH MAIN INTERFACE
+
+Create main AI Coach page.
+
+Layout:
+
+Conversation Area
+
+Context Panel
+
+Quick Actions
+
+Insight Panel
+
+------------------------------------------------------------
+
+SECTION 2
+
+COACH PERSONALITY DESIGN
+
+Create professional coaching style.
+
+The AI should feel:
+
+Calm
+
+Analytical
+
+Supportive
+
+Objective
+
+Performance-focused
+
+------------------------------------------------------------
+
+The AI must NOT feel:
+
+Emotional
+
+Judgmental
+
+Overconfident
+
+Signal Provider
+
+------------------------------------------------------------
+
+SECTION 3
+
+CHAT EXPERIENCE
+
+Create chat interface.
+
+Features:
+
+Messages
+
+Typing State
+
+Context Display
+
+Conversation History
+
+Search Conversation
+
+Save Conversation
+
+------------------------------------------------------------
+
+SECTION 4
+
+QUESTION SUGGESTIONS
+
+Create quick questions.
+
+Examples:
+
+"Why am I losing this month?"
+
+"What is my biggest mistake?"
+
+"Which strategy performs better?"
+
+"When do I perform best?"
+
+"What behavior hurts my trading?"
+
+"How did I improve?"
+
+------------------------------------------------------------
+
+SECTION 5
+
+TRADING CONTEXT PANEL
+
+Display AI available context.
+
+Show:
+
+Recent Trades
+
+Current Cycle
+
+Performance Score
+
+Psychology State
+
+Current Goal
+
+------------------------------------------------------------
+
+SECTION 6
+
+DAILY COACHING CARD
+
+Create daily coaching widget.
+
+Display:
+
+Today's Focus
+
+Risk Reminder
+
+Behavior Reminder
+
+Improvement Task
+
+Reflection Question
+
+------------------------------------------------------------
+
+Example:
+
+Today's Focus:
+
+"Wait for confirmation before entering."
+
+------------------------------------------------------------
+
+SECTION 7
+
+TRADE REVIEW ASSISTANT UI
+
+Create AI review interface.
+
+After each trade:
+
+Show:
+
+Review Request
+
+Analysis Area
+
+Lesson Area
+
+Improvement Area
+
+------------------------------------------------------------
+
+SECTION 8
+
+WEEKLY COACHING REVIEW
+
+Create weekly coaching page.
+
+Display:
+
+Performance Summary
+
+Behavior Changes
+
+Mistakes
+
+Improvements
+
+Next Focus
+
+------------------------------------------------------------
+
+SECTION 9
+
+GROWTH PLAN INTERFACE
+
+Create improvement planning UI.
+
+Display:
+
+Current Weakness
+
+Recommended Practice
+
+Progress
+
+Completion
+
+------------------------------------------------------------
+
+SECTION 10
+
+AI MEMORY INTERFACE
+
+Prepare memory visualization.
+
+Display:
+
+Known Patterns
+
+Previous Lessons
+
+Repeated Mistakes
+
+Successful Behaviors
+
+------------------------------------------------------------
+
+SECTION 11
+
+INSIGHT FEED
+
+Create AI insight timeline.
+
+Categories:
+
+Performance
+
+Psychology
+
+Risk
+
+Execution
+
+Growth
+
+------------------------------------------------------------
+
+Priority:
+
+Critical
+
+Important
+
+Suggestion
+
+Achievement
+
+------------------------------------------------------------
+
+SECTION 12
+
+VOICE INPUT PREPARATION
+
+Prepare UI for:
+
+Voice Question
+
+Voice Reflection
+
+Voice Journal Entry
+
+------------------------------------------------------------
+
+No voice engine required.
+
+Only interface preparation.
+
+------------------------------------------------------------
+
+SECTION 13
+
+MOBILE AI EXPERIENCE
+
+Optimize:
+
+Full Screen Chat
+
+Quick Questions
+
+Voice Button
+
+Swipe Insights
+
+Floating Coach Button
+
+------------------------------------------------------------
+
+SECTION 14
+
+AI RESPONSE COMPONENTS
+
+Create reusable:
+
+Message Bubble
+
+Insight Card
+
+Recommendation Card
+
+Analysis Block
+
+Score Display
+
+Progress Card
+
+------------------------------------------------------------
+
+SECTION 15
+
+SAFETY UX RULES
+
+The interface must communicate:
+
+AI provides analysis, not financial advice.
+
+AI cannot guarantee outcomes.
+
+User remains responsible.
+
+------------------------------------------------------------
+
+SECTION 16
+
+DATA CONNECTION PREPARATION
+
+Prepare connections to:
+
+Trader Intelligence
+
+Analytics
+
+Journal
+
+Psychology
+
+Growth System
+
+------------------------------------------------------------
+
+SECTION 17
+
+DATABASE ENTITIES
+
+Create:
+
+Conversation
+
+Message
+
+AIInsight
+
+CoachSession
+
+CoachMemoryReference
+
+------------------------------------------------------------
+
+SECTION 18
+
+STATE MANAGEMENT
+
+Create:
+
+AI Store
+
+Current Conversation
+
+History
+
+Context
+
+Preferences
+
+Loading State
+
+------------------------------------------------------------
+
+SECTION 19
+
+PERFORMANCE
+
+Implement:
+
+Lazy Loading
+
+Message Virtualization
+
+Cached Conversations
+
+Offline History
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Chat Interface
+
+Conversation Storage
+
+Context Loading
+
+Mobile Experience
+
+State Management
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+AI Interface Pages
+
+Components
+
+Stores
+
+Hooks
+
+Services
+
+Database Models
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS provides a professional AI coaching environment.
+
+The trader can interact with the system as a personal performance coach.
+
+END OF PROMPT

@@ -1,0 +1,572 @@
+SYSTEM ROLE
+
+You are a Senior Product Designer, UX Architect, and Frontend Engineering Lead.
+
+You are implementing the Professional User Experience System of TraderMind OS.
+
+The goal is to create a premium trading performance workspace.
+
+This is not a simple dashboard.
+
+This is a personal trading command center.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete application experience where traders can:
+
+Record Trades
+
+Analyze Performance
+
+Track Growth
+
+Monitor Psychology
+
+Improve Discipline
+
+Review Progress
+
+Interact With AI Coach
+
+------------------------------------------------------------
+
+DESIGN PRINCIPLES
+
+The application must feel like:
+
+A professional trading terminal
+
+A personal performance cockpit
+
+A coaching system
+
+A growth operating system
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Zustand
+
+React Router
+
+Framer Motion
+
+Lucide React
+
+Recharts
+
+Vite PWA
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/dashboard/
+
+layout/
+
+navigation/
+
+widgets/
+
+workspace/
+
+themes/
+
+animations/
+
+components/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+APPLICATION SHELL
+
+Create the main application framework.
+
+Desktop Layout:
+
+Sidebar
+
+Top Header
+
+Main Workspace
+
+Right Intelligence Panel
+
+------------------------------------------------------------
+
+Mobile Layout:
+
+Bottom Navigation
+
+Scrollable Content
+
+Floating Action Button
+
+------------------------------------------------------------
+
+SECTION 2
+
+MAIN NAVIGATION
+
+Create:
+
+Dashboard
+
+Journal
+
+Trade Boxes
+
+Analytics
+
+Growth
+
+AI Coach
+
+Reports
+
+Settings
+
+------------------------------------------------------------
+
+Navigation Features:
+
+Active State
+
+Icons
+
+Animations
+
+Mobile Adaptation
+
+Keyboard Support
+
+------------------------------------------------------------
+
+SECTION 3
+
+COMMAND HEADER
+
+Create professional header.
+
+Display:
+
+Trader Name
+
+Current Account
+
+Active Growth Cycle
+
+Market Status
+
+Sync Status
+
+Notifications
+
+Profile
+
+------------------------------------------------------------
+
+SECTION 4
+
+DASHBOARD HOME
+
+Create main command center.
+
+Sections:
+
+Trader Status
+
+Performance Summary
+
+Current Goals
+
+Recent Trades
+
+Active Missions
+
+AI Insights
+
+Quick Actions
+
+------------------------------------------------------------
+
+SECTION 5
+
+TRADER STATUS WIDGET
+
+Display:
+
+Trader Score
+
+Maturity Level
+
+Psychology State
+
+Discipline Level
+
+Risk Status
+
+------------------------------------------------------------
+
+Example:
+
+Trader State:
+
+Performance:
+Strong
+
+Mindset:
+Stable
+
+Discipline:
+Excellent
+
+------------------------------------------------------------
+
+SECTION 6
+
+PERFORMANCE WIDGETS
+
+Create reusable KPI cards.
+
+Widgets:
+
+Profit
+
+Win Rate
+
+Average R
+
+Drawdown
+
+Expectancy
+
+Trade Quality
+
+Execution Score
+
+------------------------------------------------------------
+
+Each widget supports:
+
+Trend
+
+Comparison
+
+Mini Chart
+
+Details
+
+------------------------------------------------------------
+
+SECTION 7
+
+ACTIVE GROWTH CYCLE PANEL
+
+Display:
+
+Current Cycle
+
+Main Goal
+
+Progress
+
+Daily Missions
+
+Remaining Tasks
+
+Cycle Score
+
+------------------------------------------------------------
+
+SECTION 8
+
+PERSONAL EDGE CARD
+
+Display:
+
+Trader Edge
+
+Best Strategy
+
+Best Session
+
+Best Conditions
+
+Current Weakness
+
+------------------------------------------------------------
+
+SECTION 9
+
+RECENT TRADE TIMELINE
+
+Create timeline.
+
+Display:
+
+Trade
+
+Result
+
+Strategy
+
+Emotion
+
+Quality Score
+
+Lesson
+
+------------------------------------------------------------
+
+SECTION 10
+
+AI INSIGHT PLACEHOLDER
+
+Prepare AI area.
+
+Display:
+
+Improvement Suggestion
+
+Risk Warning
+
+Behavior Alert
+
+Daily Focus
+
+------------------------------------------------------------
+
+No AI generation yet.
+
+Only UI preparation.
+
+------------------------------------------------------------
+
+SECTION 11
+
+QUICK ACTION SYSTEM
+
+Create floating actions:
+
+New Trade
+
+Start Review
+
+Complete Mission
+
+Add Lesson
+
+Start Cycle
+
+------------------------------------------------------------
+
+SECTION 12
+
+WIDGET SYSTEM
+
+Create reusable widget architecture.
+
+Every widget supports:
+
+Title
+
+Data
+
+Loading
+
+Error
+
+Empty State
+
+Refresh
+
+Collapse
+
+Expand
+
+------------------------------------------------------------
+
+SECTION 13
+
+PERSONALIZATION SYSTEM
+
+Allow:
+
+Dashboard Layout Customization
+
+Widget Ordering
+
+Visible Sections
+
+Theme Selection
+
+Density Mode
+
+------------------------------------------------------------
+
+SECTION 14
+
+THEME SYSTEM
+
+Create:
+
+Dark Trading Theme
+
+Light Professional Theme
+
+Auto Mode
+
+------------------------------------------------------------
+
+Design requirements:
+
+High readability
+
+Trading terminal feeling
+
+Minimal distraction
+
+------------------------------------------------------------
+
+SECTION 15
+
+RESPONSIVE SYSTEM
+
+Support:
+
+Desktop 1440+
+
+Laptop
+
+Tablet
+
+Mobile
+
+------------------------------------------------------------
+
+SECTION 16
+
+ACCESSIBILITY
+
+Implement:
+
+Keyboard Navigation
+
+Screen Reader Support
+
+Color-independent Indicators
+
+Readable Typography
+
+------------------------------------------------------------
+
+SECTION 17
+
+PERFORMANCE
+
+Implement:
+
+Lazy Loading
+
+Code Splitting
+
+Memoization
+
+Virtualized Lists
+
+Optimized Rendering
+
+------------------------------------------------------------
+
+SECTION 18
+
+DATABASE CONNECTION PREPARATION
+
+Prepare services for:
+
+Dashboard Data
+
+Trader Intelligence
+
+Analytics
+
+Growth Data
+
+------------------------------------------------------------
+
+SECTION 19
+
+TESTING
+
+Test:
+
+Layout
+
+Navigation
+
+Responsive Behavior
+
+Widget Rendering
+
+Personalization
+
+Performance
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Layouts
+
+Components
+
+Hooks
+
+Services
+
+Theme System
+
+Navigation
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a professional daily workspace.
+
+The user can open the application and immediately understand:
+
+Where they are
+
+How they are performing
+
+What needs attention
+
+What action to take next
+
+END OF PROMPT

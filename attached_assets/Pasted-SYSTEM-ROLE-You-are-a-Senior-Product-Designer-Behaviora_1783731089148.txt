@@ -1,0 +1,639 @@
+SYSTEM ROLE
+
+You are a Senior Product Designer, Behavioral Performance System Architect, and Frontend Engineer.
+
+You are implementing the Growth Cycle and Trader Life Planning User Experience of TraderMind OS.
+
+This module transforms TraderMind OS from a trading journal into a personal trading development operating system.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete trader growth management interface.
+
+The system must help traders:
+
+Set Goals
+
+Build Habits
+
+Plan Trading Days
+
+Review Performance
+
+Track Personal Improvement
+
+Develop Professional Behavior
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Zustand
+
+Dexie.js
+
+Framer Motion
+
+Recharts
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/growth/
+
+dashboard/
+
+cycles/
+
+goals/
+
+missions/
+
+habits/
+
+dailyPlan/
+
+reviews/
+
+progress/
+
+components/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+GROWTH COMMAND CENTER
+
+Create main growth dashboard.
+
+Display:
+
+Current Growth Cycle
+
+Main Objective
+
+Progress
+
+Current Mission
+
+Active Habits
+
+Performance Trend
+
+------------------------------------------------------------
+
+Example:
+
+Current Cycle:
+
+"Master Execution Discipline"
+
+
+Duration:
+
+30 Days
+
+
+Progress:
+
+68%
+
+------------------------------------------------------------
+
+SECTION 2
+
+GROWTH CYCLE INTERFACE
+
+Create cycle management.
+
+Features:
+
+Create Cycle
+
+Start Cycle
+
+Pause Cycle
+
+Complete Cycle
+
+Archive Cycle
+
+------------------------------------------------------------
+
+Cycle Fields:
+
+Name
+
+Duration
+
+Main Goal
+
+Reason
+
+Expected Improvement
+
+Success Criteria
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADING GOAL SYSTEM
+
+Create goal management.
+
+Goal Types:
+
+Performance Goal
+
+Skill Goal
+
+Psychology Goal
+
+Discipline Goal
+
+Risk Goal
+
+------------------------------------------------------------
+
+Examples:
+
+Reduce FOMO Trades
+
+Improve Exit Management
+
+Maintain 0.5% Risk
+
+Complete 50 Reviews
+
+------------------------------------------------------------
+
+SECTION 4
+
+MISSION SYSTEM
+
+Create daily and weekly missions.
+
+Mission Fields:
+
+Title
+
+Category
+
+Priority
+
+Deadline
+
+Progress
+
+Status
+
+------------------------------------------------------------
+
+Mission Types:
+
+Trading
+
+Psychology
+
+Learning
+
+Review
+
+Preparation
+
+------------------------------------------------------------
+
+SECTION 5
+
+PRE-MARKET ROUTINE
+
+Create professional preparation checklist.
+
+Before Trading:
+
+Market Analysis
+
+Economic Calendar Check
+
+Strategy Review
+
+Mental Check
+
+Risk Plan
+
+Daily Goal
+
+------------------------------------------------------------
+
+Track:
+
+Completion
+
+Consistency
+
+Quality
+
+------------------------------------------------------------
+
+SECTION 6
+
+POST-MARKET ROUTINE
+
+Create after-market review.
+
+Questions:
+
+What happened today?
+
+What was my best decision?
+
+What mistake happened?
+
+What did I learn?
+
+What will I improve tomorrow?
+
+------------------------------------------------------------
+
+SECTION 7
+
+TRADER HABIT SYSTEM
+
+Create habit tracker.
+
+Professional Trading Habits:
+
+Daily Review
+
+Risk Check
+
+Meditation
+
+Market Preparation
+
+Journal Completion
+
+Learning
+
+Sleep Tracking
+
+Exercise
+
+------------------------------------------------------------
+
+Each habit:
+
+Name
+
+Frequency
+
+Streak
+
+Completion Rate
+
+Impact
+
+------------------------------------------------------------
+
+SECTION 8
+
+DAILY TRADER PLANNER
+
+Create daily planning interface.
+
+Morning:
+
+Today's Goal
+
+Market Focus
+
+Risk Limit
+
+Mindset
+
+
+During Market:
+
+Active Mission
+
+Rules Reminder
+
+
+Evening:
+
+Review
+
+Lessons
+
+Tomorrow Plan
+
+------------------------------------------------------------
+
+SECTION 9
+
+PERSONAL DEVELOPMENT TRACKER
+
+Track improvement areas:
+
+Strategy
+
+Risk
+
+Psychology
+
+Execution
+
+Discipline
+
+Knowledge
+
+------------------------------------------------------------
+
+Display:
+
+Current Level
+
+Previous Level
+
+Growth Trend
+
+------------------------------------------------------------
+
+SECTION 10
+
+ACCOUNTABILITY SYSTEM
+
+Create accountability tracking.
+
+Track:
+
+Promises
+
+Commitments
+
+Completed Actions
+
+Missed Actions
+
+Reasons
+
+------------------------------------------------------------
+
+SECTION 11
+
+GROWTH SCORE
+
+Create:
+
+Trader Growth Score
+
+0-100
+
+Based on:
+
+Goal Completion
+
+Habit Consistency
+
+Review Quality
+
+Execution Improvement
+
+Discipline
+
+------------------------------------------------------------
+
+SECTION 12
+
+STREAK SYSTEM
+
+Track:
+
+Review Streak
+
+Journal Streak
+
+Preparation Streak
+
+Rule Compliance Streak
+
+------------------------------------------------------------
+
+SECTION 13
+
+REFLECTION JOURNAL
+
+Create deeper reflection system.
+
+Questions:
+
+What did I improve?
+
+What pattern did I discover?
+
+What behavior changed?
+
+What challenge remains?
+
+------------------------------------------------------------
+
+SECTION 14
+
+GROWTH TIMELINE
+
+Display:
+
+Goals Completed
+
+Skills Improved
+
+Mistakes Removed
+
+Major Lessons
+
+Performance Milestones
+
+------------------------------------------------------------
+
+SECTION 15
+
+VISUALIZATION
+
+Create:
+
+Growth Progress Chart
+
+Habit Calendar
+
+Mission Progress
+
+Skill Radar
+
+Consistency Heatmap
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERSONAL TRADING ROADMAP
+
+Create long-term roadmap.
+
+Stages:
+
+Foundation
+
+Consistency
+
+Optimization
+
+Professional Level
+
+Mastery
+
+------------------------------------------------------------
+
+SECTION 17
+
+MOBILE EXPERIENCE
+
+Optimize:
+
+Daily Checklist
+
+Quick Mission Update
+
+Habit Completion
+
+Reflection Entry
+
+------------------------------------------------------------
+
+SECTION 18
+
+DATABASE ENTITIES
+
+Create:
+
+GrowthCycle
+
+Goal
+
+Mission
+
+Habit
+
+DailyPlan
+
+Reflection
+
+GrowthScore
+
+Milestone
+
+------------------------------------------------------------
+
+SECTION 19
+
+STATE MANAGEMENT
+
+Create:
+
+Growth Store
+
+Current Cycle
+
+Active Goals
+
+Daily Tasks
+
+Habit Status
+
+Progress
+
+------------------------------------------------------------
+
+SECTION 20
+
+PERFORMANCE
+
+Implement:
+
+Offline Updates
+
+Autosave
+
+Caching
+
+Optimized Rendering
+
+------------------------------------------------------------
+
+SECTION 21
+
+TESTING
+
+Test:
+
+Cycle Creation
+
+Goal Tracking
+
+Habit System
+
+Daily Planner
+
+Progress Calculation
+
+Mobile Experience
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Growth Pages
+
+Components
+
+Stores
+
+Hooks
+
+Services
+
+Database Models
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a complete trader development system.
+
+The trader does not only track trades.
+
+The trader builds himself.
+
+END OF PROMPT

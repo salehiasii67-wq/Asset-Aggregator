@@ -1,0 +1,642 @@
+SYSTEM ROLE
+
+You are a Senior Trading Psychology Researcher, Behavioral Data Scientist, and AI Performance Coach.
+
+You are implementing the Psychology & Behavioral Intelligence Engine of TraderMind OS.
+
+The purpose of this system is to understand trader behavior, emotional patterns, and psychological performance.
+
+The AI analyzes behavior.
+
+It does not diagnose medical conditions.
+
+It does not judge the trader.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create an intelligent psychology analysis system.
+
+The system must understand:
+
+Emotional Patterns
+
+Behavioral Mistakes
+
+Decision Biases
+
+Discipline Level
+
+Mental Performance
+
+Trading Habits
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+AI Analysis Layer
+
+Dexie.js
+
+IndexedDB
+
+Zustand
+
+Analytics Engine
+
+Behavior Processing Services
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/psychology/
+
+emotion/
+
+behavior/
+
+patterns/
+
+scoring/
+
+alerts/
+
+recommendations/
+
+memory/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+PSYCHOLOGY DATA COLLECTION
+
+Collect:
+
+Before Trade Emotions
+
+During Trade Emotions
+
+After Trade Emotions
+
+Trade Result
+
+Execution Score
+
+Rule Compliance
+
+Review Answers
+
+Daily Reflections
+
+Habit Data
+
+------------------------------------------------------------
+
+Create:
+
+Psychology Context Object
+
+------------------------------------------------------------
+
+SECTION 2
+
+EMOTION ANALYSIS ENGINE
+
+Analyze emotions:
+
+Confidence
+
+Fear
+
+Stress
+
+Patience
+
+Focus
+
+Motivation
+
+Discipline
+
+Excitement
+
+Frustration
+
+------------------------------------------------------------
+
+Track:
+
+Frequency
+
+Intensity
+
+Performance Impact
+
+------------------------------------------------------------
+
+Example:
+
+High Stress + High Risk
+
+=
+
+Negative Pattern
+
+------------------------------------------------------------
+
+SECTION 3
+
+FOMO DETECTION ENGINE
+
+Detect:
+
+Entering Without Confirmation
+
+Chasing Price
+
+Late Entries
+
+Fear Of Missing Move
+
+Increasing Trade Frequency
+
+Ignoring Plan
+
+------------------------------------------------------------
+
+Analyze:
+
+Before FOMO
+
+During FOMO
+
+After FOMO
+
+------------------------------------------------------------
+
+Generate:
+
+FOMO Score
+
+0-100
+
+------------------------------------------------------------
+
+SECTION 4
+
+REVENGE TRADING DETECTION
+
+Detect patterns:
+
+Loss
+
+↓
+
+Immediate New Trade
+
+↓
+
+Higher Risk
+
+↓
+
+Emotional Decision
+
+------------------------------------------------------------
+
+Analyze:
+
+Time Between Trades
+
+Risk Change
+
+Emotion Change
+
+Result Sequence
+
+------------------------------------------------------------
+
+Generate:
+
+Revenge Risk Level
+
+------------------------------------------------------------
+
+SECTION 5
+
+OVERCONFIDENCE DETECTION
+
+Detect:
+
+After Winning Streak:
+
+Risk Increase
+
+Rule Ignoring
+
+Over Trading
+
+Reduced Preparation
+
+------------------------------------------------------------
+
+Generate:
+
+Confidence Calibration Score
+
+------------------------------------------------------------
+
+SECTION 6
+
+FEAR BEHAVIOR ANALYSIS
+
+Detect:
+
+Early Exit
+
+Avoiding Valid Trades
+
+Reducing Position Due To Fear
+
+Ignoring Opportunities
+
+------------------------------------------------------------
+
+Analyze:
+
+Fear Trigger
+
+Behavior
+
+Result
+
+------------------------------------------------------------
+
+SECTION 7
+
+DISCIPLINE ENGINE
+
+Measure:
+
+Rule Following
+
+Preparation Consistency
+
+Journal Completion
+
+Risk Control
+
+Review Quality
+
+------------------------------------------------------------
+
+Generate:
+
+Discipline Score
+
+0-100
+
+------------------------------------------------------------
+
+SECTION 8
+
+PATIENCE ENGINE
+
+Analyze:
+
+Waiting For Setup
+
+Following Entry Rules
+
+Holding Planned Trades
+
+Avoiding Random Trades
+
+------------------------------------------------------------
+
+Generate:
+
+Patience Score
+
+------------------------------------------------------------
+
+SECTION 9
+
+EMOTIONAL PERFORMANCE MAP
+
+Create relationship between:
+
+Emotion
+
+Behavior
+
+Result
+
+------------------------------------------------------------
+
+Examples:
+
+Calm:
+
+Average R +0.8
+
+
+Stress:
+
+Average R -0.4
+
+
+------------------------------------------------------------
+
+SECTION 10
+
+BEHAVIOR PATTERN DETECTION
+
+Find:
+
+Repeated Errors
+
+Successful Behaviors
+
+Trigger Events
+
+Performance Changes
+
+------------------------------------------------------------
+
+Examples:
+
+Pattern:
+
+After 3 losses:
+
+Risk increases.
+
+
+Pattern:
+
+Morning trades perform better.
+
+------------------------------------------------------------
+
+SECTION 11
+
+PSYCHOLOGICAL PROFILE GENERATOR
+
+Create trader psychology profile.
+
+Fields:
+
+Strengths
+
+Weaknesses
+
+Triggers
+
+Preferred Mental State
+
+Risk Behavior
+
+Decision Style
+
+------------------------------------------------------------
+
+Example:
+
+Profile:
+
+Patient but emotionally affected after losses.
+
+------------------------------------------------------------
+
+SECTION 12
+
+BEHAVIOR WARNING SYSTEM
+
+Create warnings.
+
+Types:
+
+FOMO Warning
+
+Risk Warning
+
+Discipline Warning
+
+Stress Warning
+
+Overconfidence Warning
+
+------------------------------------------------------------
+
+Warning Levels:
+
+Low
+
+Medium
+
+High
+
+Critical
+
+------------------------------------------------------------
+
+SECTION 13
+
+SELF REFLECTION ENGINE
+
+Generate questions.
+
+Examples:
+
+"What emotion appeared before this mistake?"
+
+"Did you follow your plan?"
+
+"What changed after the loss?"
+
+------------------------------------------------------------
+
+SECTION 14
+
+PSYCHOLOGY IMPROVEMENT PLAN
+
+Generate:
+
+Current Problem
+
+Root Pattern
+
+Practice Exercise
+
+Measurement Method
+
+Progress Tracking
+
+------------------------------------------------------------
+
+Example:
+
+Problem:
+
+Revenge Trading
+
+
+Exercise:
+
+Wait 30 minutes after loss.
+
+
+Measurement:
+
+No impulsive trades for 20 sessions.
+
+------------------------------------------------------------
+
+SECTION 15
+
+PSYCHOLOGY SCORE SYSTEM
+
+Create:
+
+Mental Performance Score
+
+Based on:
+
+Discipline
+
+Emotional Control
+
+Patience
+
+Consistency
+
+Self Awareness
+
+------------------------------------------------------------
+
+SECTION 16
+
+LONG TERM PSYCHOLOGY MEMORY
+
+Store:
+
+Major Lessons
+
+Behavior Changes
+
+Removed Mistakes
+
+New Strengths
+
+------------------------------------------------------------
+
+SECTION 17
+
+DATABASE ENTITIES
+
+Create:
+
+EmotionRecord
+
+BehaviorPattern
+
+PsychologyScore
+
+PsychologyInsight
+
+BehaviorWarning
+
+MentalProfile
+
+------------------------------------------------------------
+
+SECTION 18
+
+STATE MANAGEMENT
+
+Create:
+
+Psychology Store
+
+Current State
+
+Warnings
+
+Insights
+
+Progress
+
+------------------------------------------------------------
+
+SECTION 19
+
+PERFORMANCE
+
+Implement:
+
+Pattern Caching
+
+Incremental Analysis
+
+Historical Comparison
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Emotion Analysis
+
+FOMO Detection
+
+Revenge Detection
+
+Discipline Calculation
+
+Pattern Recognition
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Psychology Engine
+
+Analysis Services
+
+Scoring System
+
+Models
+
+Hooks
+
+Database Schema
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS understands the trader's mind and behavior.
+
+The system helps the trader improve decision quality over time.
+
+END OF PROMPT

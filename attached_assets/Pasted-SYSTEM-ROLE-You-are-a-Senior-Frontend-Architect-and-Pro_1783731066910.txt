@@ -1,0 +1,563 @@
+SYSTEM ROLE
+
+You are a Senior Frontend Architect and Product Experience Engineer.
+
+You are implementing the Advanced Dashboard Widget Engine of TraderMind OS.
+
+The dashboard must become a customizable professional trading workspace.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a dynamic widget-based dashboard system.
+
+The user must be able to:
+
+View important information
+
+Customize layout
+
+Move widgets
+
+Hide widgets
+
+Resize widgets
+
+Create personal workspace
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Zustand
+
+Framer Motion
+
+React Grid Layout
+
+Dexie.js
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/dashboard/widgets/
+
+core/
+
+registry/
+
+layout/
+
+builder/
+
+settings/
+
+components/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+WIDGET ARCHITECTURE
+
+Create a reusable widget framework.
+
+Every widget contains:
+
+ID
+
+Name
+
+Category
+
+Size
+
+Position
+
+Data Source
+
+Permissions
+
+Visibility
+
+Refresh Interval
+
+------------------------------------------------------------
+
+SECTION 2
+
+WIDGET REGISTRY SYSTEM
+
+Create central widget registry.
+
+Register:
+
+Dashboard Widgets
+
+Analytics Widgets
+
+Psychology Widgets
+
+Growth Widgets
+
+AI Widgets
+
+------------------------------------------------------------
+
+Example:
+
+PerformanceWidget
+
+RiskWidget
+
+PsychologyWidget
+
+TradeTimelineWidget
+
+------------------------------------------------------------
+
+SECTION 3
+
+WIDGET CATEGORIES
+
+Create categories:
+
+Performance
+
+Risk
+
+Psychology
+
+Execution
+
+Growth
+
+Strategy
+
+Market
+
+AI
+
+------------------------------------------------------------
+
+SECTION 4
+
+DRAG AND DROP SYSTEM
+
+Implement:
+
+Move Widgets
+
+Reorder Widgets
+
+Save Layout
+
+Restore Layout
+
+Reset Layout
+
+------------------------------------------------------------
+
+The layout must persist locally.
+
+------------------------------------------------------------
+
+SECTION 5
+
+RESIZABLE WIDGETS
+
+Support:
+
+Small
+
+Medium
+
+Large
+
+Full Width
+
+------------------------------------------------------------
+
+Examples:
+
+Small:
+
+Win Rate Card
+
+
+Medium:
+
+Equity Chart
+
+
+Large:
+
+Performance Analysis
+
+------------------------------------------------------------
+
+SECTION 6
+
+DASHBOARD PRESETS
+
+Create predefined layouts.
+
+------------------------------------------------------------
+
+Preset 1:
+
+Professional Trader
+
+Includes:
+
+Performance
+
+Risk
+
+Equity
+
+Execution
+
+Psychology
+
+
+------------------------------------------------------------
+
+Preset 2:
+
+Scalper Mode
+
+Includes:
+
+Sessions
+
+Trade Frequency
+
+Execution Speed
+
+
+------------------------------------------------------------
+
+Preset 3:
+
+Growth Mode
+
+Includes:
+
+Goals
+
+Habits
+
+Reviews
+
+Improvement
+
+------------------------------------------------------------
+
+Preset 4:
+
+Psychology Mode
+
+Includes:
+
+Emotion
+
+Discipline
+
+Behavior
+
+Triggers
+
+------------------------------------------------------------
+
+SECTION 7
+
+WIDGET CONFIGURATION
+
+Each widget supports:
+
+Title Editing
+
+Visibility Toggle
+
+Refresh Settings
+
+Data Filters
+
+Display Options
+
+------------------------------------------------------------
+
+SECTION 8
+
+WIDGET DATA CONNECTION
+
+Create universal data interface.
+
+Every widget can receive:
+
+Analytics Data
+
+Trade Data
+
+Growth Data
+
+Psychology Data
+
+Trader Intelligence Data
+
+------------------------------------------------------------
+
+SECTION 9
+
+SMART WIDGET STATES
+
+Every widget supports:
+
+Loading State
+
+Empty State
+
+Error State
+
+Offline State
+
+Sync State
+
+------------------------------------------------------------
+
+SECTION 10
+
+PERSONAL WORKSPACE SYSTEM
+
+Create workspace profiles.
+
+Example:
+
+Workspace:
+
+Morning Analysis
+
+
+Widgets:
+
+Market
+
+Yesterday Performance
+
+Current Goals
+
+
+------------------------------------------------------------
+
+Allow:
+
+Create Workspace
+
+Rename Workspace
+
+Duplicate Workspace
+
+Delete Workspace
+
+Switch Workspace
+
+------------------------------------------------------------
+
+SECTION 11
+
+MOBILE DASHBOARD ENGINE
+
+Mobile behavior:
+
+Stack Widgets
+
+Priority Ordering
+
+Swipe Navigation
+
+Compact Cards
+
+Bottom Sheet Details
+
+------------------------------------------------------------
+
+SECTION 12
+
+WIDGET INTERACTION
+
+Support:
+
+Click
+
+Expand
+
+Open Details
+
+View History
+
+Filter
+
+Share
+
+------------------------------------------------------------
+
+SECTION 13
+
+DASHBOARD COMMAND MODE
+
+Create quick command system.
+
+Commands:
+
+Add Widget
+
+Change Layout
+
+Open Journal
+
+Create Trade
+
+Start Review
+
+Open Analytics
+
+------------------------------------------------------------
+
+SECTION 14
+
+PERSONALIZATION STORAGE
+
+Store:
+
+Widget Layout
+
+Workspace Settings
+
+Theme
+
+Preferences
+
+Filters
+
+------------------------------------------------------------
+
+DATABASE ENTITY
+
+DashboardConfiguration
+
+Fields:
+
+id
+
+userId
+
+workspaceName
+
+layout
+
+widgets
+
+theme
+
+createdAt
+
+updatedAt
+
+------------------------------------------------------------
+
+SECTION 15
+
+ANIMATION SYSTEM
+
+Implement:
+
+Widget Entrance Animation
+
+Layout Transition
+
+Expand Animation
+
+Loading Animation
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE
+
+Implement:
+
+Lazy Widget Loading
+
+Memoization
+
+Virtual Rendering
+
+Data Subscription Optimization
+
+------------------------------------------------------------
+
+SECTION 17
+
+TESTING
+
+Test:
+
+Widget Registration
+
+Layout Saving
+
+Drag Drop
+
+Resize
+
+Workspace Switching
+
+Mobile Rendering
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Widget Engine
+
+Components
+
+Layout System
+
+State Management
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a professional customizable trading workspace.
+
+Every trader can build their own personal command center.
+
+END OF PROMPT

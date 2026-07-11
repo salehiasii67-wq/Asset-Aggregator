@@ -1,0 +1,564 @@
+SYSTEM ROLE
+
+You are a Senior Quantitative Market Analyst, Trading Behavior Scientist, and Full Stack TypeScript Engineer.
+
+You are implementing the Time & Market Behavior Intelligence Engine of TraderMind OS.
+
+This module analyzes the relationship between:
+
+Time
+
+Market Conditions
+
+Trading Performance
+
+Behavior
+
+Psychology
+
+Execution Quality
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional time and market intelligence system.
+
+The system must discover:
+
+Best Trading Times
+
+Worst Trading Times
+
+Best Sessions
+
+Best Market Conditions
+
+Performance Patterns
+
+Behavior Changes Over Time
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Dexie.js
+
+Zustand
+
+Recharts
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/analytics/marketBehavior/
+
+time/
+
+sessions/
+
+marketConditions/
+
+regime/
+
+heatmaps/
+
+services/
+
+calculators/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADING TIME ANALYSIS ENGINE
+
+Analyze trades by:
+
+Hour
+
+Day
+
+Week
+
+Month
+
+Quarter
+
+Year
+
+------------------------------------------------------------
+
+Calculate:
+
+Number of Trades
+
+Win Rate
+
+Average R
+
+Profit
+
+Loss
+
+Trade Score
+
+Psychology Score
+
+------------------------------------------------------------
+
+SECTION 2
+
+HOURLY PERFORMANCE MAP
+
+Create hourly analysis.
+
+Example:
+
+00:00-01:00
+
+01:00-02:00
+
+...
+
+23:00-24:00
+
+------------------------------------------------------------
+
+For each hour calculate:
+
+Performance Score
+
+Profitability
+
+Consistency
+
+Risk Quality
+
+------------------------------------------------------------
+
+Display:
+
+24 Hour Heatmap
+
+------------------------------------------------------------
+
+SECTION 3
+
+SESSION ANALYSIS ENGINE
+
+Analyze:
+
+Asian Session
+
+London Session
+
+New York Session
+
+London/New York Overlap
+
+------------------------------------------------------------
+
+For each session:
+
+Trades
+
+Win Rate
+
+Average R
+
+Execution Score
+
+Emotion Score
+
+Mistakes
+
+------------------------------------------------------------
+
+Generate:
+
+Best Session
+
+Worst Session
+
+------------------------------------------------------------
+
+SECTION 4
+
+DAY OF WEEK ANALYSIS
+
+Analyze:
+
+Monday
+
+Tuesday
+
+Wednesday
+
+Thursday
+
+Friday
+
+------------------------------------------------------------
+
+Calculate:
+
+Performance
+
+Risk Behavior
+
+Psychology
+
+Consistency
+
+------------------------------------------------------------
+
+Detect:
+
+Strong Days
+
+Weak Days
+
+------------------------------------------------------------
+
+SECTION 5
+
+MONTHLY PERFORMANCE CYCLE
+
+Analyze:
+
+Monthly Results
+
+Growth
+
+Drawdown
+
+Behavior Changes
+
+------------------------------------------------------------
+
+Detect:
+
+Strong Months
+
+Weak Months
+
+Recovery Periods
+
+------------------------------------------------------------
+
+SECTION 6
+
+MARKET REGIME CLASSIFICATION
+
+Create market condition categories.
+
+------------------------------------------------------------
+
+Market Types:
+
+Trending
+
+Ranging
+
+High Volatility
+
+Low Volatility
+
+Breakout Environment
+
+Uncertain Environment
+
+------------------------------------------------------------
+
+SECTION 7
+
+MARKET CONDITION ANALYSIS
+
+For every condition calculate:
+
+Number of Trades
+
+Win Rate
+
+Average R
+
+Strategy Performance
+
+Psychology Impact
+
+------------------------------------------------------------
+
+Example:
+
+Trending Market:
+
+Average R:
++1.2
+
+
+Range Market:
+
+Average R:
+-0.3
+
+------------------------------------------------------------
+
+SECTION 8
+
+VOLATILITY ANALYSIS
+
+Analyze:
+
+High Volatility
+
+Medium Volatility
+
+Low Volatility
+
+------------------------------------------------------------
+
+Calculate:
+
+Performance
+
+Risk Behavior
+
+Execution Quality
+
+------------------------------------------------------------
+
+SECTION 9
+
+NEWS CONDITION TRACKING
+
+Prepare support for:
+
+Economic Events
+
+News Days
+
+Normal Days
+
+------------------------------------------------------------
+
+Analyze:
+
+Performance Before News
+
+Performance During News
+
+Performance After News
+
+------------------------------------------------------------
+
+SECTION 10
+
+BEHAVIOR + TIME CORRELATION
+
+Analyze:
+
+Emotion by Time
+
+Mistakes by Time
+
+Discipline by Time
+
+------------------------------------------------------------
+
+Examples:
+
+After 15:00:
+
+Higher Stress
+
+More Rule Violations
+
+Lower Execution Score
+
+------------------------------------------------------------
+
+SECTION 11
+
+PERSONAL OPTIMAL WINDOW
+
+Create engine to identify:
+
+Trader's Best Trading Window
+
+------------------------------------------------------------
+
+Based on:
+
+Profitability
+
+Consistency
+
+Psychology
+
+Risk Control
+
+------------------------------------------------------------
+
+Output:
+
+Optimal Session
+
+Optimal Hours
+
+Optimal Conditions
+
+------------------------------------------------------------
+
+SECTION 12
+
+TIME RESTRICTION ENGINE
+
+Prepare system for:
+
+Avoid Trading Times
+
+Warning Periods
+
+High Risk Periods
+
+------------------------------------------------------------
+
+Example:
+
+"Avoid first 30 minutes after market open."
+
+------------------------------------------------------------
+
+SECTION 13
+
+VISUALIZATION
+
+Create:
+
+24 Hour Heatmap
+
+Session Comparison Chart
+
+Day Performance Chart
+
+Market Condition Chart
+
+Volatility Chart
+
+Timeline Performance Chart
+
+------------------------------------------------------------
+
+SECTION 14
+
+FILTER SUPPORT
+
+All analysis supports:
+
+Date Range
+
+Strategy
+
+Symbol
+
+Growth Cycle
+
+Emotion
+
+Trade Score
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+TimePerformance
+
+SessionPerformance
+
+MarketCondition
+
+VolatilityRecord
+
+TradingWindow
+
+BehaviorTimePattern
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Aggregation Queries
+
+Caching
+
+Background Calculations
+
+Indexed Search
+
+------------------------------------------------------------
+
+SECTION 17
+
+TESTING
+
+Test:
+
+Time Calculation
+
+Session Detection
+
+Condition Analysis
+
+Heatmap Generation
+
+Pattern Detection
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Analytics Services
+
+Calculation Engines
+
+Charts
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS understands when and under what conditions the trader performs best.
+
+The system creates a personal trading environment map.
+
+END OF PROMPT

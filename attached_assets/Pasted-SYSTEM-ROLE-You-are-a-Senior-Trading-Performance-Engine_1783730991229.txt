@@ -1,0 +1,670 @@
+SYSTEM ROLE
+
+You are a Senior Trading Performance Engineer, Behavioral Data Analyst, and Full Stack TypeScript Developer.
+
+You are implementing the Trade Execution Quality Intelligence Engine of TraderMind OS.
+
+This module evaluates the quality of trading decisions, not only the financial outcome.
+
+The system must understand:
+
+Was this a good trade?
+
+Was the execution according to the plan?
+
+Was the decision process professional?
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional trade quality analysis system.
+
+Analyze:
+
+Preparation
+
+Entry Quality
+
+Risk Execution
+
+Management
+
+Exit Quality
+
+Rule Compliance
+
+Psychology Impact
+
+Decision Quality
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+Dexie.js
+
+Zustand
+
+Recharts
+
+TailwindCSS
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/analytics/execution/
+
+scoring/
+
+entry/
+
+exit/
+
+management/
+
+rules/
+
+quality/
+
+services/
+
+calculators/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+TRADE QUALITY SCORE ENGINE
+
+Create:
+
+Trade Quality Score
+
+0-100
+
+This score is independent from profit/loss.
+
+------------------------------------------------------------
+
+Score Components:
+
+Preparation Quality
+
+Entry Quality
+
+Risk Management
+
+Rule Compliance
+
+Position Management
+
+Exit Quality
+
+Psychological Control
+
+------------------------------------------------------------
+
+Example:
+
+Winning Trade:
+
+Profit:
++3R
+
+Quality Score:
+45
+
+Reason:
+
+Poor execution
+
+
+Losing Trade:
+
+Loss:
+-1R
+
+Quality Score:
+90
+
+Reason:
+
+Perfect execution
+
+------------------------------------------------------------
+
+SECTION 2
+
+PRE-TRADE PREPARATION ANALYSIS
+
+Analyze:
+
+Market Preparation
+
+Strategy Confirmation
+
+Checklist Completion
+
+Risk Calculation
+
+Mental Readiness
+
+------------------------------------------------------------
+
+Calculate:
+
+Preparation Score
+
+------------------------------------------------------------
+
+SECTION 3
+
+ENTRY QUALITY ANALYSIS
+
+Evaluate:
+
+Entry Timing
+
+Entry Location
+
+Confirmation
+
+Setup Quality
+
+Market Context
+
+------------------------------------------------------------
+
+Classify:
+
+Excellent Entry
+
+Good Entry
+
+Average Entry
+
+Poor Entry
+
+------------------------------------------------------------
+
+SECTION 4
+
+ENTRY MISTAKE DETECTION
+
+Detect:
+
+Early Entry
+
+Late Entry
+
+Chasing Price
+
+No Confirmation
+
+Wrong Setup
+
+Emotional Entry
+
+------------------------------------------------------------
+
+Store:
+
+Mistake Type
+
+Frequency
+
+Impact
+
+Improvement
+
+------------------------------------------------------------
+
+SECTION 5
+
+RISK EXECUTION QUALITY
+
+Analyze:
+
+Risk Percentage
+
+Position Size
+
+Stop Loss Placement
+
+Reward Expectancy
+
+Risk Rule Compliance
+
+------------------------------------------------------------
+
+Calculate:
+
+Risk Execution Score
+
+------------------------------------------------------------
+
+Detect:
+
+Oversized Position
+
+Invalid Risk
+
+Poor Stop Placement
+
+------------------------------------------------------------
+
+SECTION 6
+
+TRADE MANAGEMENT ANALYSIS
+
+Analyze:
+
+After Entry Behavior:
+
+Moving Stop
+
+Taking Partial Profit
+
+Holding Too Long
+
+Closing Too Early
+
+Ignoring Plan
+
+------------------------------------------------------------
+
+Calculate:
+
+Management Score
+
+------------------------------------------------------------
+
+SECTION 7
+
+EXIT QUALITY ENGINE
+
+Analyze:
+
+Exit Decision
+
+Target Management
+
+Stop Management
+
+Emotional Exit
+
+Rule-Based Exit
+
+------------------------------------------------------------
+
+Classify:
+
+Excellent Exit
+
+Acceptable Exit
+
+Early Exit
+
+Late Exit
+
+Emotional Exit
+
+------------------------------------------------------------
+
+SECTION 8
+
+RULE COMPLIANCE ENGINE
+
+Analyze:
+
+Strategy Rules
+
+Risk Rules
+
+Trading Plan
+
+Checklist
+
+------------------------------------------------------------
+
+Calculate:
+
+Rule Compliance Score
+
+0-100
+
+------------------------------------------------------------
+
+Track:
+
+Rules Followed
+
+Rules Broken
+
+Rule Impact
+
+------------------------------------------------------------
+
+SECTION 9
+
+DECISION QUALITY ANALYSIS
+
+Evaluate:
+
+Reasoning
+
+Market Understanding
+
+Patience
+
+Discipline
+
+------------------------------------------------------------
+
+Store:
+
+Decision Notes
+
+Confidence Level
+
+Decision Score
+
+------------------------------------------------------------
+
+SECTION 10
+
+PROCESS VS RESULT ANALYSIS
+
+Separate:
+
+Process Quality
+
+Outcome Quality
+
+------------------------------------------------------------
+
+Categories:
+
+Good Process + Good Result
+
+Good Process + Bad Result
+
+Bad Process + Good Result
+
+Bad Process + Bad Result
+
+------------------------------------------------------------
+
+This is critical for trader development.
+
+------------------------------------------------------------
+
+SECTION 11
+
+A+ SETUP IDENTIFICATION
+
+Identify highest quality trades.
+
+Based on:
+
+Rules
+
+Conditions
+
+Execution
+
+Psychology
+
+Risk
+
+------------------------------------------------------------
+
+Create:
+
+A+ Trade Library
+
+------------------------------------------------------------
+
+Store:
+
+Screenshot
+
+Conditions
+
+Reason
+
+Result
+
+Lesson
+
+------------------------------------------------------------
+
+SECTION 12
+
+TRADE MISTAKE DATABASE
+
+Create personal mistake library.
+
+Track:
+
+Mistake
+
+Frequency
+
+Cost
+
+Trigger
+
+Solution
+
+Progress
+
+------------------------------------------------------------
+
+SECTION 13
+
+EXECUTION IMPROVEMENT TRACKING
+
+Track improvement:
+
+Before
+
+During
+
+After Growth Cycles
+
+------------------------------------------------------------
+
+Display:
+
+Execution Evolution Score
+
+------------------------------------------------------------
+
+SECTION 14
+
+EXECUTION DASHBOARD
+
+Create widgets:
+
+Average Trade Quality
+
+Best Executions
+
+Worst Executions
+
+Common Mistakes
+
+Rule Compliance
+
+Entry Score
+
+Exit Score
+
+------------------------------------------------------------
+
+SECTION 15
+
+VISUALIZATION
+
+Create:
+
+Trade Quality Distribution
+
+Execution Score Timeline
+
+Mistake Frequency Chart
+
+Entry vs Exit Chart
+
+Process/Result Matrix
+
+------------------------------------------------------------
+
+SECTION 16
+
+FILTER SUPPORT
+
+Support:
+
+Strategy
+
+Symbol
+
+Session
+
+Emotion
+
+Growth Cycle
+
+Date
+
+Trade Score
+
+------------------------------------------------------------
+
+SECTION 17
+
+DATABASE ENTITIES
+
+Create:
+
+ExecutionScore
+
+EntryAnalysis
+
+ExitAnalysis
+
+ManagementAnalysis
+
+RuleCompliance
+
+TradeMistake
+
+SetupRecord
+
+------------------------------------------------------------
+
+SECTION 18
+
+AI PREPARATION DATA
+
+Prepare:
+
+Execution Patterns
+
+Common Mistakes
+
+Strengths
+
+Weaknesses
+
+Improvement Areas
+
+------------------------------------------------------------
+
+No AI generation.
+
+Only structured intelligence.
+
+------------------------------------------------------------
+
+SECTION 19
+
+PERFORMANCE
+
+Implement:
+
+Cached Calculations
+
+Indexed Queries
+
+Background Processing
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Quality Score
+
+Entry Analysis
+
+Exit Analysis
+
+Rule Detection
+
+Process Evaluation
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Execution Engine
+
+Scoring Services
+
+Components
+
+Charts
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS understands the quality of every decision.
+
+The trader learns:
+
+Why trades succeed
+
+Why trades fail
+
+How execution improves
+
+How professional decision-making develops
+
+END OF PROMPT

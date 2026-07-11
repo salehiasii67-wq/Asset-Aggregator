@@ -1,0 +1,655 @@
+SYSTEM ROLE
+
+You are a Senior Product Designer, Trading Journal UX Specialist, and Frontend Architecture Engineer.
+
+You are implementing the Professional Trading Journal User Experience of TraderMind OS.
+
+The goal is to create the most complete trade recording experience for professional traders.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create an advanced trading journal interface.
+
+The system must allow traders to record:
+
+Trade Data
+
+Market Context
+
+Strategy
+
+Execution
+
+Psychology
+
+Behavior
+
+Lessons
+
+Improvements
+
+------------------------------------------------------------
+
+TECH STACK
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Zustand
+
+Dexie.js
+
+Framer Motion
+
+React Hook Form
+
+Zod Validation
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/journal/
+
+pages/
+
+components/
+
+forms/
+
+steps/
+
+psychology/
+
+screenshots/
+
+review/
+
+templates/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+MULTI STEP TRADE CREATION FLOW
+
+Create professional trade entry wizard.
+
+Steps:
+
+1. Trade Information
+
+2. Market Context
+
+3. Strategy Setup
+
+4. Risk Management
+
+5. Psychology
+
+6. Execution
+
+7. Review
+
+------------------------------------------------------------
+
+SECTION 2
+
+STEP 1
+
+TRADE INFORMATION
+
+Fields:
+
+Symbol
+
+Market
+
+Broker
+
+Account
+
+Date
+
+Time
+
+Session
+
+Direction
+
+Long / Short
+
+------------------------------------------------------------
+
+Price Data:
+
+Entry Price
+
+Exit Price
+
+Stop Loss
+
+Take Profit
+
+Position Size
+
+Leverage
+
+Commission
+
+Swap
+
+------------------------------------------------------------
+
+SECTION 3
+
+STEP 2
+
+MARKET CONTEXT
+
+Record:
+
+Market Condition
+
+Trend
+
+Range
+
+Breakout
+
+Reversal
+
+Volatility
+
+Liquidity
+
+News Condition
+
+------------------------------------------------------------
+
+Market Analysis:
+
+Why this trade exists?
+
+What was the setup?
+
+What confirmed entry?
+
+------------------------------------------------------------
+
+SECTION 4
+
+STEP 3
+
+STRATEGY SETUP
+
+Select:
+
+Strategy
+
+Setup Type
+
+Playbook Pattern
+
+Trade Quality Expectation
+
+------------------------------------------------------------
+
+Checklist:
+
+Rule 1
+
+Rule 2
+
+Rule 3
+
+Confirmation
+
+Risk Approval
+
+------------------------------------------------------------
+
+SECTION 5
+
+STEP 4
+
+RISK MANAGEMENT
+
+Record:
+
+Risk Percentage
+
+Risk Amount
+
+Position Size
+
+Risk Reward
+
+Expected R
+
+Maximum Allowed Risk
+
+------------------------------------------------------------
+
+Automatic Validation:
+
+Risk Too High
+
+Invalid Stop
+
+Poor Reward
+
+------------------------------------------------------------
+
+SECTION 6
+
+STEP 5
+
+PSYCHOLOGY JOURNAL
+
+Create advanced emotional tracking.
+
+Before Trade:
+
+Confidence
+
+Stress
+
+Fear
+
+Patience
+
+Focus
+
+Energy
+
+Motivation
+
+Discipline
+
+------------------------------------------------------------
+
+During Trade:
+
+Pressure
+
+Fear
+
+Greed
+
+Impulse
+
+Doubt
+
+------------------------------------------------------------
+
+After Trade:
+
+Emotion
+
+Reaction
+
+Lesson
+
+------------------------------------------------------------
+
+SECTION 7
+
+BEHAVIOR TRACKING
+
+Track:
+
+Did I follow my plan?
+
+Did I hesitate?
+
+Did I rush?
+
+Did I break rules?
+
+Did emotion affect decision?
+
+------------------------------------------------------------
+
+SECTION 8
+
+STEP 6
+
+EXECUTION QUALITY
+
+Evaluate:
+
+Entry Quality
+
+Exit Quality
+
+Management Quality
+
+Rule Compliance
+
+Patience
+
+Decision Quality
+
+------------------------------------------------------------
+
+Create:
+
+Execution Score
+
+0-100
+
+------------------------------------------------------------
+
+SECTION 9
+
+STEP 7
+
+TRADE REVIEW
+
+After trade completion.
+
+Record:
+
+What went right?
+
+What went wrong?
+
+What did I learn?
+
+What will I repeat?
+
+What will I avoid?
+
+------------------------------------------------------------
+
+SECTION 10
+
+SCREENSHOT MANAGEMENT
+
+Support:
+
+Upload Screenshot
+
+Before Entry
+
+During Trade
+
+After Exit
+
+Chart Analysis
+
+------------------------------------------------------------
+
+Features:
+
+Image Preview
+
+Annotation
+
+Drawing
+
+Notes
+
+Tags
+
+------------------------------------------------------------
+
+SECTION 11
+
+FAST TRADE ENTRY MODE
+
+Create quick entry.
+
+For traders who need speed.
+
+Required:
+
+Symbol
+
+Direction
+
+Entry
+
+Risk
+
+Screenshot
+
+Emotion
+
+Save
+
+------------------------------------------------------------
+
+Time target:
+
+Under 15 seconds
+
+------------------------------------------------------------
+
+SECTION 12
+
+TRADE TEMPLATES
+
+Create templates.
+
+Examples:
+
+Scalping Template
+
+Day Trading Template
+
+Swing Template
+
+News Template
+
+------------------------------------------------------------
+
+Templates save:
+
+Fields
+
+Checklist
+
+Rules
+
+Questions
+
+------------------------------------------------------------
+
+SECTION 13
+
+TRADE QUALITY INDICATOR
+
+Before saving:
+
+Display:
+
+Trade Quality Estimate
+
+Based on:
+
+Rules
+
+Risk
+
+Setup
+
+Psychology
+
+------------------------------------------------------------
+
+SECTION 14
+
+SMART VALIDATION
+
+Prevent:
+
+Missing Data
+
+Invalid Numbers
+
+High Risk
+
+Incomplete Psychology
+
+Missing Review
+
+------------------------------------------------------------
+
+SECTION 15
+
+TRADE DETAIL PAGE UX
+
+Create professional view.
+
+Sections:
+
+Overview
+
+Chart
+
+Execution
+
+Psychology
+
+Risk
+
+Review
+
+Lessons
+
+AI Analysis Placeholder
+
+------------------------------------------------------------
+
+SECTION 16
+
+TRADE TIMELINE
+
+Display:
+
+Created
+
+Modified
+
+Reviewed
+
+Improved
+
+------------------------------------------------------------
+
+SECTION 17
+
+MOBILE EXPERIENCE
+
+Optimize:
+
+One-hand usage
+
+Quick Entry
+
+Swipe Sections
+
+Large Touch Targets
+
+Camera Upload
+
+------------------------------------------------------------
+
+SECTION 18
+
+STATE MANAGEMENT
+
+Create journal store:
+
+Current Trade
+
+Draft Trade
+
+Templates
+
+Filters
+
+Review Status
+
+------------------------------------------------------------
+
+SECTION 19
+
+PERFORMANCE
+
+Implement:
+
+Autosave Draft
+
+Offline Save
+
+Lazy Loading
+
+Optimized Forms
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Trade Creation
+
+Validation
+
+Draft Recovery
+
+Screenshot Upload
+
+Mobile Flow
+
+Review Process
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Journal Pages
+
+Components
+
+Forms
+
+Stores
+
+Hooks
+
+Validation
+
+Services
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS provides the most complete professional trading journal experience.
+
+Every trade becomes a learning asset.
+
+END OF PROMPT
