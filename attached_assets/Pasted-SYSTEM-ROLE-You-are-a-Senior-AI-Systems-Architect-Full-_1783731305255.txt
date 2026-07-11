@@ -1,0 +1,651 @@
+SYSTEM ROLE
+
+You are a Senior AI Systems Architect, Full Stack AI Engineer, and Trading Performance Platform Designer.
+
+You are implementing the final integration layer of the TraderMind OS AI Coach System.
+
+Your task is to connect all AI intelligence modules into one unified personal trading coach.
+
+The AI is a performance improvement system.
+
+It is NOT a trading signal generator.
+
+It does NOT predict market direction.
+
+It does NOT guarantee profits.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create the complete AI Coach operating system.
+
+The system must combine:
+
+Trade Analysis
+
+Psychology Intelligence
+
+Behavior Recognition
+
+Trader Evolution
+
+Recommendation Engine
+
+Conversation Memory
+
+Performance Tracking
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+State:
+
+Zustand
+
+
+Database:
+
+Dexie.js
+
+IndexedDB
+
+
+AI Layer:
+
+LLM Ready Architecture
+
+AI Service Abstraction
+
+
+Validation:
+
+Zod
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/
+
+core/
+
+integration/
+
+orchestrator/
+
+dashboard/
+
+reports/
+
+alerts/
+
+automation/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+AI ORCHESTRATION ENGINE
+
+Create central AI controller.
+
+Responsibilities:
+
+Collect Data
+
+Run Analysis
+
+Combine Results
+
+Generate Insights
+
+Update Memory
+
+Create Actions
+
+------------------------------------------------------------
+
+Create:
+
+AI Coach Orchestrator
+
+------------------------------------------------------------
+
+SECTION 2
+
+INTELLIGENCE PIPELINE
+
+Create processing flow:
+
+Trade Data
+
+↓
+
+Trade Analysis Engine
+
+↓
+
+Psychology Engine
+
+↓
+
+Pattern Recognition
+
+↓
+
+Evolution Engine
+
+↓
+
+Recommendation Engine
+
+↓
+
+AI Coach Output
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADER PERFORMANCE SCORE
+
+Create final AI score.
+
+Calculate:
+
+Execution Score
+
+Risk Score
+
+Discipline Score
+
+Psychology Score
+
+Consistency Score
+
+Growth Score
+
+------------------------------------------------------------
+
+Formula:
+
+Trader Performance Score
+
+=
+
+Weighted Intelligence Scores
+
+------------------------------------------------------------
+
+Range:
+
+0-100
+
+------------------------------------------------------------
+
+SECTION 4
+
+AI DAILY BRIEFING SYSTEM
+
+Create automatic daily summary.
+
+Include:
+
+Yesterday Performance
+
+Current Mental State
+
+Important Pattern
+
+Risk Warning
+
+Today's Focus
+
+------------------------------------------------------------
+
+Example:
+
+GOOD MORNING
+
+
+Yesterday:
+
+3 trades
+
+
+Strength:
+
+Risk control improved
+
+
+Warning:
+
+Stress increased after loss
+
+
+Today's Focus:
+
+Follow entry checklist
+
+------------------------------------------------------------
+
+SECTION 5
+
+REAL TIME BEHAVIOR ALERTS
+
+Create intelligent warnings.
+
+Detect:
+
+Risk Increase
+
+Emotional Trading
+
+Rule Breaking
+
+Overtrading
+
+Revenge Trading
+
+FOMO
+
+------------------------------------------------------------
+
+Alert Structure:
+
+Type
+
+Severity
+
+Reason
+
+Evidence
+
+Action
+
+------------------------------------------------------------
+
+SECTION 6
+
+AI INSIGHT CENTER
+
+Create central insight system.
+
+Display:
+
+Important Discoveries
+
+Performance Changes
+
+Behavior Changes
+
+Growth Opportunities
+
+------------------------------------------------------------
+
+Categories:
+
+Performance
+
+Psychology
+
+Risk
+
+Execution
+
+Growth
+
+------------------------------------------------------------
+
+SECTION 7
+
+AUTOMATIC REVIEW GENERATOR
+
+Create:
+
+Daily Review
+
+Weekly Review
+
+Monthly Review
+
+Cycle Review
+
+------------------------------------------------------------
+
+Include:
+
+Statistics
+
+Behavior Analysis
+
+Lessons
+
+Recommendations
+
+------------------------------------------------------------
+
+SECTION 8
+
+AI GOAL MANAGEMENT
+
+Connect AI with goals.
+
+AI should:
+
+Track Progress
+
+Measure Improvement
+
+Suggest Adjustments
+
+Update Goals
+
+------------------------------------------------------------
+
+Examples:
+
+Goal:
+
+Reduce FOMO
+
+
+Progress:
+
+70% improvement
+
+
+Next Step:
+
+Continue confirmation practice
+
+------------------------------------------------------------
+
+SECTION 9
+
+AI TRAINING PLAN GENERATOR
+
+Create personalized training plans.
+
+Based on:
+
+Weaknesses
+
+Goals
+
+Trading Style
+
+Psychology
+
+Performance
+
+------------------------------------------------------------
+
+Generate:
+
+Exercises
+
+Duration
+
+Frequency
+
+Measurement
+
+------------------------------------------------------------
+
+SECTION 10
+
+AI KNOWLEDGE BASE PREPARATION
+
+Prepare architecture for future:
+
+Trading Education
+
+Personal Notes
+
+Documents
+
+Books
+
+Courses
+
+Rules
+
+------------------------------------------------------------
+
+The AI can later answer:
+
+"What did I learn about this strategy?"
+
+------------------------------------------------------------
+
+SECTION 11
+
+AI MULTI MODEL SUPPORT
+
+Create abstraction layer.
+
+Support future:
+
+OpenAI API
+
+Local Models
+
+Private Models
+
+Cloud AI
+
+------------------------------------------------------------
+
+Create:
+
+AI Provider Interface
+
+------------------------------------------------------------
+
+SECTION 12
+
+AI COST MANAGEMENT
+
+Prepare:
+
+Token Tracking
+
+Request Limits
+
+Caching
+
+Local Processing
+
+------------------------------------------------------------
+
+SECTION 13
+
+AI PRIVACY SYSTEM
+
+Implement:
+
+Local AI Data Control
+
+Memory Control
+
+Delete History
+
+Export Data
+
+Disable AI
+
+------------------------------------------------------------
+
+SECTION 14
+
+AI DASHBOARD WIDGETS
+
+Create:
+
+AI Score Card
+
+Today's Coach Message
+
+Main Weakness
+
+Main Strength
+
+Current Focus
+
+Risk Alert
+
+Growth Progress
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+AIProfile
+
+AIInsight
+
+AIAlert
+
+AIDailyBrief
+
+AITrainingPlan
+
+AIPerformanceScore
+
+AIProviderSetting
+
+------------------------------------------------------------
+
+SECTION 16
+
+AUTOMATION ENGINE
+
+Create scheduled tasks:
+
+Daily Analysis
+
+Weekly Summary
+
+Monthly Evolution Report
+
+Pattern Detection
+
+Goal Review
+
+------------------------------------------------------------
+
+SECTION 17
+
+STATE MANAGEMENT
+
+Create:
+
+AI Global Store
+
+Current Score
+
+Insights
+
+Alerts
+
+Plans
+
+Conversation Context
+
+------------------------------------------------------------
+
+SECTION 18
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Background Processing
+
+Caching
+
+Lazy Analysis
+
+Incremental Updates
+
+Efficient Database Queries
+
+------------------------------------------------------------
+
+SECTION 19
+
+TESTING
+
+Test:
+
+AI Integration
+
+Score Generation
+
+Alert System
+
+Daily Reports
+
+Goal Tracking
+
+Memory Connection
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+AI Orchestrator
+
+Integration Services
+
+Database Models
+
+Components
+
+Hooks
+
+State Stores
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a complete AI-powered trading performance operating system.
+
+The trader receives:
+
+Analysis
+
+Understanding
+
+Guidance
+
+Planning
+
+Continuous Improvement
+
+END OF PROMPT

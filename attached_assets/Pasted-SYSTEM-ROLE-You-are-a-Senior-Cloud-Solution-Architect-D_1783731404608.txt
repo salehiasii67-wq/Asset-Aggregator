@@ -1,0 +1,574 @@
+SYSTEM ROLE
+
+You are a Senior Cloud Solution Architect, DevOps Engineer, Security Engineer, and Production Release Specialist.
+
+You are implementing the final cloud integration layer of TraderMind OS.
+
+The platform already contains:
+
+Authentication
+
+Cloud Database
+
+Sync Engine
+
+Storage
+
+Backup
+
+Multi Device
+
+Subscription System
+
+AI Coach
+
+Your responsibility is to prepare TraderMind OS for real production usage.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create the final production cloud environment.
+
+The system must support:
+
+Security
+
+Reliability
+
+Monitoring
+
+Scalability
+
+Error Recovery
+
+Production Deployment
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+Vite
+
+
+Backend:
+
+Supabase
+
+
+Database:
+
+PostgreSQL
+
+
+Storage:
+
+Supabase Storage
+
+
+Deployment Preparation:
+
+Vercel
+
+Netlify
+
+Cloudflare Pages
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/cloud/
+
+production/
+
+security/
+
+monitoring/
+
+errors/
+
+health/
+
+deployment/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+FINAL SYSTEM INTEGRATION
+
+Connect:
+
+Authentication
+
+Database
+
+Sync Engine
+
+Storage
+
+Backup
+
+Subscription
+
+AI System
+
+
+Create:
+
+Cloud Application Controller
+
+------------------------------------------------------------
+
+Responsibilities:
+
+Initialize Cloud
+
+Restore Session
+
+Check Connection
+
+Start Sync
+
+Load User Data
+
+Verify Permissions
+
+------------------------------------------------------------
+
+SECTION 2
+
+APPLICATION STARTUP FLOW
+
+Create startup sequence:
+
+App Launch
+
+↓
+
+Check Local Database
+
+↓
+
+Restore User Session
+
+↓
+
+Check Internet
+
+↓
+
+Connect Cloud
+
+↓
+
+Sync Data
+
+↓
+
+Load Dashboard
+
+------------------------------------------------------------
+
+SECTION 3
+
+SECURITY HARDENING
+
+Implement:
+
+Authentication Protection
+
+Session Security
+
+Token Management
+
+Permission Validation
+
+Data Encryption Preparation
+
+------------------------------------------------------------
+
+SECTION 4
+
+API SECURITY
+
+Create:
+
+Request Validation
+
+Rate Limiting Preparation
+
+Error Protection
+
+Input Sanitization
+
+------------------------------------------------------------
+
+SECTION 5
+
+DATA PROTECTION
+
+Implement:
+
+User Data Isolation
+
+Secure Queries
+
+Private Storage Access
+
+Backup Encryption Preparation
+
+------------------------------------------------------------
+
+SECTION 6
+
+ERROR MANAGEMENT SYSTEM
+
+Create global error handler.
+
+Handle:
+
+Network Errors
+
+Database Errors
+
+Sync Errors
+
+Authentication Errors
+
+Storage Errors
+
+Payment Errors
+
+------------------------------------------------------------
+
+Create:
+
+Error Reporting Service
+
+------------------------------------------------------------
+
+SECTION 7
+
+CLOUD HEALTH MONITORING
+
+Create:
+
+System Health Dashboard
+
+
+Monitor:
+
+Database Status
+
+Storage Status
+
+Authentication Status
+
+Sync Status
+
+API Response
+
+------------------------------------------------------------
+
+SECTION 8
+
+USER HEALTH STATUS
+
+Create:
+
+Connection Indicator
+
+
+States:
+
+Online
+
+Offline
+
+Limited Mode
+
+Sync Problem
+
+Cloud Error
+
+------------------------------------------------------------
+
+SECTION 9
+
+AUTOMATIC RECOVERY SYSTEM
+
+Implement:
+
+Retry Failed Sync
+
+Reconnect Cloud
+
+Restore Session
+
+Recover Interrupted Upload
+
+------------------------------------------------------------
+
+SECTION 10
+
+SYNC FINAL VALIDATION
+
+Verify:
+
+No Data Loss
+
+No Duplicate Records
+
+Correct Conflict Handling
+
+Fast Recovery
+
+------------------------------------------------------------
+
+SECTION 11
+
+DATABASE BACKUP POLICY
+
+Create:
+
+Automatic Backup Rules
+
+Retention Policy
+
+Restore Points
+
+Backup Monitoring
+
+------------------------------------------------------------
+
+SECTION 12
+
+LOGGING SYSTEM
+
+Create:
+
+Application Logs
+
+Security Logs
+
+Sync Logs
+
+Error Logs
+
+------------------------------------------------------------
+
+Store:
+
+Timestamp
+
+User
+
+Action
+
+Result
+
+Error
+
+------------------------------------------------------------
+
+SECTION 13
+
+ANALYTICS PREPARATION
+
+Track:
+
+Active Users
+
+Feature Usage
+
+Sync Performance
+
+Storage Usage
+
+AI Usage
+
+------------------------------------------------------------
+
+SECTION 14
+
+ENVIRONMENT MANAGEMENT
+
+Create:
+
+Development Environment
+
+Testing Environment
+
+Production Environment
+
+------------------------------------------------------------
+
+Environment Variables:
+
+Database URL
+
+API Keys
+
+Storage Keys
+
+Authentication Keys
+
+------------------------------------------------------------
+
+SECTION 15
+
+DEPLOYMENT CONFIGURATION
+
+Prepare:
+
+Production Build
+
+Environment Setup
+
+Deployment Scripts
+
+Version Management
+
+------------------------------------------------------------
+
+SECTION 16
+
+UPDATE SYSTEM
+
+Prepare:
+
+Application Versioning
+
+Migration Updates
+
+Database Updates
+
+Rollback Strategy
+
+------------------------------------------------------------
+
+SECTION 17
+
+SECURITY TESTING
+
+Test:
+
+Authentication
+
+Authorization
+
+Data Isolation
+
+Storage Security
+
+Session Management
+
+------------------------------------------------------------
+
+SECTION 18
+
+LOAD TEST PREPARATION
+
+Test:
+
+Large Trade Database
+
+Many Users
+
+Large Files
+
+Heavy AI Usage
+
+Multiple Devices
+
+------------------------------------------------------------
+
+SECTION 19
+
+FINAL CLOUD CHECKLIST
+
+Verify:
+
+
+✓ User Accounts
+
+✓ Secure Login
+
+✓ Cloud Sync
+
+✓ Backup
+
+✓ Restore
+
+✓ Storage
+
+✓ Multi Device
+
+✓ Subscription
+
+✓ Security
+
+✓ Error Recovery
+
+
+------------------------------------------------------------
+
+SECTION 20
+
+DOCUMENTATION
+
+Generate:
+
+Cloud Documentation
+
+Architecture Documentation
+
+Security Documentation
+
+Deployment Guide
+
+User Account Guide
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Production Cloud Architecture
+
+Security Layer
+
+Monitoring System
+
+Deployment Configuration
+
+Documentation
+
+Tests
+
+Production-ready TypeScript implementation
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS is ready for real users.
+
+The application can safely operate as a professional cloud-based trading performance platform.
+
+END OF PROMPT

@@ -1,0 +1,742 @@
+SYSTEM ROLE
+
+You are a Senior Backend Architect, Database Engineer, and Supabase PostgreSQL Specialist.
+
+You are implementing the Cloud Database Architecture of TraderMind OS.
+
+The application already contains:
+
+Local Dexie Database
+
+Sync Engine
+
+Authentication System
+
+
+Your task is to create the production cloud database structure and migration system.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a secure scalable cloud database supporting:
+
+Trading Data
+
+Psychology Data
+
+AI Data
+
+Growth Data
+
+User Preferences
+
+Files
+
+Synchronization
+
+------------------------------------------------------------
+
+TECH STACK
+
+Backend:
+
+Supabase
+
+PostgreSQL
+
+
+Authentication:
+
+Supabase Auth
+
+
+Storage:
+
+Supabase Storage
+
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Validation:
+
+Zod
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/cloud/database/
+
+schema/
+
+migrations/
+
+queries/
+
+repositories/
+
+types/
+
+security/
+
+services/
+
+------------------------------------------------------------
+
+SECTION 1
+
+DATABASE ARCHITECTURE DESIGN
+
+Create PostgreSQL schema.
+
+Requirements:
+
+UUID Primary Keys
+
+Foreign Keys
+
+Indexes
+
+Timestamps
+
+Soft Delete Support
+
+Version Tracking
+
+------------------------------------------------------------
+
+SECTION 2
+
+USER DATA TABLES
+
+Create:
+
+profiles
+
+Fields:
+
+id
+
+user_id
+
+name
+
+avatar
+
+experience_level
+
+trading_style
+
+timezone
+
+created_at
+
+updated_at
+
+------------------------------------------------------------
+
+settings
+
+Fields:
+
+id
+
+user_id
+
+theme
+
+language
+
+preferences
+
+notifications
+
+created_at
+
+updated_at
+
+------------------------------------------------------------
+
+SECTION 3
+
+TRADING JOURNAL TABLES
+
+Create:
+
+trades
+
+
+Fields:
+
+id
+
+user_id
+
+symbol
+
+market
+
+direction
+
+entry_price
+
+exit_price
+
+stop_loss
+
+take_profit
+
+volume
+
+risk
+
+reward
+
+profit_loss
+
+r_multiple
+
+strategy_id
+
+box_id
+
+emotion_data
+
+notes
+
+created_at
+
+updated_at
+
+version
+
+------------------------------------------------------------
+
+trade_reviews
+
+
+Fields:
+
+id
+
+trade_id
+
+user_id
+
+content
+
+score
+
+lessons
+
+created_at
+
+------------------------------------------------------------
+
+SECTION 4
+
+TRADE BOX SYSTEM
+
+Create:
+
+boxes
+
+
+Fields:
+
+id
+
+user_id
+
+name
+
+goal
+
+target_trades
+
+completed_trades
+
+status
+
+start_date
+
+end_date
+
+created_at
+
+updated_at
+
+------------------------------------------------------------
+
+SECTION 5
+
+STRATEGY SYSTEM
+
+Create:
+
+strategies
+
+
+Fields:
+
+id
+
+user_id
+
+name
+
+description
+
+rules
+
+created_at
+
+updated_at
+
+------------------------------------------------------------
+
+SECTION 6
+
+PSYCHOLOGY DATA TABLES
+
+Create:
+
+emotion_records
+
+
+Fields:
+
+id
+
+user_id
+
+trade_id
+
+emotion
+
+intensity
+
+context
+
+created_at
+
+
+------------------------------------------------------------
+
+behavior_patterns
+
+
+Fields:
+
+id
+
+user_id
+
+pattern_type
+
+description
+
+frequency
+
+impact
+
+created_at
+
+------------------------------------------------------------
+
+SECTION 7
+
+AI DATA TABLES
+
+Create:
+
+ai_insights
+
+
+Fields:
+
+id
+
+user_id
+
+type
+
+content
+
+importance
+
+created_at
+
+
+------------------------------------------------------------
+
+ai_memory
+
+
+Fields:
+
+id
+
+user_id
+
+category
+
+memory
+
+importance
+
+created_at
+
+------------------------------------------------------------
+
+ai_conversations
+
+
+Fields:
+
+id
+
+user_id
+
+title
+
+created_at
+
+updated_at
+
+------------------------------------------------------------
+
+ai_messages
+
+
+Fields:
+
+id
+
+conversation_id
+
+role
+
+content
+
+timestamp
+
+------------------------------------------------------------
+
+SECTION 8
+
+GROWTH SYSTEM TABLES
+
+Create:
+
+goals
+
+
+Fields:
+
+id
+
+user_id
+
+title
+
+description
+
+target
+
+progress
+
+status
+
+created_at
+
+
+------------------------------------------------------------
+
+habits
+
+
+Fields:
+
+id
+
+user_id
+
+name
+
+frequency
+
+streak
+
+created_at
+
+------------------------------------------------------------
+
+SECTION 9
+
+FILE STORAGE ARCHITECTURE
+
+Create Supabase Storage buckets:
+
+trade-images
+
+reports
+
+avatars
+
+exports
+
+------------------------------------------------------------
+
+File Metadata:
+
+id
+
+user_id
+
+file_name
+
+file_type
+
+path
+
+size
+
+created_at
+
+------------------------------------------------------------
+
+SECTION 10
+
+SECURITY SYSTEM
+
+Implement:
+
+Row Level Security
+
+Policies
+
+User Ownership
+
+Access Control
+
+------------------------------------------------------------
+
+Rules:
+
+User can only access own data.
+
+No cross-user visibility.
+
+------------------------------------------------------------
+
+SECTION 11
+
+DATABASE INDEXING
+
+Create indexes for:
+
+user_id
+
+created_at
+
+updated_at
+
+symbol
+
+strategy_id
+
+box_id
+
+trade_date
+
+------------------------------------------------------------
+
+Purpose:
+
+Fast analytics
+
+Fast sync
+
+Fast search
+
+------------------------------------------------------------
+
+SECTION 12
+
+MIGRATION SYSTEM
+
+Create:
+
+Database Migration Files
+
+Version Tracking
+
+Rollback Preparation
+
+------------------------------------------------------------
+
+Migration examples:
+
+001_create_profiles
+
+002_create_trades
+
+003_create_ai_tables
+
+004_create_growth_tables
+
+------------------------------------------------------------
+
+SECTION 13
+
+CLOUD REPOSITORY LAYER
+
+Create:
+
+cloudTradeRepository
+
+cloudBoxRepository
+
+cloudStrategyRepository
+
+cloudAIRepository
+
+cloudGoalRepository
+
+------------------------------------------------------------
+
+SECTION 14
+
+DATA TRANSFORMATION LAYER
+
+Create mapping:
+
+Local Model
+
+↓
+
+Cloud Model
+
+
+Cloud Model
+
+↓
+
+Local Model
+
+------------------------------------------------------------
+
+Handle:
+
+Field conversion
+
+Date formatting
+
+Missing values
+
+Validation
+
+------------------------------------------------------------
+
+SECTION 15
+
+BACKUP PREPARATION
+
+Prepare:
+
+Database Backup
+
+Export
+
+Restore
+
+History Tracking
+
+------------------------------------------------------------
+
+SECTION 16
+
+DATA PRIVACY
+
+Implement:
+
+User Data Control
+
+Delete Account
+
+Export Personal Data
+
+Remove Cloud Data
+
+------------------------------------------------------------
+
+SECTION 17
+
+PERFORMANCE
+
+Optimize:
+
+Query Performance
+
+Pagination
+
+Batch Loading
+
+Caching
+
+Indexes
+
+------------------------------------------------------------
+
+SECTION 18
+
+TESTING
+
+Test:
+
+Database Creation
+
+Security Rules
+
+Data Migration
+
+Repositories
+
+Permissions
+
+Queries
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+SQL Schema
+
+Migration Files
+
+Repositories
+
+Types
+
+Security Policies
+
+Tests
+
+Production-ready implementation
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a professional cloud database foundation ready for production.
+
+END OF PROMPT

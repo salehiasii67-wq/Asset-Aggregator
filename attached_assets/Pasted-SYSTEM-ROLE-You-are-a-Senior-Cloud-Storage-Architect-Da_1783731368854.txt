@@ -1,0 +1,627 @@
+SYSTEM ROLE
+
+You are a Senior Cloud Storage Architect, Data Protection Engineer, and Full Stack Developer.
+
+You are implementing the Cloud Storage and Backup System of TraderMind OS.
+
+The application already contains:
+
+Authentication System
+
+Cloud Database
+
+Sync Engine
+
+Trading Journal
+
+AI Coach
+
+
+Your task is to create secure file storage, backup, and recovery infrastructure.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional cloud storage system supporting:
+
+Trade Screenshots
+
+Reports
+
+User Files
+
+Backups
+
+Restore
+
+File Management
+
+Storage Monitoring
+
+------------------------------------------------------------
+
+TECH STACK
+
+Storage:
+
+Supabase Storage
+
+
+Database:
+
+PostgreSQL
+
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Local:
+
+IndexedDB
+
+Dexie.js
+
+
+State:
+
+Zustand
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/cloud/storage/
+
+files/
+
+uploads/
+
+downloads/
+
+backup/
+
+restore/
+
+compression/
+
+security/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+STORAGE ARCHITECTURE
+
+Create storage system.
+
+Support:
+
+Upload
+
+Download
+
+Delete
+
+Replace
+
+Version Control
+
+File Metadata
+
+------------------------------------------------------------
+
+SECTION 2
+
+STORAGE BUCKET DESIGN
+
+Create buckets:
+
+trade-screenshots
+
+reports
+
+exports
+
+avatars
+
+backups
+
+------------------------------------------------------------
+
+SECTION 3
+
+FILE ENTITY MODEL
+
+Create:
+
+FileRecord
+
+
+Fields:
+
+id
+
+user_id
+
+name
+
+type
+
+size
+
+path
+
+bucket
+
+related_entity
+
+related_id
+
+created_at
+
+updated_at
+
+version
+
+------------------------------------------------------------
+
+SECTION 4
+
+TRADE SCREENSHOT MANAGEMENT
+
+Implement:
+
+Upload Screenshot
+
+Attach To Trade
+
+View Screenshot
+
+Delete Screenshot
+
+Replace Screenshot
+
+------------------------------------------------------------
+
+Support:
+
+Before Trade Image
+
+During Trade Image
+
+After Trade Image
+
+Chart Screenshot
+
+Review Image
+
+------------------------------------------------------------
+
+SECTION 5
+
+REPORT STORAGE
+
+Manage:
+
+PDF Reports
+
+Excel Reports
+
+CSV Files
+
+JSON Exports
+
+HTML Reports
+
+------------------------------------------------------------
+
+Features:
+
+Generate
+
+Store
+
+Download
+
+Share
+
+Delete
+
+------------------------------------------------------------
+
+SECTION 6
+
+USER AVATAR SYSTEM
+
+Implement:
+
+Upload Avatar
+
+Resize Image
+
+Replace Image
+
+Delete Image
+
+------------------------------------------------------------
+
+SECTION 7
+
+UPLOAD ENGINE
+
+Create upload service.
+
+Features:
+
+Progress Tracking
+
+Pause Preparation
+
+Retry Failed Upload
+
+Compression
+
+Validation
+
+------------------------------------------------------------
+
+Validate:
+
+File Size
+
+File Type
+
+Permission
+
+Ownership
+
+------------------------------------------------------------
+
+SECTION 8
+
+DOWNLOAD ENGINE
+
+Implement:
+
+Secure Download
+
+Temporary Links
+
+Access Validation
+
+Caching
+
+------------------------------------------------------------
+
+SECTION 9
+
+AUTOMATIC BACKUP SYSTEM
+
+Create backup engine.
+
+Backup Types:
+
+Daily Backup
+
+Weekly Backup
+
+Manual Backup
+
+Before Major Update Backup
+
+------------------------------------------------------------
+
+Backup Includes:
+
+Trades
+
+Boxes
+
+Strategies
+
+Reviews
+
+Psychology Data
+
+AI Memory
+
+Goals
+
+Settings
+
+------------------------------------------------------------
+
+SECTION 10
+
+BACKUP VERSIONING
+
+Create:
+
+Backup History
+
+
+Fields:
+
+id
+
+user_id
+
+backup_type
+
+file_size
+
+created_at
+
+status
+
+------------------------------------------------------------
+
+Support:
+
+Multiple Backup Versions
+
+Restore Point Selection
+
+------------------------------------------------------------
+
+SECTION 11
+
+RESTORE SYSTEM
+
+Implement:
+
+Restore Full Data
+
+Restore Selected Data
+
+Restore Previous Version
+
+------------------------------------------------------------
+
+Restore Options:
+
+Everything
+
+Only Trades
+
+Only Settings
+
+Only AI Data
+
+Only Psychology Data
+
+------------------------------------------------------------
+
+SECTION 12
+
+LOCAL BACKUP
+
+Support:
+
+Export Local Backup
+
+Import Local Backup
+
+Offline Backup File
+
+------------------------------------------------------------
+
+Formats:
+
+JSON
+
+ZIP Preparation
+
+------------------------------------------------------------
+
+SECTION 13
+
+STORAGE SECURITY
+
+Implement:
+
+Private Buckets
+
+Access Policies
+
+User Ownership
+
+Secure URLs
+
+Expiration Links
+
+------------------------------------------------------------
+
+Rules:
+
+User can only access own files.
+
+------------------------------------------------------------
+
+SECTION 14
+
+STORAGE MONITORING
+
+Create:
+
+Storage Dashboard
+
+
+Display:
+
+Used Space
+
+Available Space
+
+Number Of Files
+
+Largest Files
+
+Recent Uploads
+
+------------------------------------------------------------
+
+SECTION 15
+
+FILE SEARCH SYSTEM
+
+Search:
+
+File Name
+
+Trade
+
+Date
+
+Type
+
+Category
+
+------------------------------------------------------------
+
+SECTION 16
+
+FILE ORGANIZATION
+
+Create automatic organization:
+
+User
+
+↓
+
+Year
+
+↓
+
+Month
+
+↓
+
+Trade
+
+↓
+
+Files
+
+------------------------------------------------------------
+
+Example:
+
+/user123/
+
+2026/
+
+July/
+
+EURUSD_trade_01.png
+
+------------------------------------------------------------
+
+SECTION 17
+
+OFFLINE FILE HANDLING
+
+Support:
+
+Local Temporary Storage
+
+Pending Upload Queue
+
+Automatic Upload After Connection
+
+------------------------------------------------------------
+
+SECTION 18
+
+ERROR MANAGEMENT
+
+Handle:
+
+Upload Failure
+
+Network Loss
+
+Storage Limit
+
+Invalid File
+
+Permission Error
+
+------------------------------------------------------------
+
+SECTION 19
+
+DATABASE TABLES
+
+Create:
+
+files
+
+backup_history
+
+restore_history
+
+upload_queue
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+File Upload
+
+Screenshot Attachment
+
+Backup Creation
+
+Restore Process
+
+Permission Security
+
+Offline Upload Queue
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Storage Services
+
+Backup Engine
+
+Upload Components
+
+Database Models
+
+Security Rules
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a secure professional storage and backup system.
+
+User data, screenshots, and reports are protected and recoverable.
+
+END OF PROMPT

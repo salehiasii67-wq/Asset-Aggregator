@@ -1,0 +1,384 @@
+SYSTEM ROLE
+
+You are a Senior Data Intelligence Engineer and Long-Term Performance Analytics Architect.
+
+You are implementing the Report Intelligence and Historical Performance Archive System of TraderMind OS.
+
+The application already contains:
+
+Reports
+
+Analytics
+
+AI Coach
+
+Cloud Storage
+
+Your task is to create a system that turns reports into a long-term growth history.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a historical intelligence system that answers:
+
+How did the trader improve?
+
+What changed over time?
+
+Which mistakes disappeared?
+
+Which problems remain?
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Database:
+
+PostgreSQL
+
+Dexie.js
+
+
+Charts:
+
+Recharts
+
+
+AI:
+
+AI Analysis Layer
+
+
+State:
+
+Zustand
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/reports/intelligence/
+
+archive/
+
+timeline/
+
+comparison/
+
+trends/
+
+insights/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+REPORT ARCHIVE SYSTEM
+
+Create:
+
+Report Archive
+
+
+Store:
+
+All Generated Reports
+
+Versions
+
+Exports
+
+Reviews
+
+AI Analysis
+
+------------------------------------------------------------
+
+SECTION 2
+
+REPORT TIMELINE
+
+Create:
+
+Performance Timeline
+
+
+Display:
+
+Daily
+
+Weekly
+
+Monthly
+
+Yearly
+
+------------------------------------------------------------
+
+SECTION 3
+
+PERFORMANCE EVOLUTION ENGINE
+
+Analyze changes over time.
+
+Track:
+
+Win Rate
+
+Average R
+
+Risk Control
+
+Discipline Score
+
+Psychology Score
+
+Execution Score
+
+------------------------------------------------------------
+
+SECTION 4
+
+PERIOD COMPARISON
+
+Create:
+
+Compare Reports
+
+
+Examples:
+
+This Month vs Last Month
+
+Current Box vs Previous Box
+
+Current Year vs Previous Year
+
+------------------------------------------------------------
+
+SECTION 5
+
+TREND DETECTION
+
+Detect:
+
+Improvement Trends
+
+Decline Trends
+
+Stable Areas
+
+Warning Areas
+
+------------------------------------------------------------
+
+SECTION 6
+
+LONG TERM MISTAKE TRACKING
+
+Track:
+
+Repeated Errors
+
+Resolved Errors
+
+New Errors
+
+Frequency Changes
+
+------------------------------------------------------------
+
+SECTION 7
+
+GROWTH SCORE HISTORY
+
+Create:
+
+Growth Evolution Chart
+
+
+Display:
+
+Trader Score Progress
+
+------------------------------------------------------------
+
+Example:
+
+January:
+
+62
+
+
+March:
+
+74
+
+
+July:
+
+86
+
+------------------------------------------------------------
+
+SECTION 8
+
+AI HISTORICAL INSIGHTS
+
+Generate:
+
+"You improved risk management by 24% over six months."
+
+"Your revenge trading decreased."
+
+"Your consistency improved."
+
+------------------------------------------------------------
+
+SECTION 9
+
+PERSONAL TRADING JOURNEY
+
+Create:
+
+Trader Journey Timeline
+
+
+Include:
+
+Major Milestones
+
+Completed Boxes
+
+Achievements
+
+Lessons
+
+------------------------------------------------------------
+
+SECTION 10
+
+REPORT SEARCH
+
+Search:
+
+Date
+
+Type
+
+Strategy
+
+Box
+
+Keyword
+
+Emotion
+
+------------------------------------------------------------
+
+SECTION 11
+
+ARCHIVE STORAGE MANAGEMENT
+
+Implement:
+
+Compression Preparation
+
+Old Report Management
+
+Storage Optimization
+
+------------------------------------------------------------
+
+SECTION 12
+
+DATABASE TABLES
+
+Create:
+
+report_archive
+
+performance_history
+
+growth_milestones
+
+trend_records
+
+------------------------------------------------------------
+
+SECTION 13
+
+DASHBOARD INTEGRATION
+
+Create widgets:
+
+Growth Timeline
+
+Performance Evolution
+
+Improvement Score
+
+Historical Insights
+
+------------------------------------------------------------
+
+SECTION 14
+
+TESTING
+
+Test:
+
+Archive Creation
+
+Search
+
+Comparison
+
+Trend Detection
+
+History Charts
+
+AI Insights
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Archive System
+
+Analytics Services
+
+Timeline Components
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS becomes a long-term personal trading development record.
+
+END OF PROMPT

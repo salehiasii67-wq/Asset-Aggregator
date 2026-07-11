@@ -1,0 +1,442 @@
+SYSTEM ROLE
+
+You are a Senior Document Generation Engineer and Export System Developer.
+
+You are implementing the professional export engine of TraderMind OS.
+
+The Report Engine already exists.
+
+Your task is to create a multi-format export system.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Allow users to export reports into:
+
+PDF
+
+Excel
+
+CSV
+
+JSON
+
+HTML
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Libraries:
+
+PDF Generation Library
+
+Excel Generation Library
+
+CSV Generator
+
+HTML Renderer
+
+
+Storage:
+
+Supabase Storage
+
+
+Local:
+
+IndexedDB
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/reports/exporters/
+
+pdf/
+
+excel/
+
+csv/
+
+json/
+
+html/
+
+services/
+
+templates/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+EXPORT ENGINE CORE
+
+Create:
+
+ExportEngine
+
+
+Responsibilities:
+
+Receive Report
+
+Select Format
+
+Generate File
+
+Store File
+
+Return Download Link
+
+------------------------------------------------------------
+
+SECTION 2
+
+EXPORT FORMAT SYSTEM
+
+Create:
+
+ExportType
+
+
+Values:
+
+PDF
+
+EXCEL
+
+CSV
+
+JSON
+
+HTML
+
+------------------------------------------------------------
+
+SECTION 3
+
+PDF GENERATOR
+
+Create professional PDF reports.
+
+Requirements:
+
+Header
+
+Logo
+
+Charts
+
+Tables
+
+Images
+
+Page Numbers
+
+Footer
+
+Date
+
+------------------------------------------------------------
+
+Support:
+
+Trade Reports
+
+Performance Reports
+
+AI Reports
+
+------------------------------------------------------------
+
+SECTION 4
+
+PDF DESIGN SYSTEM
+
+Create:
+
+Professional Theme
+
+Typography
+
+Spacing
+
+Sections
+
+Cards
+
+Charts
+
+------------------------------------------------------------
+
+SECTION 5
+
+EXCEL EXPORT
+
+Create workbook generator.
+
+Sheets:
+
+Trades
+
+Statistics
+
+Strategies
+
+Boxes
+
+Psychology
+
+Reviews
+
+AI Insights
+
+------------------------------------------------------------
+
+Features:
+
+Filters
+
+Formatting
+
+Sorting
+
+Multiple Sheets
+
+------------------------------------------------------------
+
+SECTION 6
+
+CSV EXPORT
+
+Support:
+
+Trade Data
+
+Analytics Data
+
+Psychology Data
+
+AI Data
+
+------------------------------------------------------------
+
+SECTION 7
+
+JSON EXPORT
+
+Create full data export.
+
+Include:
+
+User Data
+
+Trades
+
+Boxes
+
+Settings
+
+AI Memory
+
+Goals
+
+------------------------------------------------------------
+
+Purpose:
+
+Backup
+
+Migration
+
+External Analysis
+
+------------------------------------------------------------
+
+SECTION 8
+
+HTML EXPORT
+
+Create:
+
+Interactive Web Report
+
+Support:
+
+Charts
+
+Tables
+
+Images
+
+Links
+
+------------------------------------------------------------
+
+SECTION 9
+
+DOWNLOAD SYSTEM
+
+Create:
+
+Download Service
+
+
+Features:
+
+Download File
+
+Open File
+
+Share File
+
+Delete File
+
+------------------------------------------------------------
+
+SECTION 10
+
+CLOUD STORAGE INTEGRATION
+
+Automatically upload generated files.
+
+Store:
+
+File URL
+
+Created Date
+
+Report ID
+
+Format
+
+------------------------------------------------------------
+
+SECTION 11
+
+EXPORT HISTORY
+
+Create:
+
+ExportRecord
+
+
+Fields:
+
+id
+
+reportId
+
+format
+
+fileSize
+
+createdAt
+
+status
+
+------------------------------------------------------------
+
+SECTION 12
+
+SHARING SYSTEM
+
+Prepare:
+
+Share Link
+
+Expiration Date
+
+Permission Control
+
+------------------------------------------------------------
+
+SECTION 13
+
+PRIVACY CONTROLS
+
+Allow hiding:
+
+Account Balance
+
+Private Notes
+
+Personal Information
+
+------------------------------------------------------------
+
+SECTION 14
+
+EXPORT QUEUE
+
+Support:
+
+Large Reports
+
+Background Processing
+
+Progress Tracking
+
+Retry Failed Export
+
+------------------------------------------------------------
+
+SECTION 15
+
+TESTING
+
+Test:
+
+PDF Generation
+
+Excel Export
+
+CSV Export
+
+JSON Export
+
+Storage Upload
+
+Download Flow
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Export Engine
+
+Generators
+
+Templates
+
+Storage Integration
+
+Components
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS can create professional downloadable reports in multiple formats.
+
+END OF PROMPT

@@ -1,0 +1,576 @@
+SYSTEM ROLE
+
+You are a Senior Full Stack Product Engineer and Multi-Device Synchronization UX Architect.
+
+You are implementing the Multi-Device Experience System of TraderMind OS.
+
+The application already has:
+
+Authentication
+
+Cloud Database
+
+Sync Engine
+
+Storage System
+
+
+Your task is to create a professional multi-device management experience.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a system that allows users to:
+
+Manage Devices
+
+Monitor Sync
+
+Control Sessions
+
+Protect Account
+
+Use Multiple Platforms
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+TailwindCSS
+
+
+State:
+
+Zustand
+
+
+Database:
+
+Supabase PostgreSQL
+
+
+Local:
+
+Dexie.js
+
+
+Authentication:
+
+Supabase Auth
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/cloud/devices/
+
+devices/
+
+sessions/
+
+sync-status/
+
+security/
+
+components/
+
+hooks/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+DEVICE REGISTRATION SYSTEM
+
+Create device tracking.
+
+Every installation receives:
+
+Device ID
+
+Device Name
+
+Platform
+
+Version
+
+Created Date
+
+Last Active Time
+
+------------------------------------------------------------
+
+Supported Platforms:
+
+Android
+
+iOS Preparation
+
+Windows
+
+MacOS
+
+Linux
+
+Web Browser
+
+------------------------------------------------------------
+
+SECTION 2
+
+DEVICE ENTITY MODEL
+
+Create:
+
+DeviceRecord
+
+
+Fields:
+
+id
+
+user_id
+
+device_name
+
+device_type
+
+platform
+
+app_version
+
+last_active
+
+created_at
+
+last_sync
+
+status
+
+------------------------------------------------------------
+
+SECTION 3
+
+ACTIVE DEVICE MANAGEMENT
+
+Create device dashboard.
+
+Display:
+
+Connected Devices
+
+Current Device
+
+Last Activity
+
+Sync Status
+
+Location Preparation
+
+------------------------------------------------------------
+
+Example:
+
+My Devices:
+
+✓ Android Phone
+
+✓ Windows Laptop
+
+✓ Chrome Browser
+
+------------------------------------------------------------
+
+SECTION 4
+
+SESSION MANAGEMENT
+
+Create:
+
+User Sessions
+
+
+Fields:
+
+id
+
+user_id
+
+device_id
+
+login_time
+
+last_activity
+
+status
+
+------------------------------------------------------------
+
+Support:
+
+View Sessions
+
+Terminate Session
+
+Logout From Device
+
+------------------------------------------------------------
+
+SECTION 5
+
+SECURITY CONTROLS
+
+Create:
+
+Security Center
+
+Features:
+
+Change Password
+
+Logout All Devices
+
+Review Sessions
+
+Remove Unknown Device
+
+------------------------------------------------------------
+
+SECTION 6
+
+SYNC STATUS UI
+
+Create synchronization dashboard.
+
+Display:
+
+Current Status
+
+Last Sync
+
+Pending Items
+
+Errors
+
+Conflicts
+
+------------------------------------------------------------
+
+Statuses:
+
+Online
+
+Offline
+
+Syncing
+
+Completed
+
+Failed
+
+Conflict
+
+------------------------------------------------------------
+
+SECTION 7
+
+SYNC HISTORY VIEW
+
+Create:
+
+Sync Timeline
+
+
+Show:
+
+Date
+
+Device
+
+Records Synced
+
+Duration
+
+Status
+
+------------------------------------------------------------
+
+Example:
+
+Today 10:45
+
+Android
+
+52 Records
+
+Completed
+
+------------------------------------------------------------
+
+SECTION 8
+
+DEVICE PRIORITY SYSTEM
+
+Allow:
+
+Primary Device
+
+Trusted Device
+
+Temporary Device
+
+------------------------------------------------------------
+
+Purpose:
+
+Better security management.
+
+------------------------------------------------------------
+
+SECTION 9
+
+DEVICE LIMIT MANAGEMENT
+
+Prepare:
+
+Free Plan
+
+Premium Plan
+
+Enterprise Plan
+
+------------------------------------------------------------
+
+Example:
+
+Free:
+
+2 Devices
+
+
+Premium:
+
+Unlimited Devices
+
+------------------------------------------------------------
+
+SECTION 10
+
+CONNECTION HEALTH MONITOR
+
+Analyze:
+
+Sync Speed
+
+Failure Rate
+
+Last Connection
+
+Storage Status
+
+------------------------------------------------------------
+
+Generate:
+
+Connection Score
+
+------------------------------------------------------------
+
+SECTION 11
+
+AUTOMATIC DEVICE RECOVERY
+
+Support:
+
+New Device Login
+
+Restore Backup
+
+Download Data
+
+Sync History
+
+------------------------------------------------------------
+
+Flow:
+
+New Device
+
+↓
+
+Login
+
+↓
+
+Verify Account
+
+↓
+
+Download Profile
+
+↓
+
+Sync Data
+
+↓
+
+Ready
+
+------------------------------------------------------------
+
+SECTION 12
+
+DEVICE NOTIFICATIONS
+
+Create alerts:
+
+New Login
+
+Unknown Device
+
+Sync Failure
+
+Backup Completed
+
+Security Change
+
+------------------------------------------------------------
+
+SECTION 13
+
+ACCOUNT SECURITY LOG
+
+Create:
+
+Security Events
+
+
+Track:
+
+Login
+
+Logout
+
+Password Change
+
+Device Added
+
+Device Removed
+
+------------------------------------------------------------
+
+SECTION 14
+
+DATABASE TABLES
+
+Create:
+
+devices
+
+sessions
+
+security_logs
+
+sync_history
+
+------------------------------------------------------------
+
+SECTION 15
+
+STATE MANAGEMENT
+
+Create:
+
+Device Store
+
+
+State:
+
+Devices
+
+Current Device
+
+Sessions
+
+Sync Status
+
+Security Events
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE
+
+Implement:
+
+Lazy Loading
+
+Pagination
+
+Efficient Queries
+
+Background Updates
+
+------------------------------------------------------------
+
+SECTION 17
+
+TESTING
+
+Test:
+
+Device Registration
+
+Multi Device Login
+
+Session Removal
+
+Sync Monitoring
+
+Security Events
+
+Recovery Flow
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Device Management System
+
+Security Components
+
+Sync UI
+
+Database Models
+
+Services
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS provides a secure seamless multi-device experience.
+
+Users can confidently use the platform across all devices.
+
+END OF PROMPT

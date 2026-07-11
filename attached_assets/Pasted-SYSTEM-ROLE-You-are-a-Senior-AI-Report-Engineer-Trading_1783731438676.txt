@@ -1,0 +1,521 @@
+SYSTEM ROLE
+
+You are a Senior AI Report Engineer, Trading Performance Analyst, and Full Stack Developer.
+
+You are implementing the AI Generated Reporting System of TraderMind OS.
+
+The application already contains:
+
+Trading Journal
+
+Analytics Engine
+
+AI Coach Engine
+
+Report Engine
+
+Cloud Storage
+
+
+Your task is to create an intelligent reporting system that automatically transforms trading data into coaching reports.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create AI-powered reports that explain:
+
+What happened?
+
+Why did it happen?
+
+What improved?
+
+What became worse?
+
+What should the trader do next?
+
+------------------------------------------------------------
+
+IMPORTANT RULE
+
+AI reports are educational and performance-based.
+
+AI must NOT:
+
+Predict market direction
+
+Guarantee profits
+
+Give financial advice
+
+Encourage higher risk
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+AI:
+
+LLM Ready Architecture
+
+
+Database:
+
+Dexie.js
+
+Supabase
+
+
+Charts:
+
+Recharts
+
+
+State:
+
+Zustand
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/reports/ai/
+
+analysis/
+
+generation/
+
+prompts/
+
+insights/
+
+recommendations/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+AI REPORT ENGINE
+
+Create:
+
+AIReportGenerator
+
+
+Responsibilities:
+
+Collect Performance Data
+
+Analyze Patterns
+
+Generate Explanation
+
+Create Recommendations
+
+Build Report
+
+------------------------------------------------------------
+
+SECTION 2
+
+AI REPORT PIPELINE
+
+Create:
+
+Trading Data
+
+↓
+
+Statistics Engine
+
+↓
+
+Psychology Engine
+
+↓
+
+Behavior Analysis
+
+↓
+
+AI Reasoning Layer
+
+↓
+
+Report Generator
+
+------------------------------------------------------------
+
+SECTION 3
+
+AI DAILY REVIEW
+
+Automatically generate:
+
+Daily Trading Review
+
+
+Include:
+
+Trades Taken
+
+Execution Quality
+
+Emotional State
+
+Rule Compliance
+
+Main Mistake
+
+Main Success
+
+Tomorrow Focus
+
+------------------------------------------------------------
+
+Example:
+
+Today Summary:
+
+You executed 5 trades.
+
+Strength:
+
+Risk remained consistent.
+
+
+Issue:
+
+Two trades were opened after emotional frustration.
+
+
+Tomorrow:
+
+Focus on waiting for confirmation.
+
+------------------------------------------------------------
+
+SECTION 4
+
+AI WEEKLY REVIEW
+
+Generate:
+
+Weekly Performance Report
+
+
+Include:
+
+Performance Changes
+
+Behavior Patterns
+
+Strategy Results
+
+Risk Analysis
+
+Psychology Trends
+
+Improvement Tasks
+
+------------------------------------------------------------
+
+SECTION 5
+
+AI MONTHLY EVOLUTION REPORT
+
+Create:
+
+Monthly Growth Report
+
+
+Analyze:
+
+Trading Growth
+
+Discipline Growth
+
+Psychology Development
+
+Consistency
+
+Mistake Reduction
+
+------------------------------------------------------------
+
+SECTION 6
+
+AI TRADE REVIEW REPORT
+
+For every trade:
+
+Generate:
+
+Entry Evaluation
+
+Risk Evaluation
+
+Emotion Impact
+
+Execution Score
+
+Rule Compliance
+
+Lessons Learned
+
+------------------------------------------------------------
+
+SECTION 7
+
+MISTAKE ANALYSIS ENGINE
+
+Detect:
+
+Repeated Mistakes
+
+Frequency
+
+Impact
+
+Improvement Trend
+
+------------------------------------------------------------
+
+Examples:
+
+Late Entries
+
+Early Exits
+
+Overtrading
+
+Risk Increase
+
+Rule Breaking
+
+Emotional Decisions
+
+------------------------------------------------------------
+
+SECTION 8
+
+AI COACHING SUMMARY
+
+Create:
+
+Personal Coaching Section
+
+
+Include:
+
+Current Strength
+
+Current Weakness
+
+Priority Improvement
+
+Practice Recommendation
+
+------------------------------------------------------------
+
+SECTION 9
+
+PERSONAL DEVELOPMENT PLAN
+
+Generate:
+
+Trading Improvement Plan
+
+
+Based on:
+
+Weaknesses
+
+Goals
+
+Performance
+
+Psychology
+
+------------------------------------------------------------
+
+Include:
+
+Daily Actions
+
+Weekly Tasks
+
+Measurement Criteria
+
+------------------------------------------------------------
+
+SECTION 10
+
+AI REPORT CUSTOMIZATION
+
+Allow:
+
+Report Length
+
+Detail Level
+
+Coaching Style
+
+Language
+
+Focus Area
+
+------------------------------------------------------------
+
+Modes:
+
+Professional Analyst
+
+Trading Coach
+
+Psychology Coach
+
+Performance Mentor
+
+------------------------------------------------------------
+
+SECTION 11
+
+AI INSIGHT DATABASE
+
+Create:
+
+AIReportInsight
+
+
+Fields:
+
+id
+
+userId
+
+reportId
+
+category
+
+insight
+
+importance
+
+createdAt
+
+------------------------------------------------------------
+
+SECTION 12
+
+AI REPORT MEMORY
+
+Connect reports with:
+
+AI Memory System
+
+Conversation Engine
+
+Previous Reports
+
+Past Goals
+
+------------------------------------------------------------
+
+Example:
+
+"Last month you struggled with revenge trading.
+This month it decreased by 35%."
+
+------------------------------------------------------------
+
+SECTION 13
+
+AUTOMATIC REPORT GENERATION
+
+Create schedules:
+
+Daily
+
+Weekly
+
+Monthly
+
+After Trade Box Completion
+
+------------------------------------------------------------
+
+SECTION 14
+
+REPORT NOTIFICATIONS
+
+Create:
+
+Report Ready Notification
+
+
+Examples:
+
+"Your weekly performance report is ready."
+
+"Your Box analysis has been completed."
+
+------------------------------------------------------------
+
+SECTION 15
+
+TESTING
+
+Test:
+
+AI Report Generation
+
+Data Connection
+
+Memory Usage
+
+Recommendation Quality
+
+Report Storage
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+AI Report Engine
+
+Prompt System
+
+Services
+
+Components
+
+Database Models
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS automatically creates intelligent performance reports that help the trader improve.
+
+END OF PROMPT

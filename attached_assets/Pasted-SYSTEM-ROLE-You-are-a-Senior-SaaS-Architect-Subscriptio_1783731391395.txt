@@ -1,0 +1,612 @@
+SYSTEM ROLE
+
+You are a Senior SaaS Architect, Subscription Platform Engineer, and Product Monetization Developer.
+
+You are implementing the Subscription and Premium Feature Architecture of TraderMind OS.
+
+The application already contains:
+
+Authentication
+
+Cloud Infrastructure
+
+Sync System
+
+AI Coach
+
+Reports
+
+Analytics
+
+Your task is to prepare TraderMind OS for commercial SaaS deployment.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a professional subscription system supporting:
+
+Free Users
+
+Premium Users
+
+Professional Users
+
+Feature Permissions
+
+Subscription Management
+
+Usage Limits
+
+Future Payments
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Backend:
+
+Supabase
+
+
+Database:
+
+PostgreSQL
+
+
+Authentication:
+
+Supabase Auth
+
+
+State:
+
+Zustand
+
+
+Validation:
+
+Zod
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/subscription/
+
+plans/
+
+features/
+
+permissions/
+
+billing/
+
+usage/
+
+components/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+SUBSCRIPTION ARCHITECTURE
+
+Create subscription system.
+
+Support:
+
+Free Plan
+
+Premium Plan
+
+Professional Plan
+
+Enterprise Preparation
+
+------------------------------------------------------------
+
+SECTION 2
+
+PLAN MODEL
+
+Create:
+
+SubscriptionPlan
+
+
+Fields:
+
+id
+
+name
+
+description
+
+price
+
+billing_period
+
+features
+
+limits
+
+created_at
+
+------------------------------------------------------------
+
+Example:
+
+
+FREE
+
+Features:
+
+Basic Journal
+
+Limited Analytics
+
+
+PREMIUM
+
+Features:
+
+Full Analytics
+
+AI Coach
+
+Cloud Sync
+
+
+PROFESSIONAL
+
+Features:
+
+Advanced AI
+
+Reports
+
+Unlimited Storage
+
+------------------------------------------------------------
+
+SECTION 3
+
+USER SUBSCRIPTION MODEL
+
+Create:
+
+UserSubscription
+
+
+Fields:
+
+id
+
+user_id
+
+plan_id
+
+status
+
+start_date
+
+end_date
+
+auto_renew
+
+created_at
+
+------------------------------------------------------------
+
+Statuses:
+
+Active
+
+Expired
+
+Cancelled
+
+Trial
+
+------------------------------------------------------------
+
+SECTION 4
+
+FEATURE MANAGEMENT SYSTEM
+
+Create:
+
+Feature Registry
+
+
+Examples:
+
+TRADE_LIMIT
+
+AI_ANALYSIS
+
+CLOUD_SYNC
+
+ADVANCED_ANALYTICS
+
+PDF_REPORTS
+
+MULTI_DEVICE
+
+AI_MEMORY
+
+CUSTOM_DASHBOARD
+
+------------------------------------------------------------
+
+SECTION 5
+
+FEATURE ACCESS CONTROL
+
+Create:
+
+Permission Engine
+
+
+Function:
+
+canAccessFeature()
+
+------------------------------------------------------------
+
+Example:
+
+if user has Premium:
+
+AI Coach = Enabled
+
+
+if Free:
+
+AI Coach = Limited
+
+------------------------------------------------------------
+
+SECTION 6
+
+USAGE TRACKING
+
+Track:
+
+Trades Created
+
+AI Requests
+
+Storage Usage
+
+Reports Generated
+
+Devices Connected
+
+------------------------------------------------------------
+
+Create:
+
+UsageRecord
+
+
+Fields:
+
+user_id
+
+feature
+
+amount
+
+period
+
+created_at
+
+------------------------------------------------------------
+
+SECTION 7
+
+FREE PLAN LIMITS
+
+Create configurable limits.
+
+Examples:
+
+Maximum Trades
+
+Maximum Storage
+
+Maximum AI Messages
+
+Maximum Devices
+
+------------------------------------------------------------
+
+SECTION 8
+
+PREMIUM FEATURES
+
+Create premium gates:
+
+Advanced Analytics
+
+Unlimited Journal
+
+AI Psychology Analysis
+
+AI Memory
+
+Cloud Backup
+
+Multi Device Sync
+
+Professional Reports
+
+------------------------------------------------------------
+
+SECTION 9
+
+PROFESSIONAL FEATURES
+
+Create:
+
+Advanced AI Coach
+
+Custom Metrics
+
+Trader Development Plans
+
+Export Automation
+
+Priority Processing
+
+------------------------------------------------------------
+
+SECTION 10
+
+PAYMENT PREPARATION
+
+Create payment abstraction layer.
+
+Prepare:
+
+Stripe Integration
+
+Apple Subscription
+
+Google Subscription
+
+PayPal Preparation
+
+------------------------------------------------------------
+
+Create:
+
+PaymentProvider Interface
+
+------------------------------------------------------------
+
+SECTION 11
+
+TRIAL SYSTEM
+
+Implement:
+
+Free Trial
+
+Trial Duration
+
+Trial Expiration
+
+Trial Conversion
+
+------------------------------------------------------------
+
+SECTION 12
+
+UPGRADE FLOW
+
+Create:
+
+Upgrade Page
+
+
+Display:
+
+Current Plan
+
+Available Plans
+
+Benefits
+
+Pricing
+
+Upgrade Button
+
+------------------------------------------------------------
+
+SECTION 13
+
+SUBSCRIPTION MANAGEMENT
+
+User can:
+
+View Plan
+
+Upgrade
+
+Downgrade
+
+Cancel
+
+Renew
+
+Restore Purchase
+
+------------------------------------------------------------
+
+SECTION 14
+
+FEATURE LOCK UI
+
+Create components:
+
+Locked Feature
+
+Upgrade Prompt
+
+Premium Badge
+
+Usage Warning
+
+------------------------------------------------------------
+
+Example:
+
+
+AI Memory
+
+
+🔒 Premium Feature
+
+
+Upgrade to unlock personal AI memory
+
+------------------------------------------------------------
+
+SECTION 15
+
+ADMIN PREPARATION
+
+Create future admin support:
+
+Manage Plans
+
+Manage Users
+
+View Revenue
+
+Manage Features
+
+------------------------------------------------------------
+
+SECTION 16
+
+DATABASE TABLES
+
+Create:
+
+subscription_plans
+
+user_subscriptions
+
+features
+
+feature_permissions
+
+usage_records
+
+payments
+
+------------------------------------------------------------
+
+SECTION 17
+
+SECURITY
+
+Implement:
+
+Server-side validation
+
+Subscription verification
+
+Permission checking
+
+Anti-manipulation protection
+
+------------------------------------------------------------
+
+SECTION 18
+
+STATE MANAGEMENT
+
+Create:
+
+Subscription Store
+
+
+State:
+
+Current Plan
+
+Features
+
+Usage
+
+Limits
+
+Expiration
+
+------------------------------------------------------------
+
+SECTION 19
+
+TESTING
+
+Test:
+
+Plan Selection
+
+Feature Access
+
+Usage Limits
+
+Subscription Expiration
+
+Upgrade Flow
+
+Permission Security
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Subscription Engine
+
+Feature System
+
+Permission Layer
+
+UI Components
+
+Database Models
+
+Payment Preparation
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS is ready to become a commercial SaaS product with controlled premium features.
+
+END OF PROMPT

@@ -1,0 +1,606 @@
+SYSTEM ROLE
+
+You are a Senior Distributed Systems Engineer and Offline-First Architecture Specialist.
+
+You are implementing the Synchronization Engine of TraderMind OS.
+
+The application already has:
+
+Local IndexedDB Database
+
+Dexie Repository Layer
+
+Cloud Authentication
+
+Supabase Infrastructure
+
+
+Your task is to create a reliable offline-first synchronization system.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build a professional sync engine supporting:
+
+Local Changes
+
+Cloud Upload
+
+Cloud Download
+
+Conflict Detection
+
+Conflict Resolution
+
+Sync Queue
+
+Multi Device Support
+
+------------------------------------------------------------
+
+ARCHITECTURE RULE
+
+Local Database remains the primary database.
+
+Cloud is synchronization layer.
+
+Never block user actions because of internet availability.
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Local:
+
+IndexedDB
+
+Dexie.js
+
+
+Cloud:
+
+Supabase PostgreSQL
+
+
+State:
+
+Zustand
+
+
+Validation:
+
+Zod
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/cloud/sync/
+
+engine/
+
+queue/
+
+conflict/
+
+processors/
+
+status/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+SYNC ENGINE CORE
+
+Create central sync controller.
+
+Responsibilities:
+
+Detect Changes
+
+Create Sync Tasks
+
+Upload Data
+
+Download Updates
+
+Resolve Conflicts
+
+Update Status
+
+------------------------------------------------------------
+
+Create:
+
+SyncEngine
+
+------------------------------------------------------------
+
+SECTION 2
+
+SYNCABLE ENTITIES
+
+Support synchronization for:
+
+Trades
+
+Boxes
+
+Strategies
+
+Tags
+
+Reviews
+
+Screenshots
+
+Settings
+
+Goals
+
+Habits
+
+AI Insights
+
+Psychology Records
+
+------------------------------------------------------------
+
+SECTION 3
+
+CHANGE TRACKING SYSTEM
+
+Track every modification.
+
+Create:
+
+Sync Metadata
+
+
+Fields:
+
+id
+
+entity
+
+entityId
+
+operation
+
+createdAt
+
+updatedAt
+
+syncStatus
+
+deviceId
+
+------------------------------------------------------------
+
+Operations:
+
+Create
+
+Update
+
+Delete
+
+------------------------------------------------------------
+
+SECTION 4
+
+SYNC QUEUE SYSTEM
+
+Create offline queue.
+
+When user changes data:
+
+Save locally
+
+Create queue item
+
+Wait for connection
+
+Sync automatically
+
+------------------------------------------------------------
+
+Queue States:
+
+Pending
+
+Uploading
+
+Completed
+
+Failed
+
+Conflict
+
+------------------------------------------------------------
+
+SECTION 5
+
+UPLOAD ENGINE
+
+Implement:
+
+Local → Cloud
+
+Process:
+
+Get Pending Changes
+
+Validate Data
+
+Upload
+
+Confirm
+
+Mark Synced
+
+------------------------------------------------------------
+
+SECTION 6
+
+DOWNLOAD ENGINE
+
+Implement:
+
+Cloud → Local
+
+Process:
+
+Fetch Updates
+
+Compare Versions
+
+Apply Changes
+
+Update Local Database
+
+------------------------------------------------------------
+
+SECTION 7
+
+VERSION CONTROL SYSTEM
+
+Each record must have:
+
+createdAt
+
+updatedAt
+
+version
+
+lastModifiedBy
+
+deviceId
+
+------------------------------------------------------------
+
+Purpose:
+
+Detect conflicting changes.
+
+------------------------------------------------------------
+
+SECTION 8
+
+CONFLICT DETECTION ENGINE
+
+Detect:
+
+Same Record Modified
+
+On Multiple Devices
+
+Before Sync Completion
+
+------------------------------------------------------------
+
+Conflict Example:
+
+Mobile:
+
+Trade Note Updated
+
+
+Desktop:
+
+Same Trade Note Updated
+
+
+Result:
+
+Conflict
+
+------------------------------------------------------------
+
+SECTION 9
+
+CONFLICT RESOLUTION
+
+Create strategies:
+
+Latest Update Wins
+
+User Choice
+
+Merge Changes
+
+Keep Local
+
+Keep Cloud
+
+------------------------------------------------------------
+
+SECTION 10
+
+CONFLICT UI
+
+Create interface:
+
+Conflict Detected
+
+
+Show:
+
+Local Version
+
+Cloud Version
+
+
+Options:
+
+Keep Local
+
+Keep Cloud
+
+Merge
+
+------------------------------------------------------------
+
+SECTION 11
+
+SYNC STATUS SYSTEM
+
+Create global status.
+
+States:
+
+Offline
+
+Local Only
+
+Waiting Sync
+
+Syncing
+
+Synced
+
+Conflict
+
+Failed
+
+------------------------------------------------------------
+
+SECTION 12
+
+NETWORK MONITORING
+
+Detect:
+
+Online
+
+Offline
+
+Connection Recovery
+
+------------------------------------------------------------
+
+When internet returns:
+
+Automatically start sync.
+
+------------------------------------------------------------
+
+SECTION 13
+
+BACKGROUND SYNC
+
+Implement:
+
+Automatic Sync
+
+Periodic Sync
+
+App Resume Sync
+
+Login Sync
+
+------------------------------------------------------------
+
+SECTION 14
+
+DEVICE IDENTIFICATION
+
+Create:
+
+Device ID
+
+Store:
+
+Device Name
+
+Platform
+
+Last Sync
+
+------------------------------------------------------------
+
+Purpose:
+
+Track multi-device activity.
+
+------------------------------------------------------------
+
+SECTION 15
+
+SYNC HISTORY
+
+Store:
+
+Sync Time
+
+Records Updated
+
+Errors
+
+Duration
+
+Device
+
+------------------------------------------------------------
+
+SECTION 16
+
+ERROR RECOVERY
+
+Handle:
+
+Network Failure
+
+Partial Sync
+
+Server Error
+
+Invalid Data
+
+Authentication Expiration
+
+------------------------------------------------------------
+
+SECTION 17
+
+SYNC DATABASE TABLES
+
+Create:
+
+SyncQueue
+
+SyncMetadata
+
+ConflictRecord
+
+SyncHistory
+
+DeviceRecord
+
+------------------------------------------------------------
+
+SECTION 18
+
+STATE MANAGEMENT
+
+Create:
+
+Sync Store
+
+
+State:
+
+Sync Status
+
+Last Sync
+
+Pending Count
+
+Errors
+
+Conflicts
+
+------------------------------------------------------------
+
+SECTION 19
+
+PERFORMANCE
+
+Implement:
+
+Batch Sync
+
+Pagination
+
+Compression Preparation
+
+Retry System
+
+Efficient Queries
+
+------------------------------------------------------------
+
+SECTION 20
+
+TESTING
+
+Test:
+
+Offline Changes
+
+Online Sync
+
+Conflict Detection
+
+Conflict Resolution
+
+Multiple Devices
+
+Network Recovery
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Sync Engine
+
+Queue System
+
+Conflict Manager
+
+Services
+
+Hooks
+
+Database Models
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS can safely synchronize user data between devices.
+
+The application works perfectly offline and synchronizes automatically when possible.
+
+END OF PROMPT

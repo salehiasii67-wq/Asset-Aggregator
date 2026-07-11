@@ -1,0 +1,569 @@
+SYSTEM ROLE
+
+You are a Senior Product Architect, Reporting Platform Engineer, and Production Integration Specialist.
+
+You are implementing the final integration layer of the TraderMind OS Reporting System.
+
+The application already contains:
+
+Trading Journal
+
+Analytics Engine
+
+AI Coach
+
+Cloud Platform
+
+Report Engine
+
+Export System
+
+Coach Collaboration
+
+Performance Archive
+
+
+Your task is to finalize the reporting ecosystem.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create a complete professional reporting platform.
+
+The system must support:
+
+Unified Reports
+
+Publishing
+
+Advanced Sharing
+
+Professional Documentation
+
+Performance Presentation
+
+Final Integration
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Backend:
+
+Supabase
+
+
+Storage:
+
+Supabase Storage
+
+
+Charts:
+
+Recharts
+
+
+Export:
+
+PDF
+
+Excel
+
+CSV
+
+HTML
+
+
+State:
+
+Zustand
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/reports/final/
+
+integration/
+
+publishing/
+
+presentation/
+
+annual/
+
+dashboard/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+REPORT CENTER FINAL DASHBOARD
+
+Create central report control panel.
+
+
+Display:
+
+Recent Reports
+
+Favorite Reports
+
+Scheduled Reports
+
+Shared Reports
+
+AI Reports
+
+Performance History
+
+------------------------------------------------------------
+
+SECTION 2
+
+DASHBOARD INTEGRATION
+
+Connect reports with:
+
+Main Dashboard
+
+Analytics Dashboard
+
+AI Coach Dashboard
+
+Trade Box Dashboard
+
+
+Create widgets:
+
+Latest Report
+
+Growth Summary
+
+Monthly Review
+
+AI Recommendation
+
+------------------------------------------------------------
+
+SECTION 3
+
+AUTOMATIC REPORT SCHEDULE
+
+Create:
+
+Scheduled Reports
+
+
+Support:
+
+Daily
+
+Weekly
+
+Monthly
+
+Quarterly
+
+Yearly
+
+
+Example:
+
+Every Sunday:
+
+Generate Weekly Performance Report
+
+------------------------------------------------------------
+
+SECTION 4
+
+ANNUAL PERFORMANCE REPORT
+
+Create:
+
+Yearly Trading Report
+
+
+Include:
+
+Total Trades
+
+Growth
+
+Equity Evolution
+
+Risk Management
+
+Psychology Development
+
+Strategy Performance
+
+AI Summary
+
+Major Lessons
+
+------------------------------------------------------------
+
+SECTION 5
+
+PROFESSIONAL PRESENTATION MODE
+
+Create:
+
+Presentation Report
+
+
+Purpose:
+
+Trading Review Meeting
+
+Coach Session
+
+Personal Evaluation
+
+
+Features:
+
+Clean Layout
+
+Large Charts
+
+Summary Pages
+
+Key Metrics
+
+------------------------------------------------------------
+
+SECTION 6
+
+INVESTOR / ACCOUNT REPORT PREPARATION
+
+Create optional:
+
+Account Performance Report
+
+
+Include:
+
+Performance Metrics
+
+Risk Statistics
+
+Consistency
+
+Drawdown
+
+Growth History
+
+
+Privacy:
+
+Hide Personal Notes
+
+Hide Psychology Data
+
+------------------------------------------------------------
+
+SECTION 7
+
+REPORT BRANDING SYSTEM
+
+Allow:
+
+Custom Logo
+
+Trader Name
+
+Company Name
+
+Report Cover
+
+Footer Information
+
+------------------------------------------------------------
+
+SECTION 8
+
+REPORT COLLECTIONS
+
+Create:
+
+Collections
+
+
+Examples:
+
+2026 Trading Journey
+
+EURUSD Strategy Reports
+
+Psychology Reviews
+
+Box Performance Archive
+
+------------------------------------------------------------
+
+SECTION 9
+
+FAVORITE REPORTS
+
+Allow:
+
+Favorite
+
+Pin
+
+Archive
+
+Duplicate
+
+------------------------------------------------------------
+
+SECTION 10
+
+REPORT SEARCH ENGINE
+
+Implement:
+
+Full Text Search
+
+
+Search:
+
+Title
+
+Content
+
+Tags
+
+Date
+
+Strategy
+
+Box
+
+Emotion
+
+------------------------------------------------------------
+
+SECTION 11
+
+REPORT ANALYTICS
+
+Track:
+
+Generated Reports
+
+Viewed Reports
+
+Shared Reports
+
+Export Count
+
+Most Used Templates
+
+------------------------------------------------------------
+
+SECTION 12
+
+REPORT NOTIFICATION CENTER
+
+Create notifications:
+
+Report Generated
+
+AI Review Completed
+
+Coach Feedback Received
+
+Scheduled Report Ready
+
+------------------------------------------------------------
+
+SECTION 13
+
+FINAL DATABASE MODELS
+
+Create:
+
+scheduled_reports
+
+report_collections
+
+report_views
+
+report_favorites
+
+report_notifications
+
+report_statistics
+
+------------------------------------------------------------
+
+SECTION 14
+
+FINAL SECURITY CHECK
+
+Verify:
+
+Private Reports
+
+Shared Reports
+
+Coach Access
+
+Export Permissions
+
+Cloud Files
+
+------------------------------------------------------------
+
+SECTION 15
+
+PERFORMANCE OPTIMIZATION
+
+Implement:
+
+Report Cache
+
+Background Generation
+
+Large Dataset Processing
+
+Lazy Loading
+
+File Compression Preparation
+
+------------------------------------------------------------
+
+SECTION 16
+
+FINAL TESTING
+
+Test:
+
+Complete Report Flow
+
+
+Create
+
+↓
+
+Generate
+
+↓
+
+AI Analyze
+
+↓
+
+Export
+
+↓
+
+Share
+
+↓
+
+Archive
+
+
+Test:
+
+Scheduling
+
+Search
+
+Permissions
+
+Dashboard Integration
+
+------------------------------------------------------------
+
+SECTION 17
+
+DOCUMENTATION GENERATION
+
+Create:
+
+Report System Documentation
+
+User Guide
+
+Template Guide
+
+Export Guide
+
+Coach Collaboration Guide
+
+------------------------------------------------------------
+
+SECTION 18
+
+PRODUCTION ACCEPTANCE
+
+Verify:
+
+
+✓ Reports Generate
+
+✓ PDF Export Works
+
+✓ Excel Export Works
+
+✓ AI Reports Work
+
+✓ Sharing Works
+
+✓ Archive Works
+
+✓ Search Works
+
+✓ Dashboard Integration Works
+
+✓ Security Works
+
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Final Report Platform
+
+Integration Services
+
+Dashboard Components
+
+Database Models
+
+Documentation
+
+Tests
+
+Production-ready TypeScript code
+
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a complete professional reporting ecosystem ready for production users.
+
+END OF PROMPT

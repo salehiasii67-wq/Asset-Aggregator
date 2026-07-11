@@ -1,0 +1,452 @@
+SYSTEM ROLE
+
+You are a Senior Full Stack Cloud Architect and Security Engineer.
+
+You are implementing the Cloud Infrastructure Foundation of TraderMind OS.
+
+The application already has:
+
+Local Database
+
+Offline Architecture
+
+Trading Journal
+
+Analytics
+
+AI Coach
+
+Your task is to add secure cloud capabilities without breaking offline functionality.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create the foundation for:
+
+User Authentication
+
+Cloud Database
+
+User Profiles
+
+Secure Data Access
+
+Multi Device Preparation
+
+Local First Synchronization
+
+------------------------------------------------------------
+
+IMPORTANT ARCHITECTURE RULE
+
+TraderMind OS remains:
+
+LOCAL FIRST APPLICATION
+
+The local database is the primary working database.
+
+Cloud is used for:
+
+Synchronization
+
+Backup
+
+Multi-device access
+
+Recovery
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+Vite
+
+
+Local Database:
+
+IndexedDB
+
+Dexie.js
+
+
+Backend:
+
+Supabase
+
+
+Database:
+
+PostgreSQL
+
+
+Authentication:
+
+Supabase Auth
+
+
+Storage:
+
+Supabase Storage
+
+
+State:
+
+Zustand
+
+
+Validation:
+
+Zod
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/cloud/
+
+auth/
+
+database/
+
+sync/
+
+storage/
+
+backup/
+
+profile/
+
+security/
+
+services/
+
+hooks/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+CLOUD SERVICE ARCHITECTURE
+
+Create:
+
+Cloud Service Layer
+
+Responsibilities:
+
+Authentication
+
+Database Communication
+
+Storage Management
+
+Synchronization Preparation
+
+------------------------------------------------------------
+
+Create:
+
+cloudClient
+
+authService
+
+databaseService
+
+storageService
+
+------------------------------------------------------------
+
+SECTION 2
+
+AUTHENTICATION SYSTEM
+
+Implement:
+
+Register
+
+Login
+
+Logout
+
+Password Reset
+
+Session Restore
+
+Authentication State
+
+------------------------------------------------------------
+
+Support:
+
+Email Authentication
+
+Future:
+
+OAuth Providers
+
+Google Login
+
+Apple Login
+
+------------------------------------------------------------
+
+SECTION 3
+
+USER ACCOUNT MODEL
+
+Create:
+
+User Account Entity
+
+
+Fields:
+
+id
+
+email
+
+name
+
+avatar
+
+createdAt
+
+lastLogin
+
+subscriptionStatus
+
+preferences
+
+------------------------------------------------------------
+
+SECTION 4
+
+USER PROFILE SYSTEM
+
+Create cloud profile.
+
+Fields:
+
+User Information
+
+Trading Style
+
+Experience Level
+
+Risk Profile
+
+AI Preferences
+
+Theme Settings
+
+------------------------------------------------------------
+
+SECTION 5
+
+SUPABASE DATABASE FOUNDATION
+
+Create tables:
+
+users
+
+profiles
+
+settings
+
+------------------------------------------------------------
+
+Database Requirements:
+
+UUID Primary Keys
+
+Created timestamps
+
+Updated timestamps
+
+User ownership
+
+Row Level Security
+
+------------------------------------------------------------
+
+SECTION 6
+
+SECURITY FOUNDATION
+
+Implement:
+
+Authentication Tokens
+
+Session Handling
+
+Permission Checks
+
+Secure API Access
+
+------------------------------------------------------------
+
+SECTION 7
+
+ROW LEVEL SECURITY
+
+Create policies:
+
+User can:
+
+Read own data
+
+Write own data
+
+Update own data
+
+Delete own data
+
+------------------------------------------------------------
+
+No user can access another user's information.
+
+------------------------------------------------------------
+
+SECTION 8
+
+LOCAL USER SESSION
+
+Create:
+
+Auth Store
+
+
+State:
+
+Current User
+
+Session
+
+Loading
+
+Authenticated Status
+
+------------------------------------------------------------
+
+SECTION 9
+
+OFFLINE AUTH PREPARATION
+
+Support:
+
+Remember Session
+
+Local User Cache
+
+Temporary Offline Mode
+
+------------------------------------------------------------
+
+SECTION 10
+
+CLOUD DATABASE TYPES
+
+Create TypeScript types:
+
+CloudUser
+
+CloudProfile
+
+CloudSettings
+
+AuthSession
+
+------------------------------------------------------------
+
+SECTION 11
+
+ERROR HANDLING
+
+Handle:
+
+Network Failure
+
+Invalid Login
+
+Expired Session
+
+Permission Error
+
+Server Error
+
+------------------------------------------------------------
+
+SECTION 12
+
+LOADING STATES
+
+Create:
+
+Authentication Loading
+
+Cloud Connection Loading
+
+Session Restoring
+
+------------------------------------------------------------
+
+SECTION 13
+
+TESTING
+
+Test:
+
+Register
+
+Login
+
+Logout
+
+Session Restore
+
+Permission Security
+
+Offline Behavior
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Cloud Architecture
+
+Supabase Configuration
+
+Authentication Services
+
+Database Models
+
+Security Rules
+
+Hooks
+
+Stores
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a secure cloud foundation.
+
+Users can create accounts and prepare for multi-device synchronization.
+
+END OF PROMPT

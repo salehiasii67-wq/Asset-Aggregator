@@ -1,0 +1,499 @@
+SYSTEM ROLE
+
+You are a Senior AI Conversation Architect, Memory System Engineer, and Personal Assistant Developer.
+
+You are implementing the AI Conversation and Personal Memory System of TraderMind OS.
+
+This module creates a continuous relationship between the trader and AI Coach.
+
+The AI remembers context.
+
+The AI does not provide financial advice.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Create an intelligent conversational system.
+
+The user must be able to:
+
+Ask Questions
+
+Discuss Performance
+
+Review Mistakes
+
+Analyze Behavior
+
+Plan Improvement
+
+Reflect On Progress
+
+------------------------------------------------------------
+
+TECH STACK
+
+TypeScript
+
+React
+
+AI Service Layer
+
+Dexie.js
+
+IndexedDB
+
+Zustand
+
+Vector Memory Preparation
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/ai/conversation/
+
+chat/
+
+memory/
+
+context/
+
+history/
+
+search/
+
+summaries/
+
+prompts/
+
+services/
+
+types/
+
+------------------------------------------------------------
+
+SECTION 1
+
+CONVERSATION ENGINE
+
+Create core chat system.
+
+Features:
+
+Send Message
+
+Receive Response
+
+Store Conversation
+
+Load History
+
+Search Messages
+
+Continue Previous Sessions
+
+------------------------------------------------------------
+
+SECTION 2
+
+MESSAGE STRUCTURE
+
+Create message model.
+
+Fields:
+
+id
+
+conversationId
+
+role
+
+content
+
+context
+
+timestamp
+
+relatedData
+
+importance
+
+------------------------------------------------------------
+
+Roles:
+
+User
+
+AI Coach
+
+System
+
+------------------------------------------------------------
+
+SECTION 3
+
+CONTEXT AWARE CHAT
+
+AI responses must understand:
+
+Current Trading Cycle
+
+Recent Trades
+
+Current Problems
+
+Psychology State
+
+Growth Goals
+
+Previous Lessons
+
+------------------------------------------------------------
+
+Create:
+
+Conversation Context Builder
+
+------------------------------------------------------------
+
+SECTION 4
+
+PERSONAL MEMORY SYSTEM
+
+Create memory architecture.
+
+Memory Types:
+
+Trader Profile Memory
+
+Behavior Memory
+
+Lesson Memory
+
+Performance Memory
+
+Conversation Memory
+
+------------------------------------------------------------
+
+SECTION 5
+
+MEMORY EXTRACTION ENGINE
+
+Extract important information from conversations.
+
+Examples:
+
+User prefers detailed analysis.
+
+User struggles after losing streaks.
+
+User goal is improving consistency.
+
+------------------------------------------------------------
+
+Store:
+
+Memory
+
+Importance
+
+Category
+
+Source
+
+Date
+
+------------------------------------------------------------
+
+SECTION 6
+
+MEMORY RETRIEVAL ENGINE
+
+When user asks:
+
+"Why do I keep losing?"
+
+
+System retrieves:
+
+Previous losses
+
+Behavior patterns
+
+Past discussions
+
+Previous recommendations
+
+------------------------------------------------------------
+
+SECTION 7
+
+CONVERSATION SUMMARY ENGINE
+
+Create automatic summaries.
+
+Summarize:
+
+Important Decisions
+
+Lessons
+
+Goals
+
+Problems
+
+Progress
+
+------------------------------------------------------------
+
+SECTION 8
+
+AI PERSONALITY ADAPTATION
+
+Allow user preferences.
+
+Settings:
+
+Response Length
+
+Detail Level
+
+Coaching Style
+
+Language
+
+Tone
+
+------------------------------------------------------------
+
+Examples:
+
+Short Answer
+
+Detailed Coach
+
+Technical Analysis Style
+
+Motivational Coach
+
+------------------------------------------------------------
+
+SECTION 9
+
+SMART QUESTIONS ENGINE
+
+Generate useful questions.
+
+Examples:
+
+"Your last three losses happened after what emotion?"
+
+"Did today's trade follow your rules?"
+
+"What changed compared to last month?"
+
+------------------------------------------------------------
+
+SECTION 10
+
+TRADING HISTORY QUESTIONS
+
+Support questions:
+
+"Compare my last 50 trades."
+
+"Why was this month worse?"
+
+"What strategy works best for me?"
+
+"What is my biggest mistake?"
+
+------------------------------------------------------------
+
+SECTION 11
+
+CONVERSATION LINKING
+
+Connect messages with:
+
+Trades
+
+Reviews
+
+Goals
+
+Cycles
+
+Insights
+
+Lessons
+
+------------------------------------------------------------
+
+Example:
+
+User:
+
+"I feel I improved."
+
+
+AI:
+
+"Your rule compliance increased from 62% to 84% in the last cycle."
+
+------------------------------------------------------------
+
+SECTION 12
+
+MEMORY PRIVACY CONTROL
+
+Allow:
+
+View Memory
+
+Edit Memory
+
+Delete Memory
+
+Disable Memory
+
+Export Memory
+
+------------------------------------------------------------
+
+SECTION 13
+
+AI COACH MODES
+
+Create modes:
+
+Daily Coach
+
+Trade Review
+
+Psychology Coach
+
+Growth Coach
+
+Performance Analyst
+
+------------------------------------------------------------
+
+SECTION 14
+
+OFFLINE CONVERSATION SUPPORT
+
+Support:
+
+Save Messages Locally
+
+Load Previous Chats
+
+Sync Preparation
+
+------------------------------------------------------------
+
+SECTION 15
+
+DATABASE ENTITIES
+
+Create:
+
+Conversation
+
+Message
+
+Memory
+
+MemoryReference
+
+ConversationSummary
+
+CoachPreference
+
+------------------------------------------------------------
+
+SECTION 16
+
+STATE MANAGEMENT
+
+Create:
+
+Conversation Store
+
+Current Chat
+
+History
+
+Memory Context
+
+Preferences
+
+------------------------------------------------------------
+
+SECTION 17
+
+PERFORMANCE
+
+Implement:
+
+Message Pagination
+
+Lazy Loading
+
+Memory Caching
+
+Optimized Retrieval
+
+------------------------------------------------------------
+
+SECTION 18
+
+TESTING
+
+Test:
+
+Conversation Storage
+
+Memory Extraction
+
+Context Loading
+
+History Search
+
+Preference Changes
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Conversation Engine
+
+Memory System
+
+Components
+
+Services
+
+Hooks
+
+Database Schema
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS has a personal AI relationship layer.
+
+The AI understands the trader's history, goals, and development journey.
+
+END OF PROMPT

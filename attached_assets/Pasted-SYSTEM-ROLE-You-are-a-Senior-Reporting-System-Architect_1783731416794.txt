@@ -1,0 +1,576 @@
+SYSTEM ROLE
+
+You are a Senior Reporting System Architect and Full Stack Document Generation Engineer.
+
+You are implementing the professional reporting foundation of TraderMind OS.
+
+The application already contains:
+
+Trading Journal
+
+Analytics Engine
+
+Trade Box System
+
+AI Coach
+
+Cloud Storage
+
+
+Your task is to create a professional reporting architecture that transforms trading data into structured documents.
+
+------------------------------------------------------------
+
+OBJECTIVE
+
+Build a complete report generation system.
+
+The system must support:
+
+Trade Reports
+
+Daily Reports
+
+Weekly Reports
+
+Monthly Reports
+
+Box Reports
+
+Performance Reports
+
+AI Coaching Reports
+
+------------------------------------------------------------
+
+TECH STACK
+
+Frontend:
+
+React
+
+TypeScript
+
+
+Charts:
+
+Recharts
+
+
+Database:
+
+Dexie.js
+
+Supabase
+
+
+Export Preparation:
+
+PDF
+
+CSV
+
+Excel
+
+JSON
+
+HTML
+
+
+State:
+
+Zustand
+
+------------------------------------------------------------
+
+MODULE STRUCTURE
+
+src/modules/reports/
+
+architecture/
+
+templates/
+
+generators/
+
+components/
+
+services/
+
+hooks/
+
+types/
+
+exporters/
+
+storage/
+
+------------------------------------------------------------
+
+SECTION 1
+
+REPORT ENGINE CORE
+
+Create central reporting engine.
+
+Responsibilities:
+
+Collect Data
+
+Process Data
+
+Apply Template
+
+Generate Report
+
+Store Report
+
+Export Report
+
+------------------------------------------------------------
+
+Create:
+
+ReportEngine
+
+------------------------------------------------------------
+
+SECTION 2
+
+REPORT DATA PIPELINE
+
+Create flow:
+
+Database
+
+↓
+
+Analytics Engine
+
+↓
+
+AI Analysis
+
+↓
+
+Report Builder
+
+↓
+
+Export System
+
+------------------------------------------------------------
+
+SECTION 3
+
+REPORT ENTITY MODEL
+
+Create:
+
+Report
+
+
+Fields:
+
+id
+
+userId
+
+type
+
+title
+
+description
+
+data
+
+filters
+
+status
+
+createdAt
+
+updatedAt
+
+fileUrl
+
+------------------------------------------------------------
+
+SECTION 4
+
+REPORT TYPES
+
+Create enum:
+
+TradeReport
+
+DailyReport
+
+WeeklyReport
+
+MonthlyReport
+
+BoxReport
+
+PerformanceReport
+
+AIReport
+
+------------------------------------------------------------
+
+SECTION 5
+
+REPORT TEMPLATE SYSTEM
+
+Create reusable templates.
+
+Support:
+
+Professional Layouts
+
+Sections
+
+Widgets
+
+Charts
+
+Tables
+
+Images
+
+------------------------------------------------------------
+
+Create:
+
+ReportTemplate
+
+
+Fields:
+
+id
+
+name
+
+type
+
+sections
+
+style
+
+createdAt
+
+------------------------------------------------------------
+
+SECTION 6
+
+TRADE REPORT TEMPLATE
+
+Create detailed trade report.
+
+Include:
+
+Trade Information
+
+Symbol
+
+Direction
+
+Entry
+
+Exit
+
+Risk
+
+Reward
+
+R Multiple
+
+
+Psychology:
+
+Emotion
+
+Confidence
+
+Stress
+
+Execution:
+
+
+Checklist
+
+Rule Compliance
+
+
+AI:
+
+Trade Score
+
+Mistakes
+
+Recommendations
+
+
+Media:
+
+Screenshots
+
+Notes
+
+------------------------------------------------------------
+
+SECTION 7
+
+DAILY REPORT TEMPLATE
+
+Include:
+
+Daily Performance
+
+Trades
+
+Profit/Loss
+
+Average R
+
+Execution Quality
+
+Psychology State
+
+Lessons
+
+Next Focus
+
+------------------------------------------------------------
+
+SECTION 8
+
+WEEKLY REPORT TEMPLATE
+
+Include:
+
+Statistics
+
+Best Trades
+
+Worst Trades
+
+Behavior Patterns
+
+Strategy Performance
+
+AI Suggestions
+
+Improvement Plan
+
+------------------------------------------------------------
+
+SECTION 9
+
+MONTHLY REPORT TEMPLATE
+
+Include:
+
+Growth Summary
+
+Equity Progress
+
+Drawdown
+
+Risk Analysis
+
+Psychology Evolution
+
+Consistency Score
+
+------------------------------------------------------------
+
+SECTION 10
+
+BOX REPORT TEMPLATE
+
+Automatically generate after Box completion.
+
+Include:
+
+Goal
+
+Target
+
+Performance
+
+Win Rate
+
+Average R
+
+Mistakes
+
+Strengths
+
+AI Coaching
+
+Next Box Recommendation
+
+------------------------------------------------------------
+
+SECTION 11
+
+REPORT BUILDER SYSTEM
+
+Create dynamic builder.
+
+Support:
+
+Add Section
+
+Remove Section
+
+Reorder Sections
+
+Customize Report
+
+------------------------------------------------------------
+
+SECTION 12
+
+REPORT FILTER SYSTEM
+
+All reports support:
+
+Date Range
+
+Trade Box
+
+Strategy
+
+Symbol
+
+Emotion
+
+Tag
+
+Session
+
+------------------------------------------------------------
+
+SECTION 13
+
+REPORT HISTORY
+
+Store:
+
+Generated Reports
+
+Creation Date
+
+Report Type
+
+Status
+
+File Location
+
+------------------------------------------------------------
+
+SECTION 14
+
+REPORT COMPONENTS
+
+Create reusable:
+
+ReportHeader
+
+ReportSection
+
+ReportTable
+
+ReportChart
+
+ReportCard
+
+ReportSummary
+
+ReportFooter
+
+------------------------------------------------------------
+
+SECTION 15
+
+REPORT GENERATION SERVICE
+
+Create:
+
+generateReport()
+
+Functions:
+
+Generate Data
+
+Build Layout
+
+Save Report
+
+Prepare Export
+
+------------------------------------------------------------
+
+SECTION 16
+
+PERFORMANCE
+
+Implement:
+
+Caching
+
+Lazy Loading
+
+Background Generation
+
+Large Data Support
+
+------------------------------------------------------------
+
+SECTION 17
+
+TESTING
+
+Test:
+
+Report Creation
+
+Template Loading
+
+Data Processing
+
+Report History
+
+Filter System
+
+------------------------------------------------------------
+
+OUTPUT FORMAT
+
+Generate:
+
+Report Architecture
+
+Database Models
+
+Templates
+
+Components
+
+Services
+
+Hooks
+
+Tests
+
+Production-ready TypeScript code
+
+------------------------------------------------------------
+
+SUCCESS CRITERIA
+
+TraderMind OS can generate structured professional reports from trading data.
+
+END OF PROMPT
