@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Asset Aggregator</string>
+    <string name="title_activity_main">Asset Aggregator</string>
+    <string name="package_name">com.salehiasii.assetaggregator</string>
+    <string name="custom_url_scheme">com.salehiasii.assetaggregator</string>
+</resources>
