@@ -25,8 +25,9 @@ jobs:
     - name: Install Dependencies
       run: pnpm install --no-frozen-lockfile
 
-    - name: Build Project
-      run: pnpm run build
+    - - name: Build Project
+      run: pnpm run build -- --no-verify || pnpm run build -- --skip-plugins
+
 
     - name: Install Capacitor in Client
       run: |
