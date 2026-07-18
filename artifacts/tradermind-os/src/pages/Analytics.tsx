@@ -11,8 +11,8 @@ import { Badge } from "../components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { Input } from "../components/ui/input";
 import {
-  AreaChart, Area, BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
-  XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine, Legend
+  AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell,
+  XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine
 } from "recharts";
 import { Lightbulb, TrendingUp, TrendingDown } from "lucide-react";
 
@@ -60,12 +60,13 @@ export default function Analytics() {
   const insights = useMemo(() => generateInsights(filtered), [filtered]);
 
   const winLoss = [
-    { name: "Wins", value: filtered.filter(t => t.outcome === 'win').length, fill: '#10b981' },
-    { name: "Losses", value: filtered.filter(t => t.outcome === 'loss').length, fill: '#ef4444' },
-    { name: "Breakeven", value: filtered.filter(t => t.outcome === 'breakeven').length, fill: '#6366f1' },
+    { name: t('analytics.wins'), value: filtered.filter(t => t.outcome === 'win').length, fill: '#10b981' },
+    { name: t('analytics.losses'), value: filtered.filter(t => t.outcome === 'loss').length, fill: '#ef4444' },
+    { name: t('analytics.breakeven'), value: filtered.filter(t => t.outcome === 'breakeven').length, fill: '#6366f1' },
   ].filter(d => d.value > 0);
 
   const allStrategies = [...new Set(trades.map(t => t.strategy).filter(Boolean))];
+  const hasFilters = strategyFilter !== 'all' || sessionFilter !== 'all' || dateFrom || dateTo;
 
   if (loading) return <div className="flex h-full items-center justify-center text-muted-foreground">{t('common.loading')}</div>;
 
@@ -73,46 +74,48 @@ export default function Analytics() {
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">{t('nav.analytics')}</h1>
-        <p className="text-muted-foreground text-sm mt-1">Based on {filtered.filter(t => t.status === 'completed').length} completed trades</p>
+        <p className="text-muted-foreground text-sm mt-1">
+          {t('analytics.basedOn', { count: filtered.filter(t => t.status === 'completed').length })}
+        </p>
       </div>
 
       {/* Filters */}
       <div className="flex flex-wrap gap-3 p-4 bg-card border rounded-xl">
         <Select value={strategyFilter} onValueChange={setStrategyFilter}>
-          <SelectTrigger className="w-36 h-8 text-xs"><SelectValue placeholder="Strategy" /></SelectTrigger>
+          <SelectTrigger className="w-40 h-8 text-xs"><SelectValue /></SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Strategies</SelectItem>
+            <SelectItem value="all">{t('analytics.allStrategies')}</SelectItem>
             {allStrategies.map(s => <SelectItem key={s} value={s}>{s}</SelectItem>)}
           </SelectContent>
         </Select>
         <Select value={sessionFilter} onValueChange={setSessionFilter}>
-          <SelectTrigger className="w-36 h-8 text-xs"><SelectValue placeholder="Session" /></SelectTrigger>
+          <SelectTrigger className="w-36 h-8 text-xs"><SelectValue /></SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Sessions</SelectItem>
-            <SelectItem value="london">London</SelectItem>
-            <SelectItem value="ny">New York</SelectItem>
-            <SelectItem value="asian">Asian</SelectItem>
-            <SelectItem value="overlap">Overlap</SelectItem>
+            <SelectItem value="all">{t('analytics.allSessions')}</SelectItem>
+            <SelectItem value="london">{t('analytics.sessionLondon')}</SelectItem>
+            <SelectItem value="ny">{t('analytics.sessionNY')}</SelectItem>
+            <SelectItem value="asian">{t('analytics.sessionAsian')}</SelectItem>
+            <SelectItem value="overlap">{t('analytics.sessionOverlap')}</SelectItem>
           </SelectContent>
         </Select>
-        <Input type="date" className="w-36 h-8 text-xs" value={dateFrom} onChange={e => setDateFrom(e.target.value)} placeholder="From" />
-        <Input type="date" className="w-36 h-8 text-xs" value={dateTo} onChange={e => setDateTo(e.target.value)} placeholder="To" />
-        {(strategyFilter !== 'all' || sessionFilter !== 'all' || dateFrom || dateTo) && (
+        <Input type="date" className="w-36 h-8 text-xs" value={dateFrom} onChange={e => setDateFrom(e.target.value)} />
+        <Input type="date" className="w-36 h-8 text-xs" value={dateTo} onChange={e => setDateTo(e.target.value)} />
+        {hasFilters && (
           <button onClick={() => { setStrategyFilter('all'); setSessionFilter('all'); setDateFrom(''); setDateTo(''); }}
-            className="text-xs text-primary hover:underline px-2">Clear</button>
+            className="text-xs text-primary hover:underline px-2">{t('analytics.clearFilters')}</button>
         )}
       </div>
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <StatCard label="Net P&L" value={`$${metrics.netPnL.toFixed(0)}`} positive={metrics.netPnL >= 0} />
-        <StatCard label="Win Rate" value={`${(metrics.winRate * 100).toFixed(1)}%`} positive={metrics.winRate >= 0.5} />
-        <StatCard label="Profit Factor" value={metrics.profitFactor === 999 ? "∞" : metrics.profitFactor.toFixed(2)} positive={metrics.profitFactor >= 1.5} />
-        <StatCard label="Expectancy" value={`$${metrics.expectancy.toFixed(0)}`} positive={metrics.expectancy > 0} />
-        <StatCard label="Avg R" value={`${metrics.avgR.toFixed(2)}R`} positive={metrics.avgR > 0} />
-        <StatCard label="Max Drawdown" value={`${metrics.maxDrawdownPct.toFixed(1)}%`} positive={metrics.maxDrawdownPct < 10} />
-        <StatCard label="Sharpe Ratio" value={metrics.sharpeRatio.toFixed(2)} positive={metrics.sharpeRatio > 1} />
-        <StatCard label="Rule Compliance" value={`${metrics.avgRulesFollowed.toFixed(0)}%`} positive={metrics.avgRulesFollowed >= 70} />
+        <StatCard label={t('analytics.netPnL')} value={`$${metrics.netPnL.toFixed(0)}`} positive={metrics.netPnL >= 0} />
+        <StatCard label={t('analytics.winRate')} value={`${(metrics.winRate * 100).toFixed(1)}%`} positive={metrics.winRate >= 0.5} />
+        <StatCard label={t('analytics.profitFactor')} value={metrics.profitFactor === 999 ? "∞" : metrics.profitFactor.toFixed(2)} positive={metrics.profitFactor >= 1.5} />
+        <StatCard label={t('analytics.expectancy')} value={`$${metrics.expectancy.toFixed(0)}`} positive={metrics.expectancy > 0} />
+        <StatCard label={t('analytics.avgR')} value={`${metrics.avgR.toFixed(2)}R`} positive={metrics.avgR > 0} />
+        <StatCard label={t('analytics.maxDrawdown')} value={`${metrics.maxDrawdownPct.toFixed(1)}%`} positive={metrics.maxDrawdownPct < 10} />
+        <StatCard label={t('analytics.sharpeRatio')} value={metrics.sharpeRatio.toFixed(2)} positive={metrics.sharpeRatio > 1} />
+        <StatCard label={t('analytics.ruleCompliance')} value={`${metrics.avgRulesFollowed.toFixed(0)}%`} positive={metrics.avgRulesFollowed >= 70} />
       </div>
 
       {/* Insights */}
@@ -120,7 +123,7 @@ export default function Analytics() {
         <Card className="border-primary/20 bg-primary/5">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2 text-primary">
-              <Lightbulb className="w-4 h-4" /> Insights
+              <Lightbulb className="w-4 h-4" /> {t('analytics.insights')}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -140,11 +143,9 @@ export default function Analytics() {
       <Card>
         <CardHeader>
           <div className="flex items-center justify-between">
-            <CardTitle>Equity Curve</CardTitle>
+            <CardTitle>{t('analytics.equityCurve')}</CardTitle>
             <div className="flex items-center gap-2">
-              {metrics.netPnL >= 0
-                ? <TrendingUp className="w-4 h-4 text-green-500" />
-                : <TrendingDown className="w-4 h-4 text-destructive" />}
+              {metrics.netPnL >= 0 ? <TrendingUp className="w-4 h-4 text-green-500" /> : <TrendingDown className="w-4 h-4 text-destructive" />}
               <span className={`text-sm font-bold ${metrics.netPnL >= 0 ? 'text-green-500' : 'text-destructive'}`}>
                 ${metrics.netPnL.toFixed(0)}
               </span>
@@ -167,13 +168,13 @@ export default function Analytics() {
                   <YAxis stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} tickFormatter={v => `$${v}`} />
                   <ReferenceLine y={0} stroke="hsl(var(--border))" strokeDasharray="3 3" />
                   <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                    formatter={(v: any, n: string) => [`$${Number(v).toFixed(0)}`, n === 'equity' ? 'Equity' : 'P&L']} />
+                    formatter={(v: any) => [`$${Number(v).toFixed(0)}`, t('analytics.equityCurve')]} />
                   <Area type="monotone" dataKey="equity" stroke="hsl(var(--primary))" fill="url(#equityGrad)" strokeWidth={2} dot={false} activeDot={{ r: 4 }} />
                 </AreaChart>
               </ResponsiveContainer>
             </div>
           ) : (
-            <div className="h-[260px] flex items-center justify-center text-muted-foreground text-sm">No completed trades yet</div>
+            <div className="h-[260px] flex items-center justify-center text-muted-foreground text-sm">{t('analytics.noData')}</div>
           )}
         </CardContent>
       </Card>
@@ -182,7 +183,7 @@ export default function Analytics() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Win/Loss Pie */}
         <Card>
-          <CardHeader><CardTitle className="text-base">Win / Loss Split</CardTitle></CardHeader>
+          <CardHeader><CardTitle className="text-base">{t('analytics.winLossSplit')}</CardTitle></CardHeader>
           <CardContent>
             {winLoss.length > 0 ? (
               <div className="h-[220px]">
@@ -203,13 +204,13 @@ export default function Analytics() {
                   ))}
                 </div>
               </div>
-            ) : <div className="h-[220px] flex items-center justify-center text-muted-foreground text-sm">No data</div>}
+            ) : <div className="h-[220px] flex items-center justify-center text-muted-foreground text-sm">{t('analytics.noData')}</div>}
           </CardContent>
         </Card>
 
         {/* R Distribution */}
         <Card>
-          <CardHeader><CardTitle className="text-base">R-Multiple Distribution</CardTitle></CardHeader>
+          <CardHeader><CardTitle className="text-base">{t('analytics.rDistribution')}</CardTitle></CardHeader>
           <CardContent>
             <div className="h-[220px]">
               <ResponsiveContainer width="100%" height="100%">
@@ -218,7 +219,7 @@ export default function Analytics() {
                   <XAxis dataKey="range" stroke="hsl(var(--muted-foreground))" fontSize={9} tickLine={false} axisLine={false} />
                   <YAxis stroke="hsl(var(--muted-foreground))" fontSize={10} tickLine={false} axisLine={false} />
                   <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                    formatter={(v: any) => [v, 'Trades']} />
+                    formatter={(v: any) => [v, t('analytics.trades')]} />
                   <Bar dataKey="count" radius={[4, 4, 0, 0]}>
                     {rDist.map((d, i) => <Cell key={i} fill={d.range.startsWith('-') || d.range.startsWith('<') ? '#ef4444' : '#10b981'} />)}
                   </Bar>
@@ -230,7 +231,7 @@ export default function Analytics() {
 
         {/* Session Performance */}
         <Card>
-          <CardHeader><CardTitle className="text-base">Session P&L</CardTitle></CardHeader>
+          <CardHeader><CardTitle className="text-base">{t('analytics.sessionPnL')}</CardTitle></CardHeader>
           <CardContent>
             <div className="h-[220px]">
               <ResponsiveContainer width="100%" height="100%">
@@ -239,7 +240,7 @@ export default function Analytics() {
                   <XAxis dataKey="session" stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} />
                   <YAxis stroke="hsl(var(--muted-foreground))" fontSize={10} tickLine={false} axisLine={false} tickFormatter={v => `$${v}`} />
                   <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                    formatter={(v: any, n: string) => [n === 'pnl' ? `$${v}` : `${v}%`, n === 'pnl' ? 'P&L' : 'Win Rate']} />
+                    formatter={(v: any, n: string) => [n === 'pnl' ? `$${v}` : `${v}%`, n === 'pnl' ? t('analytics.netPnL') : t('analytics.winRate')]} />
                   <Bar dataKey="pnl" radius={[4, 4, 0, 0]}>
                     {sessions.map((d, i) => <Cell key={i} fill={d.pnl >= 0 ? '#10b981' : '#ef4444'} />)}
                   </Bar>
@@ -253,7 +254,7 @@ export default function Analytics() {
       {/* Strategy Breakdown */}
       {strategies.length > 0 && (
         <Card>
-          <CardHeader><CardTitle>Strategy Performance</CardTitle></CardHeader>
+          <CardHeader><CardTitle>{t('analytics.strategyPerf')}</CardTitle></CardHeader>
           <CardContent>
             <div className="h-[240px]">
               <ResponsiveContainer width="100%" height="100%">
@@ -262,7 +263,7 @@ export default function Analytics() {
                   <XAxis type="number" stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} tickFormatter={v => `$${v}`} />
                   <YAxis type="category" dataKey="strategy" stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} width={110} />
                   <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                    formatter={(v: any, n: string) => [n === 'pnl' ? `$${v}` : `${v}%`, n === 'pnl' ? 'P&L' : 'Win Rate']} />
+                    formatter={(v: any, n: string) => [n === 'pnl' ? `$${v}` : `${v}%`, n === 'pnl' ? t('analytics.netPnL') : t('analytics.winRate')]} />
                   <Bar dataKey="pnl" name="pnl" radius={[0, 4, 4, 0]}>
                     {strategies.map((d, i) => <Cell key={i} fill={d.pnl >= 0 ? '#10b981' : '#ef4444'} />)}
                   </Bar>
@@ -273,10 +274,10 @@ export default function Analytics() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="text-xs text-muted-foreground border-b border-border">
-                    <th className="text-left pb-2 font-medium">Strategy</th>
-                    <th className="text-right pb-2 font-medium">Trades</th>
-                    <th className="text-right pb-2 font-medium">Win Rate</th>
-                    <th className="text-right pb-2 font-medium">P&L</th>
+                    <th className="text-left pb-2 font-medium">{t('analytics.stratTable.strategy')}</th>
+                    <th className="text-right pb-2 font-medium">{t('analytics.stratTable.trades')}</th>
+                    <th className="text-right pb-2 font-medium">{t('analytics.stratTable.winRate')}</th>
+                    <th className="text-right pb-2 font-medium">{t('analytics.stratTable.pnl')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -299,10 +300,10 @@ export default function Analytics() {
         </Card>
       )}
 
-      {/* Day of Week */}
+      {/* Day of Week + Emotion */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card>
-          <CardHeader><CardTitle>Day of Week Performance</CardTitle></CardHeader>
+          <CardHeader><CardTitle>{t('analytics.dayOfWeek')}</CardTitle></CardHeader>
           <CardContent>
             <div className="h-[220px]">
               <ResponsiveContainer width="100%" height="100%">
@@ -312,7 +313,7 @@ export default function Analytics() {
                   <YAxis stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} tickFormatter={v => `$${v}`} />
                   <ReferenceLine y={0} stroke="hsl(var(--border))" />
                   <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                    formatter={(v: any) => [`$${v}`, 'P&L']} />
+                    formatter={(v: any) => [`$${v}`, t('analytics.netPnL')]} />
                   <Bar dataKey="pnl" radius={[4, 4, 0, 0]}>
                     {dowData.filter(d => d.count > 0).map((d, i) => <Cell key={i} fill={d.pnl >= 0 ? '#10b981' : '#ef4444'} />)}
                   </Bar>
@@ -322,10 +323,9 @@ export default function Analytics() {
           </CardContent>
         </Card>
 
-        {/* Emotion Performance */}
         {emotionData.length > 0 && (
           <Card>
-            <CardHeader><CardTitle>Emotion vs Avg R</CardTitle></CardHeader>
+            <CardHeader><CardTitle>{t('analytics.emotionVsR')}</CardTitle></CardHeader>
             <CardContent>
               <div className="h-[220px]">
                 <ResponsiveContainer width="100%" height="100%">
@@ -335,7 +335,7 @@ export default function Analytics() {
                     <YAxis type="category" dataKey="emotion" stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} width={75} />
                     <ReferenceLine x={0} stroke="hsl(var(--border))" />
                     <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                      formatter={(v: any) => [`${v}R`, 'Avg R']} />
+                      formatter={(v: any) => [`${v}R`, t('analytics.avgR')]} />
                     <Bar dataKey="avgR" radius={[0, 4, 4, 0]}>
                       {emotionData.map((d, i) => <Cell key={i} fill={d.avgR >= 0 ? '#10b981' : '#ef4444'} />)}
                     </Bar>
@@ -352,8 +352,8 @@ export default function Analytics() {
         <Card>
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle>Drawdown Curve</CardTitle>
-              <Badge variant="destructive" className="text-xs">{metrics.maxDrawdownPct.toFixed(1)}% Max DD</Badge>
+              <CardTitle>{t('analytics.drawdownCurve')}</CardTitle>
+              <Badge variant="destructive" className="text-xs">{metrics.maxDrawdownPct.toFixed(1)}% {t('analytics.maxDD')}</Badge>
             </div>
           </CardHeader>
           <CardContent>
@@ -370,7 +370,7 @@ export default function Analytics() {
                   <XAxis dataKey="name" stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} />
                   <YAxis stroke="hsl(var(--muted-foreground))" fontSize={11} tickLine={false} axisLine={false} tickFormatter={v => `${v}%`} />
                   <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 12 }}
-                    formatter={(v: any) => [`${v}%`, 'Drawdown']} />
+                    formatter={(v: any) => [`${v}%`, t('analytics.maxDrawdown')]} />
                   <Area type="monotone" dataKey="drawdown" stroke="#ef4444" fill="url(#ddGrad)" strokeWidth={2} dot={false} />
                 </AreaChart>
               </ResponsiveContainer>

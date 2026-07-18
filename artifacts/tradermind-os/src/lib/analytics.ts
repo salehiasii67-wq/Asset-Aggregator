@@ -183,24 +183,33 @@ export function computeTradeQualityScore(trade: Partial<Trade>): number {
 
 export function generateInsights(trades: Trade[]): string[] {
   const completed = trades.filter(t => t.status === 'completed' && t.pnl !== undefined);
-  if (completed.length < 5) return ['Record more trades to unlock insights.'];
+  if (completed.length < 5) return ['برای نمایش بینش‌ها، حداقل ۵ معامله تکمیل‌شده ثبت کنید.'];
   const insights: string[] = [];
 
+  const sessionMap: Record<string, string> = {
+    london: 'لندن', ny: 'نیویورک', asian: 'آسیا', overlap: 'تداخل'
+  };
   const sessionData = getSessionBreakdown(trades);
-  const bestSession = sessionData.sort((a, b) => b.pnl - a.pnl)[0];
-  if (bestSession) insights.push(`Your best session is ${bestSession.session} with $${bestSession.pnl.toFixed(0)} total P&L.`);
+  const bestSession = [...sessionData].sort((a, b) => b.pnl - a.pnl)[0];
+  if (bestSession) insights.push(`بهترین جلسه شما ${sessionMap[bestSession.session] || bestSession.session} با سود کل ${bestSession.pnl.toFixed(0)} است.`);
 
+  const emotionMap: Record<string, string> = {
+    calm: 'آرام', confident: 'با اطمینان', neutral: 'خنثی',
+    anxious: 'نگران', fearful: 'ترسیده', excited: 'هیجان‌زده',
+    frustrated: 'ناامید', impatient: 'بی‌صبر'
+  };
   const emotionData = getEmotionPerformance(trades);
   const bestEmotion = emotionData[0];
-  if (bestEmotion) insights.push(`Trading while ${bestEmotion.emotion.toLowerCase()} gives your best avg R of ${bestEmotion.avgR}R.`);
+  if (bestEmotion) insights.push(`معامله در حالت ${emotionMap[bestEmotion.emotion] || bestEmotion.emotion} بهترین میانگین R شما را می‌دهد: ${bestEmotion.avgR}R.`);
 
   const stratData = getStrategyBreakdown(trades);
-  if (stratData.length > 1) insights.push(`"${stratData[0].strategy}" is your most profitable strategy ($${stratData[0].pnl.toFixed(0)}).`);
+  if (stratData.length > 1) insights.push(`«${stratData[0].strategy}» سودآورترین استراتژی شما است (${stratData[0].pnl.toFixed(0)}).`);
 
   const metrics = calculateMetrics(trades);
-  if (metrics.avgRulesFollowed < 70) insights.push(`Rule compliance is ${metrics.avgRulesFollowed.toFixed(0)}% — improving this could significantly boost performance.`);
-  if (metrics.sharpeRatio > 1) insights.push(`Strong risk-adjusted returns with Sharpe ratio of ${metrics.sharpeRatio.toFixed(2)}.`);
-  if (metrics.consecutiveLosses >= 3) insights.push(`You've had up to ${metrics.consecutiveLosses} consecutive losses. Consider a break rule after 2 losses.`);
+  if (metrics.avgRulesFollowed < 70) insights.push(`رعایت قوانین ${metrics.avgRulesFollowed.toFixed(0)}٪ است — بهبود این مورد عملکرد را به‌طور قابل توجهی افزایش می‌دهد.`);
+  if (metrics.sharpeRatio > 1) insights.push(`بازده تعدیل‌شده بر اساس ریسک قوی است: نسبت شارپ ${metrics.sharpeRatio.toFixed(2)}.`);
+  if (metrics.consecutiveLosses >= 3) insights.push(`تا ${metrics.consecutiveLosses} باخت متوالی داشته‌اید — یک قانون استراحت پس از ۲ باخت اعمال کنید.`);
+  if (metrics.profitFactor >= 2) insights.push(`ضریب سود ${metrics.profitFactor.toFixed(2)} — استراتژی‌های سودآور شما را حفظ کنید.`);
 
   return insights;
 }

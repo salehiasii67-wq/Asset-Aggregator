@@ -8,15 +8,9 @@ import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { Link } from "wouter";
 import { TradeWizard } from "../components/TradeWizard";
-import { 
-  TrendingUp, 
-  Target, 
-  Activity, 
-  Wallet, 
-  PlusCircle,
-  History,
-  Brain,
-  Shield
+import {
+  TrendingUp, Target, Activity, Wallet, PlusCircle,
+  History, Brain, Shield
 } from "lucide-react";
 import { useGrowthCycles } from "../hooks/useGrowthCycles";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
@@ -39,14 +33,14 @@ export default function Dashboard() {
   const recentTrades = trades.slice(0, 6);
 
   const kpis = [
-    { label: t('dashboard.netProfit'), value: `${metrics.netPnL.toFixed(0)}`, icon: Wallet, positive: metrics.netPnL >= 0 },
+    { label: t('dashboard.netProfit'), value: `$${metrics.netPnL.toFixed(0)}`, icon: Wallet, positive: metrics.netPnL >= 0 },
     { label: t('dashboard.winRate'), value: `${(metrics.winRate * 100).toFixed(1)}%`, icon: Target, positive: metrics.winRate >= 0.5 },
     { label: t('dashboard.avgR'), value: `${metrics.avgR.toFixed(2)}R`, icon: TrendingUp, positive: metrics.avgR > 0 },
-    { label: 'Profit Factor', value: metrics.profitFactor === 999 ? '∞' : metrics.profitFactor.toFixed(2), icon: Activity, positive: metrics.profitFactor >= 1.5 },
+    { label: t('dashboard.profitFactor'), value: metrics.profitFactor === 999 ? '∞' : metrics.profitFactor.toFixed(2), icon: Activity, positive: metrics.profitFactor >= 1.5 },
     { label: t('dashboard.totalTrades'), value: metrics.totalTrades, icon: History, positive: undefined },
-    { label: 'Max Drawdown', value: `${metrics.maxDrawdownPct.toFixed(1)}%`, icon: Shield, positive: metrics.maxDrawdownPct < 10 },
-    { label: 'Expectancy', value: `${metrics.expectancy.toFixed(0)}`, icon: Brain, positive: metrics.expectancy > 0 },
-    { label: 'Rules Followed', value: `${metrics.avgRulesFollowed.toFixed(0)}%`, icon: Shield, positive: metrics.avgRulesFollowed >= 70 },
+    { label: t('dashboard.maxDrawdown'), value: `${metrics.maxDrawdownPct.toFixed(1)}%`, icon: Shield, positive: metrics.maxDrawdownPct < 10 },
+    { label: t('dashboard.expectancy'), value: `$${metrics.expectancy.toFixed(0)}`, icon: Brain, positive: metrics.expectancy > 0 },
+    { label: t('dashboard.rulesFollowed'), value: `${metrics.avgRulesFollowed.toFixed(0)}%`, icon: Shield, positive: metrics.avgRulesFollowed >= 70 },
   ];
 
   return (
@@ -66,7 +60,7 @@ export default function Dashboard() {
           <Link href="/psychology">
             <Button variant="outline" className="gap-2">
               <Brain className="w-4 h-4" />
-              Log Session
+              {t('dashboard.logSession')}
             </Button>
           </Link>
         </div>
@@ -95,8 +89,9 @@ export default function Dashboard() {
         <Card className="lg:col-span-2">
           <CardHeader className="pb-2">
             <CardTitle className="text-base flex items-center justify-between">
-              <span>Equity Curve</span>
-              <Badge variant={metrics.netPnL >= 0 ? "default" : "destructive"} className={metrics.netPnL >= 0 ? "bg-green-500/20 text-green-400 border-green-500/30" : ""}>
+              <span>{t('dashboard.equityCurve')}</span>
+              <Badge variant={metrics.netPnL >= 0 ? "default" : "destructive"}
+                className={metrics.netPnL >= 0 ? "bg-green-500/20 text-green-400 border-green-500/30" : ""}>
                 {metrics.netPnL >= 0 ? '+' : ''}${metrics.netPnL.toFixed(0)}
               </Badge>
             </CardTitle>
@@ -114,15 +109,16 @@ export default function Dashboard() {
                     </defs>
                     <XAxis dataKey="name" hide />
                     <YAxis hide />
-                    <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 11 }}
-                      formatter={(v: any) => [`${Number(v).toFixed(0)}`, 'Equity']} />
+                    <Tooltip
+                      contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', fontSize: 11 }}
+                      formatter={(v: any) => [`$${Number(v).toFixed(0)}`, t('dashboard.equityCurve')]} />
                     <Area type="monotone" dataKey="equity" stroke="hsl(var(--primary))" fill="url(#dashEqGrad)" strokeWidth={2.5} dot={false} activeDot={{ r: 4 }} />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
             ) : (
               <div className="h-[160px] flex items-center justify-center text-muted-foreground text-sm">
-                Record trades to see your equity curve
+                {t('dashboard.recordTrades')}
               </div>
             )}
           </CardContent>
@@ -142,17 +138,17 @@ export default function Dashboard() {
                 <div>
                   <div className="font-semibold">{activeCycle.name}</div>
                   <div className="text-xs text-muted-foreground mt-0.5">
-                    Since {new Date(activeCycle.startDate).toLocaleDateString()}
+                    {t('dashboard.sinceDate')} {new Date(activeCycle.startDate).toLocaleDateString()}
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="text-center p-2 rounded-lg bg-background/50">
                     <div className="text-lg font-bold text-primary">{activeCycle.targetWinRate || '—'}%</div>
-                    <div className="text-xs text-muted-foreground">Target WR</div>
+                    <div className="text-xs text-muted-foreground">{t('dashboard.targetWR')}</div>
                   </div>
                   <div className="text-center p-2 rounded-lg bg-background/50">
                     <div className="text-lg font-bold text-primary">1:{activeCycle.targetRR || '—'}</div>
-                    <div className="text-xs text-muted-foreground">Target RR</div>
+                    <div className="text-xs text-muted-foreground">{t('dashboard.targetRR')}</div>
                   </div>
                 </div>
                 {activeCycle.goals.slice(0, 2).map((g, i) => (
@@ -161,15 +157,15 @@ export default function Dashboard() {
                   </div>
                 ))}
                 <Link href="/growth">
-                  <Button variant="outline" size="sm" className="w-full text-xs">View Missions</Button>
+                  <Button variant="outline" size="sm" className="w-full text-xs">{t('dashboard.viewMissions')}</Button>
                 </Link>
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center py-6 text-center gap-3">
-                <p className="text-sm text-muted-foreground">No active cycle</p>
+                <p className="text-sm text-muted-foreground">{t('dashboard.noActiveCycle')}</p>
                 <Link href="/growth">
                   <Button variant="default" size="sm" className="gap-1.5">
-                    <PlusCircle className="w-3.5 h-3.5" /> Start Cycle
+                    <PlusCircle className="w-3.5 h-3.5" /> {t('dashboard.startCycle')}
                   </Button>
                 </Link>
               </div>
@@ -184,7 +180,7 @@ export default function Dashboard() {
           <CardTitle className="text-base flex items-center justify-between">
             <span className="flex items-center gap-2"><History className="w-4 h-4" /> {t('dashboard.recentTrades')}</span>
             <Link href="/journal">
-              <Button variant="ghost" size="sm" className="text-xs text-muted-foreground h-7">View all →</Button>
+              <Button variant="ghost" size="sm" className="text-xs text-muted-foreground h-7">{t('dashboard.viewAll')}</Button>
             </Link>
           </CardTitle>
         </CardHeader>
@@ -194,14 +190,22 @@ export default function Dashboard() {
               {recentTrades.map((trade) => (
                 <div key={trade.id} className="flex items-center justify-between px-6 py-3 hover:bg-secondary/30 transition-colors">
                   <div className="flex items-center gap-3">
-                    <div className={cn("w-1.5 h-10 rounded-full", trade.outcome === 'win' ? 'bg-green-500' : trade.outcome === 'loss' ? 'bg-destructive' : 'bg-muted')} />
+                    <div className={cn("w-1.5 h-10 rounded-full",
+                      trade.outcome === 'win' ? 'bg-green-500' : trade.outcome === 'loss' ? 'bg-destructive' : 'bg-muted')} />
                     <div>
                       <div className="font-mono font-semibold text-sm">{trade.symbol}
                         <span className={cn("ml-1.5 text-xs", trade.direction === 'long' ? 'text-green-400' : 'text-red-400')}>
                           {trade.direction === 'long' ? '▲' : '▼'}
                         </span>
                       </div>
-                      <div className="text-xs text-muted-foreground">{new Date(trade.date).toLocaleDateString()} · {trade.strategy} · {trade.sessionType}</div>
+                      <div className="text-xs text-muted-foreground">
+                        {new Date(trade.date).toLocaleDateString()} · {trade.strategy} · {
+                          trade.sessionType === 'london' ? t('wizard.step1.sessionLondon') :
+                          trade.sessionType === 'ny' ? t('wizard.step1.sessionNY') :
+                          trade.sessionType === 'asian' ? t('wizard.step1.sessionAsian') :
+                          t('wizard.step1.sessionOverlap')
+                        }
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 text-right">
@@ -216,8 +220,9 @@ export default function Dashboard() {
                       </div>
                     )}
                     <div>
-                      <div className={cn("font-bold text-sm", trade.outcome === 'win' ? 'text-green-400' : trade.outcome === 'loss' ? 'text-destructive' : '')}>
-                        {trade.pnl != null ? `${trade.pnl >= 0 ? '+' : ''}${Math.abs(trade.pnl).toFixed(0)}` : '—'}
+                      <div className={cn("font-bold text-sm",
+                        trade.outcome === 'win' ? 'text-green-400' : trade.outcome === 'loss' ? 'text-destructive' : '')}>
+                        {trade.pnl != null ? `${trade.pnl >= 0 ? '+' : ''}$${Math.abs(trade.pnl).toFixed(0)}` : '—'}
                       </div>
                       <div className="text-xs text-muted-foreground">
                         {trade.pnlR != null ? `${trade.pnlR > 0 ? '+' : ''}${trade.pnlR}R` : '—'}
@@ -230,7 +235,7 @@ export default function Dashboard() {
           ) : (
             <div className="text-center py-10 text-muted-foreground">
               <Activity className="w-8 h-8 mx-auto mb-2 opacity-30" />
-              <p className="text-sm">No trades yet — click "New Trade" to get started</p>
+              <p className="text-sm">{t('dashboard.noTrades')}</p>
             </div>
           )}
         </CardContent>

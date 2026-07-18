@@ -1,0 +1,1 @@
+- [TraderMind OS Architecture](tradermind-os-arch.md) — local-first PWA, Dexie v2, 7-step wizard, full FA i18n, no backend ever

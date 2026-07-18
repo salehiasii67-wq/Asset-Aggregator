@@ -51,10 +51,10 @@ export function useCycleMissions(cycleId?: number) {
       if (todayMissions.length === 0 && all.length === 0) {
         // Seed default missions for today
         const defaults: Omit<CycleMission, 'id'>[] = [
-          { cycleId, date: today, task: 'Review last 3 trades', category: 'review', status: 'pending', createdAt: new Date().toISOString() },
-          { cycleId, date: today, task: 'Log psychology entry', category: 'psychology', status: 'pending', createdAt: new Date().toISOString() },
-          { cycleId, date: today, task: 'Plan tomorrow\'s sessions', category: 'analysis', status: 'pending', createdAt: new Date().toISOString() },
-          { cycleId, date: today, task: 'No overtrading (max 3 trades)', category: 'discipline', status: 'pending', createdAt: new Date().toISOString() },
+          { cycleId, date: today, task: 'مرور ۳ معامله آخر', category: 'review', status: 'pending', createdAt: new Date().toISOString() },
+          { cycleId, date: today, task: 'ثبت جلسه روانشناسی', category: 'psychology', status: 'pending', createdAt: new Date().toISOString() },
+          { cycleId, date: today, task: 'برنامه‌ریزی جلسات فردا', category: 'analysis', status: 'pending', createdAt: new Date().toISOString() },
+          { cycleId, date: today, task: 'بدون معامله بیش از حد (حداکثر ۳ معامله)', category: 'discipline', status: 'pending', createdAt: new Date().toISOString() },
         ];
         await db.cycleMissions.bulkAdd(defaults as CycleMission[]);
       }
