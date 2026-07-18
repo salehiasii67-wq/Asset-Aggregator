@@ -41,20 +41,33 @@ jobs:
 
     - name: Build Android App
       run: |
-        # ورود مستقیم به پوشه‌ای که کدهای فرانت‌اند و کپی‌سیتر آنجا هستند
-        cd artifacts/trademind-os
+        # پیدا کردن مسیر دقیق پوشه فرانت‌اَند در کل پروژه
+        TARGET_DIR=$(find . -type d -name "trademind-os" | head -n 1)
         
-        # اجرای دستورات کپی‌سیتر مستقیماً در پوشه اصلی خودشان
+        if [ -z "$TARGET_DIR" ]; then
+          echo "پوشه پروژه پیدا نشد! تلاش برای پیدا کردن پوشه ریشه با تنظیمات کپی‌سیتر..."
+          TARGET_DIR=$(find . -name "capacitor.config.*" -exec dirname {} \; | head -n 1)
+        fi
+        
+        if [ -z "$TARGET_DIR" ]; then
+          TARGET_DIR="."
+        fi
+        
+        echo "ورود به پوشه هدف در مسیر: $TARGET_DIR"
+        cd "$TARGET_DIR"
+        
+        # اجرای دستورات کپی‌سیتر
         npx cap android add || true
         npx cap sync android || true
         
-        # ورود به پوشه اندروید ساخته شده و اجرای گریدل
-        if [ -d "android" ]; then
-          cd android
+        # پیدا کردن و ورود به پوشه اندروید برای اجرای گریدل
+        FINAL_ANDROID=$(find . -name "gradlew" -exec dirname {} \; | head -n 1)
+        if [ -n "$FINAL_ANDROID" ]; then
+          cd "$FINAL_ANDROID"
           chmod +x gradlew
           ./gradlew assembleDebug
         else
-          echo "پوشه اندروید در مسیر اصلی یافت نشد!" && exit 1
+          echo "خطا: پوشه اندروید حاوی فایل gradlew یافت نشد!" && exit 1
         fi
 
     - name: Upload APK
@@ -64,3 +77,4 @@ jobs:
         path: |
           **/build/outputs/apk/debug/app-debug.apk
           **/build/outputs/apk/debug/*.apk
+          
