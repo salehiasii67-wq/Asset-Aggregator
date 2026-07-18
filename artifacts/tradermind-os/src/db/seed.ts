@@ -1,4 +1,4 @@
-import { db } from './database';
+import { db, type Trade, type PsychologyLog } from './database';
 import { computeTradeQualityScore } from '../lib/analytics';
 
 export async function seedDatabase() {
