@@ -41,28 +41,20 @@ jobs:
 
     - name: Build Android App
       run: |
-        # ایجاد پوشه‌های فرضی خروجی وب
-        mkdir -p dist || mkdir -p build || mkdir -p out || true
+        # ورود مستقیم به پوشه‌ای که کدهای فرانت‌اند و کپی‌سیتر آنجا هستند
+        cd artifacts/trademind-os
         
-        # اجرای خروجی کپی‌سیتر 
+        # اجرای دستورات کپی‌سیتر مستقیماً در پوشه اصلی خودشان
         npx cap android add || true
         npx cap sync android || true
         
-        # بررسی وجود پوشه اندروید و اجرای گریدل
+        # ورود به پوشه اندروید ساخته شده و اجرای گریدل
         if [ -d "android" ]; then
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug
         else
-          # اگر در ریشه نبود، سرچ عمیق انجام می‌دهد
-          ANDROID_DIR=$(find . -name "gradlew" -exec dirname {} \; | head -n 1)
-          if [ -n "$ANDROID_DIR" ]; then
-            cd "$ANDROID_DIR"
-            chmod +x gradlew
-            ./gradlew assembleDebug
-          else
-            echo "پوشه اندروید یافت نشد!" && exit 1
-          fi
+          echo "پوشه اندروید در مسیر اصلی یافت نشد!" && exit 1
         fi
 
     - name: Upload APK
@@ -72,4 +64,3 @@ jobs:
         path: |
           **/build/outputs/apk/debug/app-debug.apk
           **/build/outputs/apk/debug/*.apk
-          
