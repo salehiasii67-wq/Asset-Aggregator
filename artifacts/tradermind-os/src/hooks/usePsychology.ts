@@ -1,29 +1,33 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { db, PsychologyLog } from '../db/database';
 
 export function usePsychology() {
   const [logs, setLogs] = useState<PsychologyLog[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchLogs = async () => {
-      try {
-        const allLogs = await db.psychologyLogs.orderBy('date').reverse().toArray();
-        setLogs(allLogs);
-      } catch (error) {
-        console.error("Failed to fetch psychology logs:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchLogs();
+  const fetch = useCallback(async () => {
+    try {
+      const all = await db.psychologyLogs.orderBy('date').reverse().toArray();
+      setLogs(all);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => { fetch(); }, [fetch]);
 
   const addLog = async (log: Omit<PsychologyLog, 'id'>) => {
     const id = await db.psychologyLogs.add(log as PsychologyLog);
-    setLogs([{ ...log, id }, ...logs]);
+    await fetch();
     return id;
   };
 
-  return { logs, loading, addLog };
+  const deleteLog = async (id: number) => {
+    await db.psychologyLogs.delete(id);
+    setLogs(prev => prev.filter(l => l.id !== id));
+  };
+
+  return { logs, loading, addLog, deleteLog, refetch: fetch };
 }
