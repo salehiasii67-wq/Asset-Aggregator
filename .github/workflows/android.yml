@@ -40,11 +40,6 @@ jobs:
           distribution: zulu
           java-version: '17'
 
-      - name: Add Android Platform
-        run: |
-          cd artifacts/tradermind-os
-          npx cap add android
-
       - name: Sync Capacitor
         run: |
           cd artifacts/tradermind-os
