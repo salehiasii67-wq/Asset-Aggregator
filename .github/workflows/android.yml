@@ -2,72 +2,62 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Source Code
-      uses: actions/checkout@v4
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 22
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
 
-    - name: Install pnpm
-      uses: pnpm/action-setup@v3
-      with:
-        version: 9
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
-    - name: Install Dependencies
-      run: pnpm install --no-frozen-lockfile
+      - name: Install Dependencies
+        run: pnpm install --no-frozen-lockfile
 
-    - name: Build Project
-      env:
-        PORT: 3000
-        BASE_PATH: "/"
-        DATABASE_URL: "file:./dev.db"
-      run: |
-        # بیلد کردن پروژه اصلی فرانت‌اند با متغیرهای لازم
-        cd artifacts/trademind-os
-        PORT=3000 BASE_PATH="/" pnpm run build
-        
-        # جابه‌جا کردن فایل‌های کامپایل شده وب به ریشه پوشه dist برای خوندن درست کپی‌سیتر
-        if [ -d "dist/public" ]; then
-          mv dist/public/* dist/ && rmdir dist/public
-        fi
+      - name: Build TraderMind OS
+        run: |
+          cd artifacts/tradermind-os
+          pnpm run build
+        env:
+          PORT: 3000
+          BASE_PATH: /
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'zulu'
-        java-version: '17'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: '17'
 
-    - name: Build Android App
-      run: |
-        # ورود به پوشه‌ای که کانفیگ کپی‌سیتر و کدهای اندروید قرار دارد
-        cd artifacts/trademind-os
-        
-        # نصب پکیج‌های کپی‌سیتر بدون تداخل با مونو‌ریپو
-        pnpm add @capacitor/cli @capacitor/core @capacitor/android -w || true
-        
-        # همگام‌سازی نهایی فایل‌های وب با پروژه اندروید
-        npx cap sync android
-        
-        # ورود به پوشه اندروید و تولید نهایی APK
-        cd android
-        chmod +x gradlew
-        ./gradlew assembleDebug
+      - name: Add Android Platform
+        run: |
+          cd artifacts/tradermind-os
+          npx cap add android
 
-    - name: Upload APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-debug.apk
-        path: |
-          **/build/outputs/apk/debug/app-debug.apk
-          **/build/outputs/apk/debug/*.apk
-          
+      - name: Sync Capacitor
+        run: |
+          cd artifacts/tradermind-os
+          npx cap sync android
+
+      - name: Build Android APK
+        run: |
+          cd artifacts/tradermind-os/android
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: tradermind-os-debug-apk
+          path: artifacts/tradermind-os/android/app/build/outputs/apk/debug/app-debug.apk
