@@ -41,24 +41,20 @@ jobs:
 
     - name: Build Android App
       run: |
-        # ساخت پوشه خروجی وب
+        # ایجاد پوشه خروجی وب پیش‌فرض برای جلوگیری از خطای سینک
         mkdir -p dist || mkdir -p build || mkdir -p out || true
         
-        # نصب مستقیم و درجا ابزارهای کپسیتر روی سرور گیت‌هاب
+        # نصب سراسری کپی‌سیتر
         pnpm add -g @capacitor/cli @capacitor/core
         
-        # تلاش برای ورود به پوشه فرانت‌اند (در صورت وجود)
-        TARGET_DIR=$(find . -type d -name "trademind-os" | head -n 1)
-        if [ -n "$TARGET_DIR" ]; then
-          cd "$TARGET_DIR"
-          pnpm add @capacitor/android || true
-        fi
+        # تلاش برای نصب پکیج اندروید
+        pnpm add @capacitor/android || true
         
-        # اجرای دستورات ساخت پلتفرم اندروید
-        capacitor android add || npx cap android add || true
-        capacitor sync android || npx cap sync android || true
+        # اجرای دستورات با ساختار استاندارد نسخه جدید کپی‌سیتر
+        npx cap add android || true
+        npx cap sync android || true
         
-        # پیدا کردن پوشه گریدل و تولید فایل APK
+        # پیدا کردن پوشه اندروید و اجرای گریدل
         FINAL_ANDROID=$(find . -name "gradlew" -exec dirname {} \; | head -n 1)
         if [ -n "$FINAL_ANDROID" ]; then
           echo "ورود به پوشه اندروید: $FINAL_ANDROID"
